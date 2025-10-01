@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Coming Soon — ZOMO Health Newsletter Templates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  
+  <!-- Epilogue Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <style>
+    :root { color-scheme: light dark; supported-color-schemes: light dark; }
+    
+    body { 
+      margin:0; 
+      font-family:'Epilogue',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; 
+      background:#FFFFFF; 
+      color:#0a1216; 
+      transition:background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    header { 
+      padding:24px; 
+      display:flex; 
+      flex-direction:column; 
+      align-items:flex-start; 
+      gap:12px; 
+      border-bottom:1px solid #e2e8f0;
+    }
+    
+    header img { 
+      height:40px; 
+      filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%);
+    }
+    
+    header h1 { 
+      margin:0; 
+      font-family:'Epilogue',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+      font-size:24px; 
+      font-weight:700; 
+      color:#0a1216;
+    }
+    
+    main { 
+      padding:32px 24px; 
+      max-width:1100px; 
+      margin:0 auto; 
+      text-align:center;
+    }
+    
+    .coming-soon-container {
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      border-radius:12px;
+      padding:48px 32px;
+      margin:32px 0;
+    }
+    
+    .coming-soon-icon {
+      width:80px;
+      height:80px;
+      background:#0d9488;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin:0 auto 24px;
+    }
+    
+    .coming-soon-icon .material-icons {
+      font-size:40px;
+      color:#FFFFFF;
+    }
+    
+    .coming-soon-title {
+      font-size:32px;
+      font-weight:700;
+      color:#0a1216;
+      margin:0 0 16px;
+    }
+    
+    .coming-soon-subtitle {
+      font-size:18px;
+      font-weight:400;
+      color:#64748b;
+      margin:0 0 32px;
+      line-height:1.6;
+    }
+    
+    .back-button {
+      display:inline-block;
+      background:#0d9488;
+      color:#FFFFFF;
+      text-decoration:none;
+      padding:12px 24px;
+      border-radius:8px;
+      font-size:16px;
+      font-weight:500;
+      transition:background-color 0.3s ease;
+    }
+    
+    .back-button:hover {
+      background:#0b7a6b;
+    }
+    
+    footer { 
+      opacity:.75; 
+      font-size:14px; 
+      font-weight:400; 
+      padding:32px 24px; 
+      text-align:center; 
+      border-top:1px solid #e2e8f0; 
+      color:#64748b;
+    }
+    
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      body { 
+        background:#0a1216; 
+        color:#f8fafc; 
+      }
+      
+      header { 
+        border-bottom-color:#131f27; 
+      }
+      
+      header img { 
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%);
+      }
+      
+      header h1 { 
+        color:#f8fafc; 
+      }
+      
+      .coming-soon-container {
+        background:#0f1a21;
+        border-color:#131f27;
+      }
+      
+      .coming-soon-title {
+        color:#f8fafc;
+      }
+      
+      .coming-soon-subtitle {
+        color:#94a3b8;
+      }
+      
+      .coming-soon-icon {
+        background:#2dd4bf;
+      }
+      
+      .back-button {
+        background:#2dd4bf;
+        color:#0a1216;
+      }
+      
+      .back-button:hover {
+        background:#26c4b1;
+      }
+      
+      footer { 
+        border-top-color:#131f27; 
+        color:#94a3b8; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" alt="ZOMO Health logo">
+    <h1>ZOMO Health Newsletter Templates</h1>
+  </header>
+  <main>
+    <div class="coming-soon-container">
+      <div class="coming-soon-icon">
+        <span class="material-icons">schedule</span>
+      </div>
+      <h2 class="coming-soon-title">Coming Soon</h2>
+      <p class="coming-soon-subtitle">
+        This newsletter template is currently in development. We're working hard to create a custom template that will be tailored specifically for your organization's needs and branding.
+      </p>
+      <a href="index.html" class="back-button">
+        <span class="material-icons" style="font-size:18px; vertical-align:middle; margin-right:8px;">arrow_back</span>
+        Back to Templates
+      </a>
+    </div>
+  </main>
+  <footer>© <span id="y"></span> ZOMO Health</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
