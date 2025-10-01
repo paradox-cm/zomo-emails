@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ZOMO Health — Newsletter Templates</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  
+  <!-- Epilogue Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <style>
+    :root { color-scheme: light dark; supported-color-schemes: light dark; }
+    
+    body { 
+      margin:0; 
+      font-family:'Epilogue',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif; 
+      background:#FFFFFF; 
+      color:#0a1216; 
+      transition:background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    header { 
+      padding:24px; 
+      display:flex; 
+      flex-direction:column; 
+      align-items:flex-start; 
+      gap:12px; 
+      border-bottom:1px solid #e2e8f0;
+    }
+    
+    header img { 
+      height:40px; 
+      filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%);
+    }
+    
+    header h1 { 
+      margin:0; 
+      font-family:'Epilogue',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+      font-size:24px; 
+      font-weight:700; 
+      color:#0a1216;
+    }
+    
+    main { 
+      padding:32px 24px; 
+      max-width:1100px; 
+      margin:0 auto; 
+    }
+    
+    .grid { 
+      display:grid; 
+      grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); 
+      gap:20px; 
+    }
+    
+    .card { 
+      background:#FFFFFF; 
+      border:1px solid #e2e8f0; 
+      border-radius:8px; 
+      padding:24px; 
+      text-decoration:none; 
+      color:inherit; 
+      display:block; 
+      transition:all 0.3s ease;
+    }
+    
+    .thumb { 
+      border:2px solid #0d9488; 
+      border-radius:8px; 
+      height:180px; 
+      display:flex; 
+      align-items:center; 
+      justify-content:center; 
+      font-size:16px; 
+      font-weight:600; 
+      color:#0d9488; 
+      background:transparent;
+    }
+    
+    .card h3 { 
+      margin:16px 0 8px; 
+      font-size:18px; 
+      font-weight:700; 
+      color:#0a1216;
+    }
+    
+    .card p { 
+      margin:0; 
+      font-size:14px; 
+      font-weight:400; 
+      line-height:1.6; 
+      color:#64748b;
+    }
+    
+    a.card:hover { 
+      transform:translateY(-2px); 
+      box-shadow:0 8px 25px rgba(13,148,136,0.15); 
+      border-color:#0d9488;
+    }
+    
+    section h2 { 
+      font-size:20px; 
+      font-weight:700; 
+      color:#0a1216; 
+      margin:0 0 12px;
+    }
+    
+    section { 
+      margin-top:32px; 
+      font-size:16px; 
+      font-weight:400; 
+      line-height:1.6; 
+      color:#64748b;
+    }
+    
+    code { 
+      background:#f8fafc; 
+      padding:2px 6px; 
+      border-radius:4px; 
+      font-family:'Monaco','Menlo','Ubuntu Mono',monospace; 
+      font-size:14px;
+    }
+    
+    footer { 
+      opacity:.75; 
+      font-size:14px; 
+      font-weight:400; 
+      padding:32px 24px; 
+      text-align:center; 
+      border-top:1px solid #e2e8f0; 
+      color:#64748b;
+    }
+    
+    /* Dark mode styles */
+    @media (prefers-color-scheme: dark) {
+      body { 
+        background:#0a1216; 
+        color:#f8fafc; 
+      }
+      
+      header { 
+        border-bottom-color:#131f27; 
+      }
+      
+      header img { 
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%);
+      }
+      
+      header h1 { 
+        font-family:'Epilogue',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+        color:#f8fafc; 
+      }
+      
+      .card { 
+        background:#0f1a21; 
+        border-color:#131f27; 
+      }
+      
+      .card h3 { 
+        color:#f8fafc; 
+      }
+      
+      .card p { 
+        color:#94a3b8; 
+      }
+      
+      .thumb { 
+        border-color:#2dd4bf; 
+        color:#2dd4bf; 
+      }
+      
+      a.card:hover { 
+        box-shadow:0 8px 25px rgba(45,212,191,0.15); 
+        border-color:#2dd4bf;
+      }
+      
+      section h2 { 
+        color:#f8fafc; 
+      }
+      
+      section { 
+        color:#94a3b8; 
+      }
+      
+      code { 
+        background:#131f27; 
+        color:#f8fafc;
+      }
+      
+      footer { 
+        border-top-color:#131f27; 
+        color:#94a3b8; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" alt="ZOMO Health logo">
+    <h1>ZOMO Health Newsletter Templates</h1>
+  </header>
+  <main>
+    <div class="grid">
+      <a class="card" href="zomo-health-template-01.html">
+        <div class="thumb">600px Email • One-column</div>
+        <h3>ZOMO Health — Template 01</h3>
+        <p>Mailchimp-ready HTML with inline styles, VML CTA, light/dark support</p>
+      </a>
+    </div>
+    <section style="margin-top:24px;font-size:14px;">
+      <h2 style="font-size:16px;margin:0 0 6px;">Mailchimp Import</h2>
+      <ol style="margin:0;padding-left:20px;">
+        <li>Zip this folder or copy all of <code>zomo-health-template-01.html</code>.</li>
+        <li>Mailchimp → Campaigns → Design Email → Code Your Own:
+          <ul>
+            <li><b>Paste in code</b> (use absolute image URLs or upload images to Content Studio).</li>
+            <li><b>Import zip</b> (include <code>assets/</code> so Mailchimp hosts images).</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <footer>© <span id="y"></span> ZOMO Health</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
