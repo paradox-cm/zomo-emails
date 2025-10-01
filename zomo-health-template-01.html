@@ -269,6 +269,66 @@
     .mobile-preview .mobile-card { width: 100% !important; margin-bottom: 12px !important; }
     .mobile-preview .mobile-content-image { height: auto !important; max-height: 250px !important; object-fit: contain !important; }
     
+    /* Mobile preview - exact replica of @media query mobile styles */
+    /* Avatar layout - stack above text */
+    .mobile-preview .mobile-avatar-stack table[role="presentation"] tr { display: block !important; }
+    .mobile-preview .mobile-avatar-stack table[role="presentation"] tr td { display: block !important; width: 100% !important; }
+    .mobile-preview .mobile-avatar-stack table[role="presentation"] tr td:first-child { 
+      text-align: center !important; 
+      padding-right: 0 !important; 
+      padding-bottom: 16px !important;
+      margin-bottom: 16px !important;
+    }
+    .mobile-preview .mobile-avatar-stack .dm-avatar { 
+      width: 120px !important; 
+      height: 120px !important; 
+      min-width: 120px !important; 
+      min-height: 120px !important; 
+      max-width: 120px !important; 
+      max-height: 120px !important; 
+      margin: 0 auto !important;
+      flex-shrink: 0 !important;
+    }
+    
+    /* Cards stack - single column layout */
+    .mobile-preview .mobile-cards-stack table[role="presentation"] tr { display: block !important; }
+    .mobile-preview .mobile-cards-stack table[role="presentation"] tr td { 
+      display: block !important; 
+      width: 100% !important; 
+      padding-right: 0 !important;
+      margin-bottom: 12px !important;
+    }
+    .mobile-preview .mobile-cards-stack .mobile-card { 
+      width: 100% !important; 
+      margin-bottom: 12px !important; 
+    }
+    
+    /* Mobile preview cards responsive layout - force mobile stacking */
+    .mobile-preview .cards-container { display: block !important; }
+    .mobile-preview .cards-container table[role="presentation"] { display: block !important; width: 100% !important; }
+    .mobile-preview .cards-container table[role="presentation"] tr { display: block !important; width: 100% !important; }
+    .mobile-preview .cards-container table[role="presentation"] tr td { 
+      display: block !important; 
+      width: 100% !important; 
+      max-width: 100% !important;
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+      margin-bottom: 12px !important;
+      float: none !important;
+    }
+    .mobile-preview .cards-container .card-cell { 
+      width: 100% !important; 
+      max-width: 100% !important;
+      margin-bottom: 12px !important; 
+      display: block !important;
+      float: none !important;
+    }
+    .mobile-preview .cards-container .card-cell table[role="presentation"] { height: auto !important; }
+    .mobile-preview .cards-container .card-cell table[role="presentation"] tr td { 
+      height: auto !important; 
+      padding: 12px 16px !important; 
+    }
+    
     .desktop-preview {
       max-width: 100%;
     }
@@ -399,6 +459,65 @@
       .mobile-center { text-align: center !important; }
       .mobile-card { width: 100% !important; margin-bottom: 12px !important; }
       .mobile-content-image { height: auto !important; max-height: 250px !important; object-fit: contain !important; }
+      
+      /* Mobile avatar layout - stack above text */
+      .mobile-avatar-stack table[role="presentation"] tr { display: block !important; }
+      .mobile-avatar-stack table[role="presentation"] tr td { display: block !important; width: 100% !important; }
+      .mobile-avatar-stack table[role="presentation"] tr td:first-child { 
+        text-align: center !important; 
+        padding-right: 0 !important; 
+        padding-bottom: 16px !important;
+        margin-bottom: 16px !important;
+      }
+      .mobile-avatar-stack .dm-avatar { 
+        width: 120px !important; 
+        height: 120px !important; 
+        min-width: 120px !important; 
+        min-height: 120px !important; 
+        max-width: 120px !important; 
+        max-height: 120px !important; 
+        margin: 0 auto !important;
+        flex-shrink: 0 !important;
+      }
+      
+      /* Mobile cards stack - single column layout */
+      .mobile-cards-stack table[role="presentation"] tr { display: block !important; }
+      .mobile-cards-stack table[role="presentation"] tr td { 
+        display: block !important; 
+        width: 100% !important; 
+        padding-right: 0 !important;
+        margin-bottom: 12px !important;
+      }
+      .mobile-cards-stack .mobile-card { 
+        width: 100% !important; 
+        margin-bottom: 12px !important; 
+      }
+      
+      /* Cards responsive layout - force mobile stacking */
+      .cards-container { display: block !important; }
+      .cards-container table[role="presentation"] { display: block !important; width: 100% !important; }
+      .cards-container table[role="presentation"] tr { display: block !important; width: 100% !important; }
+      .cards-container table[role="presentation"] tr td { 
+        display: block !important; 
+        width: 100% !important; 
+        max-width: 100% !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-bottom: 12px !important;
+        float: none !important;
+      }
+      .cards-container .card-cell { 
+        width: 100% !important; 
+        max-width: 100% !important;
+        margin-bottom: 12px !important; 
+        display: block !important;
+        float: none !important;
+      }
+      .cards-container .card-cell table[role="presentation"] { height: auto !important; }
+      .cards-container .card-cell table[role="presentation"] tr td { 
+        height: auto !important; 
+        padding: 12px 16px !important; 
+      }
     }
     
     @media only screen and (max-width: 480px) {
@@ -467,7 +586,7 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td align="left" style="vertical-align:middle;">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="150" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
                   </td>
                   <td align="right" style="vertical-align:middle;">
                     <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">September, 2025</p>
@@ -619,10 +738,10 @@
                       </tr>
                       <tr>
                         <td style="padding-top:16px;">
-                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="cards-container">
                             <tr>
                               <!-- Card 1: SOC 2 -->
-                              <td style="width:180px; vertical-align:top; padding-right:12px;" class="mobile-card">
+                              <td style="width:180px; vertical-align:top; padding-right:12px;" class="card-cell">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                                   <tr>
                                     <td style="padding:16px; vertical-align:middle; height:180px;">
@@ -636,7 +755,7 @@
                                 </table>
                               </td>
                               <!-- Card 2: Faster Implementation -->
-                              <td style="width:180px; vertical-align:top; padding-right:12px;" class="mobile-card">
+                              <td style="width:180px; vertical-align:top; padding-right:12px;" class="card-cell">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                                   <tr>
                                     <td style="padding:16px; vertical-align:middle; height:180px;">
@@ -650,7 +769,7 @@
                                 </table>
                               </td>
                               <!-- Card 3: HRIS Integrations -->
-                              <td style="width:180px; vertical-align:top;" class="mobile-card">
+                              <td style="width:180px; vertical-align:top;" class="card-cell">
                                 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                                   <tr>
                                     <td style="padding:16px; vertical-align:middle; height:180px;">
@@ -692,20 +811,21 @@
                           <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                             At Zomo Health, our success is built on a deep understanding of the brokerage world. Our team's extensive experience working with firms across the country ensures we can anticipate your needs and provide the best support.
                           </p>
-                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-                            <tr>
-                              <td style="width:120px; vertical-align:top; padding-right:16px; text-align:center;">
-                                <div style="width:120px; height:120px; background:#FFFFFF; border:2px solid #e2e8f0; border-radius:50%; display:flex; align-items:center; justify-content:center;" class="dm-bg dm-placeholder dm-avatar">
-                                  <span class="material-icons dm-avatar-icon" style="color:#0d9488; font-size:48px;">person</span>
-                                </div>
-                              </td>
-                              <td style="vertical-align:top;">
-                                <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                                  <strong>Nikki Herndon, Senior VP of Operations:</strong> Nikki has been a cornerstone of our team since 2013. With a Master's in Healthcare Administration and Management from Texas A&amp;M, her expertise ensures smooth program implementation and operational excellence for our partners and their clients. Along with leading our national relationships with some of the largest brokerage firms in the United States, she leads a family including Rhett, 2 years old, Maggie, 5 years old, and her husband, Andrew.
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
+                          <!-- Avatar and text container -->
+                          <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px;">
+                            <!-- Avatar -->
+                            <div style="flex: 0 0 auto; text-align: center; min-width: 120px;">
+                              <div style="width: 120px; height: 120px; background: #FFFFFF; border: 2px solid #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;" class="dm-bg dm-placeholder dm-avatar">
+                                <span class="material-icons dm-avatar-icon" style="color: #0d9488; font-size: 48px;">person</span>
+                              </div>
+                            </div>
+                            <!-- Text content -->
+                            <div style="flex: 1; min-width: 200px;">
+                              <p style="margin: 0; font-size: 16px; font-weight: 400; line-height: 1.6; color: #64748b;" class="dm-muted">
+                                <strong>Nikki Herndon, Senior VP of Operations:</strong> Nikki has been a cornerstone of our team since 2013. With a Master's in Healthcare Administration and Management from Texas A&amp;M, her expertise ensures smooth program implementation and operational excellence for our partners and their clients. Along with leading our national relationships with some of the largest brokerage firms in the United States, she leads a family including Rhett, 2 years old, Maggie, 5 years old, and her husband, Andrew.
+                              </p>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                     </table>
