@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>ZOMO Health Email System</title>
+  <title>Newsletter Templates — ZOMO Health</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
@@ -33,6 +33,25 @@
       align-items:flex-start; 
       gap:12px; 
       border-bottom:1px solid #e2e8f0;
+    }
+    
+    .back-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #0d9488;
+      text-decoration: none;
+      font-weight: 500;
+      margin-bottom: 16px;
+      transition: opacity 0.2s ease;
+    }
+    
+    .back-link:hover {
+      opacity: 0.7;
+    }
+    
+    .back-arrow {
+      font-size: 18px;
     }
     
     .header-row {
@@ -262,60 +281,57 @@
 </head>
 <body>
   <header>
+    <a href="../../index.html" class="back-link">
+      <span class="material-icons back-arrow">arrow_back</span>
+      Back to Email System
+    </a>
     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" alt="ZOMO Health logo">
     <div class="header-row">
-      <h1>ZOMO Health Email System</h1>
+      <h1>Newsletter Templates</h1>
       <span class="version">v1.0</span>
     </div>
   </header>
   <main>
     <div class="grid">
-      <a class="card" href="emails/newsletters/templates.html">
-        <div class="thumb">Newsletter Templates</div>
-        <h3>Newsletters</h3>
-        <p>Partner newsletters including General Template, CBiz, Gallagher, Lockton Partners, Marsh, and USI</p>
+      <a class="card" href="zomo-health-template-01.html">
+        <div class="thumb">600px Email • One-column</div>
+        <h3>General Template</h3>
+        <p>Mailchimp-ready HTML with inline styles, VML CTA, light/dark support</p>
       </a>
       
-      <a class="card" href="emails/onboarding/index.html">
-        <div class="thumb">Onboarding</div>
-        <h3>Onboarding</h3>
-        <p>Welcome sequences, activation, and user engagement communications</p>
+      <a class="card" href="../../coming-soon.html">
+        <div class="badge">Pending</div>
+        <div class="thumb">Coming Soon</div>
+        <h3>CBiz Newsletter</h3>
+        <p>Custom newsletter template for CBiz partners</p>
       </a>
       
-      <a class="card" href="emails/transactional/index.html">
-        <div class="thumb">Transactional</div>
-        <h3>Transactional</h3>
-        <p>Password reset, email verification, and payment confirmation emails</p>
+      <a class="card" href="../../coming-soon.html">
+        <div class="badge">Pending</div>
+        <div class="thumb">Coming Soon</div>
+        <h3>Gallagher Newsletter</h3>
+        <p>Custom newsletter template for Gallagher partners</p>
       </a>
       
-      <a class="card" href="emails/marketing/index.html">
-        <div class="thumb">Marketing</div>
-        <h3>Marketing</h3>
-        <p>Product announcements, feature updates, and promotional campaigns</p>
+      <a class="card" href="../../coming-soon.html">
+        <div class="badge">Pending</div>
+        <div class="thumb">Coming Soon</div>
+        <h3>Lockton Partners Newsletter</h3>
+        <p>Custom newsletter template for Lockton Partners</p>
       </a>
       
-      <a class="card" href="emails/support/index.html">
-        <div class="thumb">Support</div>
-        <h3>Support</h3>
-        <p>Ticket confirmations, resolution notifications, and customer service emails</p>
+      <a class="card" href="../../coming-soon.html">
+        <div class="badge">Pending</div>
+        <div class="thumb">Coming Soon</div>
+        <h3>Marsh Newsletter</h3>
+        <p>Custom newsletter template for Marsh partners</p>
       </a>
       
-      <a class="card" href="emails/compliance/index.html">
-        <div class="thumb">Compliance</div>
-        <h3>Compliance</h3>
-        <p>HIPAA notifications, security alerts, and regulatory communications</p>
-      </a>
-      
-      <a class="card" href="emails/billing/index.html">
-        <div class="thumb">Billing</div>
-        <h3>Billing</h3>
-        <p>Subscription management, payment processing, and billing communications</p>
-      </a>
-      
-      <a class="card" href="emails/operations/index.html">
-        <div class="thumb">Operations</div>
-        <h3>Operations</h3>
-        <p>System maintenance, support operations, and account management communications</p>
+      <a class="card" href="../../coming-soon.html">
+        <div class="badge">Pending</div>
+        <div class="thumb">Coming Soon</div>
+        <h3>USI Newsletter</h3>
+        <p>Custom newsletter template for USI partners</p>
       </a>
     </div>
     <section style="margin-top:24px;font-size:14px;">
@@ -334,81 +350,101 @@
     </section>
 
     <section style="margin-top:32px;font-size:14px;">
-      <h2 style="font-size:24px;margin:0 0 8px;color:#0a1216;font-weight:700;">Email Template Library</h2>
+      <h2 style="font-size:24px;margin:0 0 8px;color:#0a1216;font-weight:700;">Template Documentation</h2>
       <p class="doc-intro" style="margin:0 0 24px;font-size:16px;color:#64748b;line-height:1.6;">
-        Comprehensive collection of professional email templates for all ZOMO Health communications. 
-        From newsletters to transactional emails, find the perfect template for every use case.
+        Comprehensive guide to understanding, customizing, and implementing the ZOMO Health newsletter templates. 
+        Learn about the technical features, mobile responsiveness, and best practices for creating professional email campaigns.
       </p>
       
       <div class="doc-section" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin-bottom:20px;">
-        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Available Email Types</h3>
+        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Template Overview</h3>
         <p style="margin:0 0 12px;color:#64748b;line-height:1.6;">
-          Our email template library covers the complete customer journey and business communications:
+          The ZOMO Health newsletter template is a professional, responsive email template designed for partner communications. 
+          It features a modern design with light/dark mode support, mobile responsiveness, and Mailchimp compatibility.
         </p>
         <ul style="margin:0;padding-left:18px;color:#64748b;line-height:1.6;">
-          <li><strong>Newsletters:</strong> Partner updates, company news, and industry insights</li>
-          <li><strong>Transactional:</strong> Account confirmations, password resets, and system notifications</li>
-          <li><strong>Marketing:</strong> Product announcements, feature updates, and promotional campaigns</li>
-          <li><strong>Onboarding:</strong> Welcome sequences and getting started guides</li>
-          <li><strong>Support:</strong> Ticket confirmations and resolution notifications</li>
-          <li><strong>Compliance:</strong> HIPAA notifications and security alerts</li>
+          <li><strong>600px width:</strong> Optimized for email clients and mobile devices</li>
+          <li><strong>One-column layout:</strong> Clean, focused design for maximum readability</li>
+          <li><strong>Inline styles:</strong> Ensures consistent rendering across email clients</li>
+          <li><strong>VML buttons:</strong> Outlook-compatible call-to-action buttons</li>
+          <li><strong>Dark mode support:</strong> Automatic adaptation to user's system preferences</li>
+          <li><strong>Mobile responsive:</strong> Fully responsive design with mobile-optimized typography and spacing</li>
         </ul>
       </div>
 
       <div class="doc-section" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin-bottom:20px;">
-        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Template Standards</h3>
+        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Template Structure</h3>
         <p style="margin:0 0 12px;color:#64748b;line-height:1.6;">
-          All ZOMO Health email templates follow consistent design and technical standards:
-        </p>
-        <ul style="margin:0;padding-left:18px;color:#64748b;line-height:1.6;">
-          <li><strong>Brand Consistency:</strong> Unified color palette, typography, and visual elements</li>
-          <li><strong>Mobile Responsive:</strong> Optimized for all device sizes and email clients</li>
-          <li><strong>Accessibility:</strong> WCAG compliant with proper contrast and semantic markup</li>
-          <li><strong>Email Client Support:</strong> Tested across Outlook, Gmail, Apple Mail, and major clients</li>
-          <li><strong>HIPAA Compliance:</strong> Healthcare-specific security and privacy considerations</li>
-          <li><strong>Performance Optimized:</strong> Fast loading with efficient HTML structure</li>
-        </ul>
-      </div>
-
-      <div class="doc-section" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin-bottom:20px;">
-        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Implementation Guide</h3>
-        <p style="margin:0 0 12px;color:#64748b;line-height:1.6;">
-          Getting started with ZOMO Health email templates:
+          The template is organized into modular sections that can be easily customized or rearranged:
         </p>
         <ol style="margin:0;padding-left:20px;color:#64748b;line-height:1.6;">
-          <li><strong>Choose Template:</strong> Select the appropriate template for your email type</li>
-          <li><strong>Customize Content:</strong> Replace placeholder text with your specific content</li>
-          <li><strong>Update Branding:</strong> Ensure logos, colors, and contact information are current</li>
-          <li><strong>Test Responsiveness:</strong> Preview on desktop and mobile devices</li>
-          <li><strong>Email Client Testing:</strong> Verify rendering across major email clients</li>
-          <li><strong>Deploy:</strong> Import into your email marketing platform or send directly</li>
+          <li><strong>Header:</strong> Logo and date display</li>
+          <li><strong>Headline:</strong> Main newsletter title with accent color</li>
+          <li><strong>Hero Image:</strong> Placeholder for featured image</li>
+          <li><strong>Greeting & Intro:</strong> Personalized opening message</li>
+          <li><strong>In This Issue:</strong> Table of contents with icons</li>
+          <li><strong>Content Sections:</strong> Modular blocks for different topics</li>
+          <li><strong>Team Spotlight:</strong> Staff introduction with avatar</li>
+          <li><strong>Client Highlight:</strong> Success story showcase</li>
+          <li><strong>Resources:</strong> Health news and links</li>
+          <li><strong>Contact Info:</strong> Partner representative details</li>
+          <li><strong>Social Bar:</strong> LinkedIn follow button</li>
+          <li><strong>Footer:</strong> Legal compliance and unsubscribe links</li>
         </ol>
       </div>
 
       <div class="doc-section" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin-bottom:20px;">
-        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Best Practices</h3>
+        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Customization Guide</h3>
+        <p style="margin:0 0 12px;color:#64748b;line-height:1.6;">
+          To customize the template for different campaigns:
+        </p>
         <ul style="margin:0;padding-left:18px;color:#64748b;line-height:1.6;">
-          <li><strong>Content Strategy:</strong> Keep messages clear, concise, and actionable</li>
-          <li><strong>Personalization:</strong> Use dynamic content to improve engagement</li>
-          <li><strong>Call-to-Actions:</strong> Make CTAs prominent and action-oriented</li>
-          <li><strong>Image Optimization:</strong> Use compressed images with proper alt text</li>
-          <li><strong>Link Management:</strong> Use tracking URLs and ensure all links work</li>
-          <li><strong>Compliance:</strong> Include required unsubscribe and preference management links</li>
-          <li><strong>Testing:</strong> Always test before sending to your full audience</li>
+          <li><strong>Content Updates:</strong> Replace placeholder text with campaign-specific content</li>
+          <li><strong>Images:</strong> Update hero image and team photos with absolute URLs</li>
+          <li><strong>Links:</strong> Replace example.com URLs with actual campaign links</li>
+          <li><strong>Contact Info:</strong> Update partner representative details in the contact section</li>
+          <li><strong>Preheader Text:</strong> Modify the hidden preheader for email previews</li>
+          <li><strong>Subject Line:</strong> Update the title tag for email subject</li>
+        </ul>
+      </div>
+
+      <div class="doc-section" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin-bottom:20px;">
+        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Technical Features</h3>
+        <ul style="margin:0;padding-left:18px;color:#64748b;line-height:1.6;">
+          <li><strong>Email Client Compatibility:</strong> Tested with Outlook, Gmail, Apple Mail, and major clients</li>
+          <li><strong>Responsive Design:</strong> Adapts to mobile devices and different screen sizes</li>
+          <li><strong>Mobile Optimization:</strong> Media queries for 600px and 480px breakpoints with responsive typography</li>
+          <li><strong>Accessibility:</strong> Proper semantic HTML and alt text for images</li>
+          <li><strong>Brand Consistency:</strong> Uses ZOMO Health color palette and typography</li>
+          <li><strong>Performance:</strong> Optimized HTML structure for fast loading</li>
+          <li><strong>Compliance:</strong> Includes required unsubscribe and preference links</li>
+        </ul>
+      </div>
+
+      <div class="doc-section" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;margin-bottom:20px;">
+        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Mobile Responsiveness</h3>
+        <p style="margin:0 0 12px;color:#64748b;line-height:1.6;">
+          The template includes comprehensive mobile optimization for all device sizes:
+        </p>
+        <ul style="margin:0;padding-left:18px;color:#64748b;line-height:1.6;">
+          <li><strong>Responsive Breakpoints:</strong> 600px and 480px media queries for optimal mobile experience</li>
+          <li><strong>Adaptive Typography:</strong> Font sizes scale down appropriately on mobile devices</li>
+          <li><strong>Mobile Spacing:</strong> Reduced padding and margins for better mobile fit</li>
+          <li><strong>Responsive Images:</strong> Logo and hero image scale to fit mobile screens</li>
+          <li><strong>Stacked Layout:</strong> Cards and elements stack vertically on mobile</li>
+          <li><strong>Touch-Friendly:</strong> Optimized button sizes and spacing for touch interaction</li>
         </ul>
       </div>
 
       <div class="doc-section" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:20px;">
-        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Support & Resources</h3>
+        <h3 style="margin:0 0 8px;font-size:16px;font-weight:600;color:#0a1216;">Color Palette</h3>
         <p style="margin:0 0 12px;color:#64748b;line-height:1.6;">
-          Need help with email templates? We're here to support you:
+          The template uses ZOMO Health's official brand colors:
         </p>
         <ul style="margin:0;padding-left:18px;color:#64748b;line-height:1.6;">
-          <li><strong>Technical Support:</strong> Contact our development team for template customization</li>
-          <li><strong>Design Guidelines:</strong> Access our brand guidelines and design system</li>
-          <li><strong>Training Materials:</strong> Video tutorials and documentation for email marketing</li>
-          <li><strong>Compliance Resources:</strong> HIPAA and healthcare email compliance guidelines</li>
-          <li><strong>Performance Analytics:</strong> Track email performance and engagement metrics</li>
+          <li><strong>Light Mode:</strong> Background #FFFFFF, Text #0a1216, Primary #0d9488, Muted #64748b</li>
+          <li><strong>Dark Mode:</strong> Background #0a1216, Text #f8fafc, Primary #2dd4bf, Muted #94a3b8</li>
+          <li><strong>Automatic Switching:</strong> Colors adapt based on user's system preference</li>
         </ul>
       </div>
     </section>
