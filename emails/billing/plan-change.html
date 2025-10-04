@@ -22,6 +22,63 @@
   <!-- Dark Mode: Background #0a1216 / Foreground #f8fafc / Primary #2dd4bf / Muted #94a3b8 -->
 
   <style>
+    :root {
+      --bg-color: #FFFFFF;
+      --text-color: #0a1216;
+      --muted-color: #64748b;
+      --muted-bg-color: #f8fafc;
+      --accent-color: #0d9488;
+      --border-color: #e2e8f0;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0a1216;
+        --text-color: #f8fafc;
+        --muted-color: #94a3b8;
+        --muted-bg-color: #1e293b;
+        --accent-color: #2dd4bf;
+        --border-color: #1e293b;
+      }
+      
+      .dm-bg { background: #0a1216 !important; }
+      .dm-text { color: #f8fafc !important; }
+      .dm-muted { color: #94a3b8 !important; }
+      .dm-accent { color: #2dd4bf !important; }
+      .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
+      .dm-hero { background: #0f1a21 !important; border-color: #2dd4bf !important; }
+      .dm-hero-text { color: #2dd4bf !important; }
+      .dm-headline-accent { color: #2dd4bf !important; }
+      .dm-hr { border-color: #1e293b !important; }
+      .dm-cta { background: #2dd4bf !important; color: #0a1216 !important; }
+      .btn-link { color: #2dd4bf !important; }
+      .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
+      .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
+    }
+    
+    .force-dark {
+      --bg-color: #0a1216 !important;
+      --text-color: #f8fafc !important;
+      --muted-color: #94a3b8 !important;
+      --muted-bg-color: #1e293b !important;
+      --accent-color: #2dd4bf !important;
+      --border-color: #1e293b !important;
+    }
+    
+    .force-dark .dm-bg { background: #0a1216 !important; }
+    .force-dark .dm-text { color: #f8fafc !important; }
+    .force-dark .dm-muted { color: #94a3b8 !important; }
+    .force-dark .dm-accent { color: #2dd4bf !important; }
+    .force-dark .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
+    .force-dark .dm-hero { background: #0f1a21 !important; border-color: #2dd4bf !important; }
+    .force-dark .dm-hero-text { color: #2dd4bf !important; }
+    .force-dark .dm-headline-accent { color: #2dd4bf !important; }
+    .force-dark .dm-hr { border-color: #1e293b !important; }
+    .force-dark .dm-cta { background: #2dd4bf !important; color: #0a1216 !important; }
+    .force-dark .btn-link { color: #2dd4bf !important; }
+    .force-dark .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
+    .force-dark .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
+
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
     
     .view-switcher {
@@ -392,7 +449,7 @@
           <tr>
             <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
               <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" line-height:1.4; class="dm-text mobile-text-large">
-                Plan <span class="btn-link btn-link-dark" class="dm-headline-accent">Updated</span>
+                Plan <span class="btn-link btn-link-dark dm-headline-accent">Updated</span>
               </h1>
             </td>
           </tr>
@@ -419,7 +476,7 @@
           <!-- Plan Comparison -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box dm-bg">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
                     <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" line-height:1.4; class="dm-text">Plan Change Details</h3>
@@ -466,7 +523,7 @@
           <!-- New Features -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box dm-bg">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
                     <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" line-height:1.4; class="dm-text">What's New in Your Plan</h3>
@@ -541,8 +598,8 @@
                       <p style="margin:0; line-height:1.6; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; line-height:1.6;" class="dm-muted">
                         1980 Post Oak Blvd., Ste 100<br>
                         Houston, TX 77056<br>
-                        <a href="mailto:billing@zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">billing@zomohealth.com</a><br>
-                        <a href="tel:1-877-378-8880" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
+                        <a href="mailto:billing@zomohealth.com" class="btn-link btn-link-dark">billing@zomohealth.com</a><br>
+                        <a href="tel:1-877-378-8880" class="btn-link btn-link-dark">1-877-378-8880</a>
                       </p>
                     </td>
                     <td style="vertical-align:middle; width:30%; text-align:right;" class="footer-symbol">
@@ -557,9 +614,9 @@
               </p>
               
               <p style="margin:0 0 8px; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
-                © 2025 ZOMO Health • <a href="https://zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Website</a> • 
-                <a href="*|UPDATE_PROFILE|*" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Update Preferences</a> • 
-                <a href="*|UNSUB|*" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Unsubscribe</a>
+                © 2025 ZOMO Health • <a href="https://zomohealth.com" class="btn-link btn-link-dark">Website</a> • 
+                <a href="*|UPDATE_PROFILE|*" class="btn-link btn-link-dark">Update Preferences</a> • 
+                <a href="*|UNSUB|*" class="btn-link btn-link-dark">Unsubscribe</a>
               </p>
             </td>
           </tr>
