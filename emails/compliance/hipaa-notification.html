@@ -208,6 +208,17 @@
     
     /* Light mode button text override */
     .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
+    /* Dark mode primary button text override */
+    .force-dark .btn-primary, .force-dark .btn-primary-dark {
+      color: #0a1216 !important;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      .btn-primary, .btn-primary-dark {
+        color: #0a1216 !important;
+      }
+    }
+
     
     /* Force Dark Mode Classes */
     .force-dark .dm-bg { background: #0a1216 !important; }
