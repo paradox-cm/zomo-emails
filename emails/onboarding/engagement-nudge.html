@@ -505,7 +505,13 @@
     @media (prefers-color-scheme: dark) {
       .material-icons { color: #2dd4bf !important; }
       .dm-icon { color: #2dd4bf !important; }
-      .dm-icon-accent { color: #2dd4bf !important; }
+      .dm-icon-accent { color: #2dd4bf !important; }    }
+    
+    /* Special theming for icons in colored backgrounds */
+    .force-light .dm-hero .material-icons { color: #FFFFFF !important; }
+    .force-dark .dm-hero .material-icons { color: #FFFFFF !important; }
+    @media (prefers-color-scheme: dark) {
+      .dm-hero .material-icons { color: #FFFFFF !important; }
     }
   </style>
 </head>
@@ -574,8 +580,8 @@
           <!-- Engagement Nudge Message -->
           <tr>
             <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
-              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" class="dm-text mobile-text-large">
-                We <span class="btn-link btn-link-dark" class="dm-headline-accent">Miss You</span>
+              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; ;" class="dm-text mobile-text-large">
+                We <span class="btn-link btn-link-dark dm-headline-accent">Miss You</span>
               </h1>
             </td>
           </tr>
@@ -587,7 +593,7 @@
                 <tr>
                   <td style="padding:32px; text-align:center;">
                     <div style="width:80px; height:80px; background:#f59e0b; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;" class="dm-hero-icon">
-                      <span class="material-icons" style="color:#FFFFFF; font-size:40px;">favorite</span>
+                      <span class="material-icons" style=" font-size:40px;">favorite</span>
                     </div>
                     <h2 style="margin:0 0 12px; font-size:24px; font-weight:600; color:#f59e0b;" class="dm-hero-text">Your Wellness Journey Awaits</h2>
                     <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
@@ -605,29 +611,29 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
-                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Your Progress So Far</h3>
+                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; ;" class="dm-text">Your Progress So Far</h3>
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Last Login:</span>
+                          <span style="font-weight:600; ;" class="dm-text">Last Login:</span>
                           <span style="color:#64748b; margin-left:8px;" class="dm-muted">[LAST_LOGIN_DATE]</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Goals Set:</span>
+                          <span style="font-weight:600; ;" class="dm-text">Goals Set:</span>
                           <span style="color:#64748b; margin-left:8px;" class="dm-muted">[GOALS_COUNT]</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Assessments Completed:</span>
+                          <span style="font-weight:600; ;" class="dm-text">Assessments Completed:</span>
                           <span style="color:#64748b; margin-left:8px;" class="dm-muted">[ASSESSMENTS_COUNT]</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:8px 0;">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Wellness Score:</span>
+                          <span style="font-weight:600; ;" class="dm-text">Wellness Score:</span>
                           <span style="margin-left:8px; font-weight:600;" class="dm-headline-accent">[WELLNESS_SCORE]</span>
                         </td>
                       </tr>
@@ -646,7 +652,7 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
-                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Quick Actions to Get Back on Track</h3>
+                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; ;" class="dm-text">Quick Actions to Get Back on Track</h3>
                     <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       Here are some easy ways to jump back into your wellness routine:
                     </p>
@@ -657,7 +663,7 @@
                       <li style="margin:8px 0;"><strong>Explore New Features:</strong> Discover tools you haven't tried yet</li>
                     </ul>
                     <div style="margin:20px 0; padding:16px; background:#f0fdf4; border-left:4px solid #0d9488; border-radius:4px;">
-                      <p style="margin:0; font-size:14px; font-weight:500; color:#0a1216;" class="dm-text">
+                      <p style="margin:0; font-size:14px; font-weight:500; ;" class="dm-text">
                         <strong>Remember:</strong> Small, consistent actions lead to big wellness improvements over time.
                       </p>
                     </div>
@@ -688,13 +694,13 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:20px; text-align:center;">
-                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">Need Help Getting Back Started?</h3>
+                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; ;" class="dm-text">Need Help Getting Back Started?</h3>
                     <p style="margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       Our support team is here to help you get back on track with your wellness goals.
                     </p>
                     <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      📧 <a href="mailto:support@zomohealth.com" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">support@zomohealth.com</a><br>
-                      📞 <a href="tel:1-877-378-8880" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
+                      📧 <a href="mailto:support@zomohealth.com" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">support@zomohealth.com</a><br>
+                      📞 <a href="tel:1-877-378-8880" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">1-877-378-8880</a>
                     </p>
                   </td>
                 </tr>
@@ -716,8 +722,8 @@
                       <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
                         1980 Post Oak Blvd., Ste 100<br>
                         Houston, TX 77056<br>
-                        <a href="mailto:info@zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">info@zomohealth.com</a><br>
-                        <a href="tel:1-877-378-8880" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
+                        <a href="mailto:info@zomohealth.com" class="btn-link btn-link-dark btn-link btn-link-dark">info@zomohealth.com</a><br>
+                        <a href="tel:1-877-378-8880" class="btn-link btn-link-dark btn-link btn-link-dark">1-877-378-8880</a>
                       </p>
                     </td>
                     <td style="vertical-align:middle; width:30%; text-align:right;" class="footer-symbol">
@@ -732,9 +738,9 @@
               </p>
               
               <p style="margin:0 0 8px; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
-                © 2025 ZOMO Health • <a href="https://zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Website</a> • 
-                <a href="*|UPDATE_PROFILE|*" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Update Preferences</a> • 
-                <a href="*|UNSUB|*" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Unsubscribe</a>
+                © 2025 ZOMO Health • <a href="https://zomohealth.com" class="btn-link btn-link-dark btn-link btn-link-dark">Website</a> • 
+                <a href="*|UPDATE_PROFILE|*" class="btn-link btn-link-dark btn-link btn-link-dark">Update Preferences</a> • 
+                <a href="*|UNSUB|*" class="btn-link btn-link-dark btn-link btn-link-dark">Unsubscribe</a>
               </p>
             </td>
           </tr>

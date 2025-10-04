@@ -499,7 +499,13 @@
     @media (prefers-color-scheme: dark) {
       .material-icons { color: #2dd4bf !important; }
       .dm-icon { color: #2dd4bf !important; }
-      .dm-icon-accent { color: #2dd4bf !important; }
+      .dm-icon-accent { color: #2dd4bf !important; }    }
+    
+    /* Special theming for icons in colored backgrounds */
+    .force-light .dm-hero .material-icons { color: #FFFFFF !important; }
+    .force-dark .dm-hero .material-icons { color: #FFFFFF !important; }
+    @media (prefers-color-scheme: dark) {
+      .dm-hero .material-icons { color: #FFFFFF !important; }
     }
   </style>
 </head>
@@ -568,8 +574,8 @@
           <!-- Getting Started Message -->
           <tr>
             <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
-              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" class="dm-text mobile-text-large">
-                Your <span class="btn-link btn-link-dark" class="dm-headline-accent">Getting Started</span> Guide
+              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; ;" class="dm-text mobile-text-large">
+                Your <span class="btn-link btn-link-dark dm-headline-accent">Getting Started</span> Guide
               </h1>
             </td>
           </tr>
@@ -581,9 +587,9 @@
                 <tr>
                   <td style="padding:32px; text-align:center;">
                     <div style="width:80px; height:80px; background:#0d9488; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
-                      <span class="material-icons" style="color:#FFFFFF; font-size:40px;">rocket_launch</span>
+                      <span class="material-icons" style=" font-size:40px;">rocket_launch</span>
                     </div>
-                    <h2 style="margin:0 0 12px; font-size:24px; font-weight:600; class="dm-hero-text">Welcome to Your Wellness Journey!</h2>
+                    <h2 style="margin:0 0 12px; font-size:24px; font-weight:600;" class="dm-hero-text">Welcome to Your Wellness Journey!</h2>
                     <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       Follow this step-by-step guide to set up your account and start making the most of your ZOMO Health experience.
                     </p>
@@ -604,7 +610,7 @@
                         <span style="color:#FFFFFF; font-size:18px; font-weight:600;">1</span>
                       </div>
                       <div style="flex:1;">
-                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Complete Your Health Assessment</h3>
+                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; ;" class="dm-text">Complete Your Health Assessment</h3>
                         <p style="margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                           Start by taking our comprehensive health assessment to get personalized insights and recommendations.
                         </p>
@@ -632,7 +638,7 @@
                         <span style="color:#FFFFFF; font-size:18px; font-weight:600;">2</span>
                       </div>
                       <div style="flex:1;">
-                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Set Your Wellness Goals</h3>
+                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; ;" class="dm-text">Set Your Wellness Goals</h3>
                         <p style="margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                           Define your personal wellness objectives and create a plan to achieve them with our goal-setting tools.
                         </p>
@@ -660,7 +666,7 @@
                         <span style="color:#FFFFFF; font-size:18px; font-weight:600;">3</span>
                       </div>
                       <div style="flex:1;">
-                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Download the Mobile App</h3>
+                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; ;" class="dm-text">Download the Mobile App</h3>
                         <p style="margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                           Get the ZOMO Health mobile app for iOS or Android to track your progress on the go.
                         </p>
@@ -693,7 +699,7 @@
                         <span style="color:#FFFFFF; font-size:18px; font-weight:600;">4</span>
                       </div>
                       <div style="flex:1;">
-                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Connect Your Health Data</h3>
+                        <h3 style="margin:0 0 8px; font-size:20px; font-weight:600; ;" class="dm-text">Connect Your Health Data</h3>
                         <p style="margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                           Sync your fitness trackers, health apps, and medical devices for a complete picture of your wellness.
                         </p>
@@ -729,13 +735,13 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:20px; text-align:center;">
-                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">Need Help Getting Started?</h3>
+                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; ;" class="dm-text">Need Help Getting Started?</h3>
                     <p style="margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       Our team is here to help you make the most of your ZOMO Health experience.
                     </p>
                     <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      📧 <a href="mailto:support@zomohealth.com" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">support@zomohealth.com</a><br>
-                      📞 <a href="tel:1-877-378-8880" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
+                      📧 <a href="mailto:support@zomohealth.com" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">support@zomohealth.com</a><br>
+                      📞 <a href="tel:1-877-378-8880" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">1-877-378-8880</a>
                     </p>
                   </td>
                 </tr>
@@ -757,8 +763,8 @@
                       <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
                         1980 Post Oak Blvd., Ste 100<br>
                         Houston, TX 77056<br>
-                        <a href="mailto:info@zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">info@zomohealth.com</a><br>
-                        <a href="tel:1-877-378-8880" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
+                        <a href="mailto:info@zomohealth.com" class="btn-link btn-link-dark btn-link btn-link-dark">info@zomohealth.com</a><br>
+                        <a href="tel:1-877-378-8880" class="btn-link btn-link-dark btn-link btn-link-dark">1-877-378-8880</a>
                       </p>
                     </td>
                     <td style="vertical-align:middle; width:30%; text-align:right;" class="footer-symbol">
@@ -773,9 +779,9 @@
               </p>
               
               <p style="margin:0 0 8px; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
-                © 2025 ZOMO Health • <a href="https://zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Website</a> • 
-                <a href="*|UPDATE_PROFILE|*" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Update Preferences</a> • 
-                <a href="*|UNSUB|*" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Unsubscribe</a>
+                © 2025 ZOMO Health • <a href="https://zomohealth.com" class="btn-link btn-link-dark btn-link btn-link-dark">Website</a> • 
+                <a href="*|UPDATE_PROFILE|*" class="btn-link btn-link-dark btn-link btn-link-dark">Update Preferences</a> • 
+                <a href="*|UNSUB|*" class="btn-link btn-link-dark btn-link btn-link-dark">Unsubscribe</a>
               </p>
             </td>
           </tr>
