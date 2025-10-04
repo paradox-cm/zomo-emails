@@ -723,28 +723,16 @@
       <span class="material-icons">download</span>
       Download HTML
     </button>
-  </div>  <script>
+  </div>
+
+  <script>
     function downloadHTML() {
       // Open the download page for this email template
       window.open('../../download-pages/hipaa-notification-download.html', '_blank');
     }
   </script>
       
-      // Create a temporary URL for the blob
-      const url = URL.createObjectURL(blob);
       
-      // Create a temporary link element and trigger download
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = '"$filename".html';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      
-      // Clean up the URL
-      URL.revokeObjectURL(url);
-    }
-  </script>
 </body>
 </html>
 
