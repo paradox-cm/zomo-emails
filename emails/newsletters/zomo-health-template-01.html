@@ -666,6 +666,16 @@
       div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
       div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
     }
+    
+    /* Special theming for button icons */
+    .force-light .btn-primary .material-icons { color: #FFFFFF !important; }
+    .force-dark .btn-primary .material-icons { color: #0a1216 !important; }
+    .force-light .btn-primary-dark .material-icons { color: #FFFFFF !important; }
+    .force-dark .btn-primary-dark .material-icons { color: #0a1216 !important; }
+    @media (prefers-color-scheme: dark) {
+      .btn-primary .material-icons { color: #0a1216 !important; }
+      .btn-primary-dark .material-icons { color: #0a1216 !important; }
+    }
   </style>
 
   <!--[if mso]>
@@ -1221,7 +1231,7 @@
                       Get the latest health news, product updates, and broker insights.
                     </p>
                     <a href="https://www.linkedin.com/company/zomo-health/" target="_blank" style="display:inline-block; padding:8px 16px; background:#0d9488; color:#FFFFFF; text-decoration:none; border-radius:6px; font-size:14px; font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
-                      <span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:4px;">linkedin</span>Follow us on LinkedIn
+                      <span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:4px; color:#FFFFFF;">linkedin</span>Follow us on LinkedIn
                     </a>
                   </td>
                 </tr>

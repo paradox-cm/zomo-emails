@@ -516,7 +516,16 @@
     .force-dark div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
     @media (prefers-color-scheme: dark) {
       div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
-      div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
+      div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }    }
+    
+    /* Special theming for button icons */
+    .force-light .btn-primary .material-icons { color: #FFFFFF !important; }
+    .force-dark .btn-primary .material-icons { color: #0a1216 !important; }
+    .force-light .btn-primary-dark .material-icons { color: #FFFFFF !important; }
+    .force-dark .btn-primary-dark .material-icons { color: #0a1216 !important; }
+    @media (prefers-color-scheme: dark) {
+      .btn-primary .material-icons { color: #0a1216 !important; }
+      .btn-primary-dark .material-icons { color: #0a1216 !important; }
     }
   </style>
 </head>
