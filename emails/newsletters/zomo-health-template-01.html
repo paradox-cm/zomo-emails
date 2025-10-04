@@ -341,6 +341,7 @@
       color: #FFFFFF !important;
     }
     
+    
     @media (prefers-color-scheme: dark) {
       .dm-bg { background:#0a1216 !important; }
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
@@ -538,7 +539,7 @@
 
     .download-btn {
       background: #0d9488;
-      color: #FFFFFF;
+      color: #FFFFFF !important;
       border: none;
       border-radius: 8px;
       padding: 12px 24px;
@@ -561,25 +562,27 @@
     }
 
     /* Dark mode styles for bottom nav */    
+    
     .force-dark .bottom-nav {
       /* No background needed - container is invisible */
     }
 
     .force-dark .download-btn {
       background: #2dd4bf;
-      color: #FFFFFF;
+      color: #0a1216 !important;
     }
 
     .force-dark .download-btn:hover {
       background: #26c4b1;
-    }    @media (prefers-color-scheme: dark) {
+    }    
+    @media (prefers-color-scheme: dark) {
       .bottom-nav {
         /* No background needed - container is invisible */
       }
 
       .download-btn {
         background: #2dd4bf;
-        color: #FFFFFF;
+        color: #FFFFFF !important;
       }
 
       .download-btn:hover {
