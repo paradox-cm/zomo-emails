@@ -420,7 +420,7 @@
 
     .download-btn {
       background: #0d9488;
-      color: #FFFFFF !important;
+      
       border: none;
       border-radius: 8px;
       padding: 12px 24px;
@@ -431,10 +431,13 @@
       display: flex;
       align-items: center;
       gap: 8px;
+      color: #FFFFFF !important;
+      
       transition: background-color 0.2s ease;
     }
 
-    .download-btn:hover {
+    .download-btn:hover {color: #FFFFFF !important;
+      
       background: #0b7a6b;
     }
 
@@ -448,12 +451,14 @@
       /* No background needed - container is invisible */
     }
 
-    .force-dark .download-btn {
+    .force-dark .download-btn {color: #0a1216 !important;
+      
       background: #2dd4bf;
-      color: #0a1216 !important;
+      
     }
 
-    .force-dark .download-btn:hover {
+    .force-dark .download-btn:hover {color: #FFFFFF !important;
+      
       background: #26c4b1;
     }    
     @media (prefers-color-scheme: dark) {
@@ -463,10 +468,11 @@
 
       .download-btn {
         background: #2dd4bf;
-        color: #FFFFFF !important;
+        
       }
 
-      .download-btn:hover {
+      .download-btn:hover {color: #FFFFFF !important;
+      
         background: #26c4b1;
       }
     }
