@@ -546,7 +546,16 @@
     .force-light .dm-hero .material-icons { color: #FFFFFF !important; }
     .force-dark .dm-hero .material-icons { color: #FFFFFF !important; }
     @media (prefers-color-scheme: dark) {
-      .dm-hero .material-icons { color: #FFFFFF !important; }
+      .dm-hero .material-icons { color: #FFFFFF !important; }    }
+    
+    /* Special theming for icons in any colored background */
+    .force-light div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
+    .force-dark div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
+    .force-light div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
+    .force-dark div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
+    @media (prefers-color-scheme: dark) {
+      div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
+      div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
     }
   </style>
 
@@ -615,7 +624,16 @@
     @media (prefers-color-scheme: dark) {
       .material-icons { color: #2dd4bf !important; }
       .dm-icon { color: #2dd4bf !important; }
-      .dm-icon-accent { color: #2dd4bf !important; }
+      .dm-icon-accent { color: #2dd4bf !important; }    }
+    
+    /* Special theming for icons in any colored background */
+    .force-light div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
+    .force-dark div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
+    .force-light div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
+    .force-dark div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
+    @media (prefers-color-scheme: dark) {
+      div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
+      div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
     }
   </style>
   <![endif]-->
