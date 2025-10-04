@@ -360,21 +360,13 @@
       .mobile-container { width: 100% !important; max-width: 100% !important; }
       .mobile-padding { padding: 16px !important; }
       .mobile-text-large { font-size: 32px !important; line-height: 1.3 !important; }
-    }
-    
-    /* Bottom Navigation */
+    }    /* Bottom Navigation */
     .bottom-nav {
       position: fixed;
       bottom: 0;
-      left: 0;
       right: 0;
-      background: #FFFFFF;
-      border-top: 1px solid #e2e8f0;
-      padding: 12px 16px;
       z-index: 1000;
-      display: flex;
-      justify-content: center;
-      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+      padding: 16px;
     }
 
     .download-btn {
@@ -401,10 +393,8 @@
       font-size: 18px;
     }
 
-    /* Dark mode styles for bottom nav */
-    .force-dark .bottom-nav {
-      background: #0a1216;
-      border-top-color: #1e293b;
+    /* Dark mode styles for bottom nav */    .force-dark .bottom-nav {
+      /* No background needed - container is invisible */
     }
 
     .force-dark .download-btn {
@@ -414,12 +404,9 @@
 
     .force-dark .download-btn:hover {
       background: #26c4b1;
-    }
-
-    @media (prefers-color-scheme: dark) {
+    }    @media (prefers-color-scheme: dark) {
       .bottom-nav {
-        background: #0a1216;
-        border-top-color: #1e293b;
+        /* No background needed - container is invisible */
       }
 
       .download-btn {
@@ -730,20 +717,12 @@
       <span class="material-icons">download</span>
       Download HTML
     </button>
-  </div>
-
-  <script>
+  </div>  <script>
     function downloadHTML() {
-      // Get the current page's HTML content
-      const htmlContent = document.documentElement.outerHTML;
-      
-      // Encode the HTML content for URL
-      const encodedHtml = encodeURIComponent(htmlContent);
-      
-      // Open the code viewer page with the HTML content
-      const codeViewerUrl = `../code-pages/template.html?html=${encodedHtml}`;
-      window.open(codeViewerUrl, '_blank');
+      // Open the download page for this email template
+      window.open('../../download-pages/account-security-download.html', '_blank');
     }
+  </script>
       
       // Create a temporary URL for the blob
       const url = URL.createObjectURL(blob);

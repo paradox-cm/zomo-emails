@@ -1,4 +1,217 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation - ZOMO Health - Download HTML</title>
+    
+    <!-- Epilogue Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #05151d;
+            --border-color: #e2e8f0;
+            --primary-color: #0d9488;
+            --primary-hover: #0b7a6b;
+            --code-bg: #f8fafc;
+            --code-border: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s ease;
+            font-family: inherit;
+        }
+        
+        .copy-btn:hover {
+            background: var(--primary-hover);
+        }
+        
+        .copy-btn.copied {
+            background: #10b981;
+        }
+        
+        .copy-btn .material-icons {
+            font-size: 18px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        
+        .code-container {
+            background: var(--code-bg);
+            border: 1px solid var(--code-border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 24px;
+        }
+        
+        .code-header {
+            background: #f1f5f9;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--code-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .code-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .code-content {
+            padding: 0;
+            overflow-x: auto;
+        }
+        
+        pre {
+            margin: 0;
+            padding: 24px;
+            background: transparent;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text-color);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 16px;
+            transition: color 0.2s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-hover);
+        }
+        
+        .back-link .material-icons {
+            font-size: 20px;
+        }
+        
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0a1216;
+                --text-color: #f8fafc;
+                --border-color: #1e293b;
+                --primary-color: #2dd4bf;
+                --primary-hover: #26c4b1;
+                --code-bg: #0f1a21;
+                --code-border: #1e293b;
+            }
+            
+            .code-header {
+                background: #1e293b;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .container {
+                padding: 16px;
+            }
+            
+            .copy-btn {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+            
+            pre {
+                padding: 16px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Payment Confirmation - ZOMO Health - HTML Code</h1>
+        <button class="copy-btn" onclick="copyCode()">
+            <span class="material-icons">content_copy</span>
+            <span class="copy-text">Copy Code</span>
+        </button>
+    </div>
+    
+    <div class="container">
+        <a href="../../emails/transactional/payment-confirmation.html" class="back-link">
+            <span class="material-icons">arrow_back</span>
+            Back to Email
+        </a>
+        
+        <div class="code-container">
+            <div class="code-header">
+                <h3>HTML Source Code</h3>
+            </div>
+            <div class="code-content">
+                <pre id="code-content"><!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
@@ -7,7 +220,7 @@
   <meta name="x-apple-disable-message-reformatting">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
-  <title>Payment Failed - ZOMO Health</title>
+  <title>Payment Confirmation - ZOMO Health</title>
 
   <!-- Epilogue Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -511,7 +724,7 @@
   <div id="email-container" class="email-container desktop-preview">
   <!-- Hidden Preheader (edit per send) -->
   <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; opacity:0; color:transparent; height:0;">
-    Payment failed for your ZOMO Health subscription. Please update your payment method to continue service.
+    Payment confirmed! Your ZOMO Health subscription is now active.
   </div>
   
 
@@ -528,34 +741,34 @@
                     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
                   </td>
                   <td align="right" style="vertical-align:middle;">
-                    <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">Payment Issue</p>
+                    <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">Receipt</p>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
           
-          <!-- Payment Failed Message -->
+          <!-- Payment Confirmation -->
           <tr>
             <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
               <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" class="dm-text mobile-text-large">
-                Payment <span style="color:#dc2626;" class="dm-headline-accent">Failed</span>
+                Payment <span class="btn-link btn-link-dark" class="dm-headline-accent">Confirmed</span>
               </h1>
             </td>
           </tr>
           
-          <!-- Alert Hero -->
+          <!-- Success Hero -->
           <tr>
             <td style="padding:0 20px 24px;">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#fef2f2; border:1px solid #fecaca; border-radius:8px;" class="dm-hero">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-hero">
                 <tr>
                   <td style="padding:32px; text-align:center;">
-                    <div style="width:80px; height:80px; background:#dc2626; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
-                      <span class="material-icons" style="color:#FFFFFF; font-size:40px;">error</span>
+                    <div style="width:80px; height:80px; background:#10b981; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
+                      <span class="material-icons" style="color:#FFFFFF; font-size:40px;">check_circle</span>
                     </div>
-                    <h2 style="margin:0 0 12px; font-size:24px; font-weight:600; color:#dc2626;" class="dm-hero-text">Payment Could Not Be Processed</h2>
+                    <h2 style="margin:0 0 12px; font-size:24px; font-weight:600; class="dm-hero-text">Payment Successful!</h2>
                     <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      We were unable to process your payment for your ZOMO Health subscription. Please update your payment method to continue your service without interruption.
+                      Thank you for your payment. Your ZOMO Health subscription is now active and you have full access to all features.
                     </p>
                   </td>
                 </tr>
@@ -573,6 +786,12 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
+                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Transaction ID:</span>
+                          <span style="color:#64748b; margin-left:8px;" class="dm-muted">[TXN-123456789]</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
                           <span style="font-weight:600; color:#0a1216;" class="dm-text">Amount:</span>
                           <span style="color:#64748b; margin-left:8px;" class="dm-muted">$[AMOUNT]</span>
                         </td>
@@ -585,7 +804,7 @@
                       </tr>
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Attempted:</span>
+                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Date:</span>
                           <span style="color:#64748b; margin-left:8px;" class="dm-muted">[DATE]</span>
                         </td>
                       </tr>
@@ -610,21 +829,16 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
-                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">What You Need to Do</h3>
+                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">What's Next?</h3>
                     <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      To restore your service and avoid any interruption:
+                      Your subscription is now active! Here's what you can do:
                     </p>
-                    <ol style="margin:0; padding-left:20px; color:#64748b; font-size:15px; font-weight:400; line-height:1.7;" class="dm-muted">
-                      <li style="margin:8px 0;">Click "Update Payment Method" below</li>
-                      <li style="margin:8px 0;">Enter your new payment information</li>
-                      <li style="margin:8px 0;">We'll automatically retry the payment</li>
-                      <li style="margin:8px 0;">Your service will continue uninterrupted</li>
-                    </ol>
-                    <div style="margin:20px 0; padding:16px; background:#fef2f2; border-left:4px solid #dc2626; border-radius:4px;">
-                      <p style="margin:0; font-size:14px; font-weight:500; color:#0a1216;" class="dm-text">
-                        <strong>Important:</strong> Your service will remain active for 3 days while you update your payment method.
-                      </p>
-                    </div>
+                    <ul style="margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.7;" class="dm-muted">
+                      <li style="margin:8px 0;"><strong>Access Your Dashboard:</strong> Log in to view your health data and insights</li>
+                      <li style="margin:8px 0;"><strong>Set Up Your Profile:</strong> Complete your health information for personalized recommendations</li>
+                      <li style="margin:8px 0;"><strong>Download the App:</strong> Get the mobile app for on-the-go access</li>
+                      <li style="margin:8px 0;"><strong>Explore Features:</strong> Discover all the tools available in your plan</li>
+                    </ul>
                   </td>
                 </tr>
               </table>
@@ -638,13 +852,13 @@
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <div style="text-align:center;">
                 <!--[if mso]>
-                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://app.zomohealth.com/billing/update-payment" style="height:44px;v-text-anchor:middle;width:200px;" arcsize="12%" fillcolor="#dc2626" stroke="f">
-                  <w:anchorlock/><center style="color:#FFFFFF;font-family:Arial,sans-serif;font-size:16px;">Update Payment</center>
+                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://app.zomohealth.com/dashboard" style="height:44px;v-text-anchor:middle;width:200px;" arcsize="12%" fillcolor="#0d9488" stroke="f">
+                  <w:anchorlock/><center style="color:#FFFFFF;font-family:Arial,sans-serif;font-size:16px;">Access Dashboard</center>
                 </v:roundrect>
                 <![endif]-->
                 <!--[if !mso]><!-- -->
-                <a href="https://app.zomohealth.com/billing/update-payment" target="_blank" style="background:#dc2626;color:#FFFFFF;display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
-                  Update Payment Method
+                <a href="https://app.zomohealth.com/dashboard" target="_blank" style="background:#0d9488;color:#FFFFFF;display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
+                  Access Dashboard
                 </a>
                 <!--<![endif]-->
               </div>
@@ -661,10 +875,10 @@
                   <td style="padding:20px; text-align:center;">
                     <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">Need Help?</h3>
                     <p style="margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      Our billing support team is here to help you resolve any payment issues.
+                      Our support team is here to help you get started with your new subscription.
                     </p>
                     <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      📧 <a href="mailto:billing@zomohealth.com" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">billing@zomohealth.com</a><br>
+                      📧 <a href="mailto:support@zomohealth.com" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">support@zomohealth.com</a><br>
                       📞 <a href="tel:1-877-378-8880" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
                     </p>
                   </td>
@@ -701,7 +915,7 @@
               
               <!-- Legal Compliance Text -->
               <p style="margin:0 0 12px; font-size:12px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
-                This is an automated billing notification from ZOMO Health. Please update your payment method to continue your subscription.
+                This is your payment confirmation from ZOMO Health. Please keep this email for your records.
               </p>
               
               <!-- Footer Links -->
@@ -806,12 +1020,20 @@
       <span class="material-icons">download</span>
       Download HTML
     </button>
-  </div>  <script>
+  </div>
+
+  <script>
     function downloadHTML() {
-      // Open the download page for this email template
-      window.open('../../download-pages/payment-failed-download.html', '_blank');
+      // Get the current page's HTML content
+      const htmlContent = document.documentElement.outerHTML;
+      
+      // Encode the HTML content for URL
+      const encodedHtml = encodeURIComponent(htmlContent);
+      
+      // Open the code viewer page with the HTML content
+      const codeViewerUrl = `../code-pages/template.html?html=${encodedHtml}`;
+      window.open(codeViewerUrl, '_blank');
     }
-  </script>
       
       // Create a temporary URL for the blob
       const url = URL.createObjectURL(blob);
@@ -830,4 +1052,38 @@
   </script>
 </body>
 </html>
-
+</pre>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Copy code to clipboard
+        async function copyCode() {
+            const codeContent = document.getElementById('code-content').textContent;
+            const copyBtn = document.querySelector('.copy-btn');
+            const copyText = document.querySelector('.copy-text');
+            
+            try {
+                await navigator.clipboard.writeText(codeContent);
+                
+                // Update button state
+                copyBtn.classList.add('copied');
+                copyText.textContent = 'Copied!';
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    copyBtn.classList.remove('copied');
+                    copyText.textContent = 'Copy Code';
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy: ', err);
+                copyText.textContent = 'Failed';
+                setTimeout(() => {
+                    copyText.textContent = 'Copy Code';
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+</html>

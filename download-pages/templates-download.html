@@ -1,4 +1,217 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Templates — ZOMO Health - Download HTML</title>
+    
+    <!-- Epilogue Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #05151d;
+            --border-color: #e2e8f0;
+            --primary-color: #0d9488;
+            --primary-hover: #0b7a6b;
+            --code-bg: #f8fafc;
+            --code-border: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s ease;
+            font-family: inherit;
+        }
+        
+        .copy-btn:hover {
+            background: var(--primary-hover);
+        }
+        
+        .copy-btn.copied {
+            background: #10b981;
+        }
+        
+        .copy-btn .material-icons {
+            font-size: 18px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        
+        .code-container {
+            background: var(--code-bg);
+            border: 1px solid var(--code-border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 24px;
+        }
+        
+        .code-header {
+            background: #f1f5f9;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--code-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .code-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .code-content {
+            padding: 0;
+            overflow-x: auto;
+        }
+        
+        pre {
+            margin: 0;
+            padding: 24px;
+            background: transparent;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text-color);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 16px;
+            transition: color 0.2s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-hover);
+        }
+        
+        .back-link .material-icons {
+            font-size: 20px;
+        }
+        
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0a1216;
+                --text-color: #f8fafc;
+                --border-color: #1e293b;
+                --primary-color: #2dd4bf;
+                --primary-hover: #26c4b1;
+                --code-bg: #0f1a21;
+                --code-border: #1e293b;
+            }
+            
+            .code-header {
+                background: #1e293b;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .container {
+                padding: 16px;
+            }
+            
+            .copy-btn {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+            
+            pre {
+                padding: 16px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Newsletter Templates — ZOMO Health - HTML Code</h1>
+        <button class="copy-btn" onclick="copyCode()">
+            <span class="material-icons">content_copy</span>
+            <span class="copy-text">Copy Code</span>
+        </button>
+    </div>
+    
+    <div class="container">
+        <a href="../../emails/newsletters/templates.html" class="back-link">
+            <span class="material-icons">arrow_back</span>
+            Back to Email
+        </a>
+        
+        <div class="code-container">
+            <div class="code-header">
+                <h3>HTML Source Code</h3>
+            </div>
+            <div class="code-content">
+                <pre id="code-content"><!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -515,11 +728,65 @@
       <span class="material-icons">download</span>
       Download HTML
     </button>
-  </div>  <script>
+  </div>
+
+  <script>
     function downloadHTML() {
-      // Open the download page for this email template
-      window.open('../../download-pages/templates-download.html', '_blank');
+      // Get the current page's HTML content
+      const htmlContent = document.documentElement.outerHTML;
+      
+      // Create a blob with the HTML content
+      const blob = new Blob([htmlContent], { type: 'text/html' });
+      
+      // Create a temporary URL for the blob
+      const url = URL.createObjectURL(blob);
+      
+      // Create a temporary link element and trigger download
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = '"$filename".html';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      
+      // Clean up the URL
+      URL.revokeObjectURL(url);
     }
   </script>
+</body>
+</html>
+</pre>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Copy code to clipboard
+        async function copyCode() {
+            const codeContent = document.getElementById('code-content').textContent;
+            const copyBtn = document.querySelector('.copy-btn');
+            const copyText = document.querySelector('.copy-text');
+            
+            try {
+                await navigator.clipboard.writeText(codeContent);
+                
+                // Update button state
+                copyBtn.classList.add('copied');
+                copyText.textContent = 'Copied!';
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    copyBtn.classList.remove('copied');
+                    copyText.textContent = 'Copy Code';
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy: ', err);
+                copyText.textContent = 'Failed';
+                setTimeout(() => {
+                    copyText.textContent = 'Copy Code';
+                }, 2000);
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,13 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Export Ready - ZOMO Health - Download HTML</title>
+    
+    <!-- Epilogue Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #05151d;
+            --border-color: #e2e8f0;
+            --primary-color: #0d9488;
+            --primary-hover: #0b7a6b;
+            --code-bg: #f8fafc;
+            --code-border: #e2e8f0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: var(--bg-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .copy-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.2s ease;
+            font-family: inherit;
+        }
+        
+        .copy-btn:hover {
+            background: var(--primary-hover);
+        }
+        
+        .copy-btn.copied {
+            background: #10b981;
+        }
+        
+        .copy-btn .material-icons {
+            font-size: 18px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+        
+        .code-container {
+            background: var(--code-bg);
+            border: 1px solid var(--code-border);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 24px;
+        }
+        
+        .code-header {
+            background: #f1f5f9;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--code-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .code-header h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-color);
+        }
+        
+        .code-content {
+            padding: 0;
+            overflow-x: auto;
+        }
+        
+        pre {
+            margin: 0;
+            padding: 24px;
+            background: transparent;
+            font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+            font-size: 14px;
+            line-height: 1.5;
+            color: var(--text-color);
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 16px;
+            transition: color 0.2s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-hover);
+        }
+        
+        .back-link .material-icons {
+            font-size: 20px;
+        }
+        
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0a1216;
+                --text-color: #f8fafc;
+                --border-color: #1e293b;
+                --primary-color: #2dd4bf;
+                --primary-hover: #26c4b1;
+                --code-bg: #0f1a21;
+                --code-border: #1e293b;
+            }
+            
+            .code-header {
+                background: #1e293b;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                padding: 12px 16px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .container {
+                padding: 16px;
+            }
+            
+            .copy-btn {
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+            
+            pre {
+                padding: 16px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Data Export Ready - ZOMO Health - HTML Code</h1>
+        <button class="copy-btn" onclick="copyCode()">
+            <span class="material-icons">content_copy</span>
+            <span class="copy-text">Copy Code</span>
+        </button>
+    </div>
+    
+    <div class="container">
+        <a href="../../emails/operations/data-export.html" class="back-link">
+            <span class="material-icons">arrow_back</span>
+            Back to Email
+        </a>
+        
+        <div class="code-container">
+            <div class="code-header">
+                <h3>HTML Source Code</h3>
+            </div>
+            <div class="code-content">
+                <pre id="code-content"><!doctype html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="x-apple-disable-message-reformatting">
   <meta name="color-scheme" content="light dark">
   <meta name="supported-color-schemes" content="light dark">
-  <title>Support Ticket Resolved - ZOMO Health</title>
+  <title>Data Export Ready - ZOMO Health</title>
 
   <!-- Epilogue Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,10 +228,6 @@
   
   <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- ZOMO HEALTH COLOR PALETTE -->
-  <!-- Light Mode: Background #FFFFFF / Foreground #05151d / Primary #0d9488 / Muted #64748b -->
-  <!-- Dark Mode: Background #0a1216 / Foreground #f8fafc / Primary #2dd4bf / Muted #94a3b8 -->
 
   <style>
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
@@ -276,6 +484,11 @@
         color: #0a1216 !important;
       }
       
+      .dm-alert {
+        background: #1e293b !important;
+        border-left-color: #f59e0b !important;
+      }
+      
       .mobile-preview {
         border-color: #1e293b !important;
       }
@@ -310,6 +523,14 @@
     .force-light .theme-option { color: #05151d !important; }
     .force-light .theme-option:hover { background: #f8fafc !important; }
     .force-light .theme-option.active { background: #0d9488 !important; color: white !important; }
+    .force-light .dm-alert { background: #fef3c7 !important; border-left-color: #f59e0b !important; }
+    .force-light .btn-link { color: #05151d !important; }
+    .force-light .btn-link-dark { color: #05151d !important; }
+    
+    /* Light mode button text override */
+    .btn-primary, .btn-primary-dark {
+      color: #FFFFFF !important;
+    }
     
     /* Force Dark Mode Classes */
     .force-dark .dm-bg { background: #0a1216 !important; }
@@ -342,6 +563,7 @@
     .force-dark .theme-option { color: #f8fafc !important; }
     .force-dark .theme-option:hover { background: #1e293b !important; }
     .force-dark .theme-option.active { background: #2dd4bf !important; color: #0a1216 !important; }
+    .force-dark .dm-alert { background: #1e293b !important; border-left-color: #f59e0b !important; }
     
     u + #body a { text-decoration:none !important; }
     body, table, td, a { font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important; color: #05151d !important; }
@@ -459,7 +681,7 @@
   <div id="email-container" class="email-container desktop-preview">
   <!-- Hidden Preheader -->
   <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; opacity:0; color:transparent; height:0;">
-    Your support ticket #[TICKET_NUMBER] has been resolved. Review the solution and provide feedback.
+    Your data export is ready for download. The file will be available for 7 days.
   </div>
   
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF;" class="dm-bg">
@@ -475,34 +697,34 @@
                     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
                   </td>
                   <td align="right" style="vertical-align:middle;">
-                    <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">Ticket Resolved</p>
+                    <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">Data Export</p>
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
           
-          <!-- Resolution Message -->
+          <!-- Export Ready Message -->
           <tr>
             <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
               <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" class="dm-text mobile-text-large">
-                Ticket <span class="btn-link btn-link-dark" class="dm-headline-accent">Resolved</span>
+                Data Export <span class="btn-link btn-link-dark" class="dm-headline-accent">Ready</span>
               </h1>
             </td>
           </tr>
           
-          <!-- Resolution Hero -->
+          <!-- Export Hero -->
           <tr>
             <td style="padding:0 20px 24px;">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px;" class="dm-hero">
                 <tr>
                   <td style="padding:32px; text-align:center;">
                     <div style="width:80px; height:80px; background:#0d9488; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
-                      <span class="material-icons" style="color:#FFFFFF; font-size:40px;">check_circle</span>
+                      <span class="material-icons" style="color:#FFFFFF; font-size:40px;">download</span>
                     </div>
-                    <h2 style="margin:0 0 12px; font-size:24px; font-weight:600; class="dm-hero-text">Issue Resolved</h2>
+                    <h2 style="margin:0 0 12px; font-size:24px; font-weight:600; class="dm-hero-text">Your Data is Ready</h2>
                     <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      Great news! Your support ticket has been successfully resolved. We've implemented a solution to address your issue.
+                      Your requested data export has been prepared and is ready for download. The file contains all your account data in a secure, portable format.
                     </p>
                   </td>
                 </tr>
@@ -510,42 +732,42 @@
             </td>
           </tr>
 
-          <!-- Ticket Details -->
+          <!-- Export Details -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
-                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Ticket Information</h3>
+                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Export Information</h3>
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Ticket Number:</span>
-                          <span style="color:#64748b; margin-left:8px;" class="dm-muted">#[TICKET_NUMBER]</span>
+                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Request Date:</span>
+                          <span style="color:#64748b; margin-left:8px;" class="dm-muted">[REQUEST_DATE]</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Subject:</span>
-                          <span style="color:#64748b; margin-left:8px;" class="dm-muted">[TICKET_SUBJECT]</span>
+                          <span style="font-weight:600; color:#0a1216;" class="dm-text">File Size:</span>
+                          <span style="color:#64748b; margin-left:8px;" class="dm-muted">[FILE_SIZE]</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Created:</span>
-                          <span style="color:#64748b; margin-left:8px;" class="dm-muted">[TICKET_CREATED_DATE]</span>
+                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Format:</span>
+                          <span style="color:#64748b; margin-left:8px;" class="dm-muted">[FILE_FORMAT]</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:8px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
-                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Resolved:</span>
-                          <span style="margin-left:8px; font-weight:600;" class="dm-headline-accent">[RESOLUTION_DATE]</span>
+                          <span style="font-weight:600; color:#0a1216;" class="dm-text">Expires:</span>
+                          <span style="margin-left:8px; font-weight:600;" class="dm-headline-accent">[EXPIRY_DATE]</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="padding:8px 0;">
                           <span style="font-weight:600; color:#0a1216;" class="dm-text">Status:</span>
-                          <span style="margin-left:8px; font-weight:600;" class="dm-headline-accent">Resolved</span>
+                          <span style="margin-left:8px; font-weight:600;" class="dm-headline-accent">Ready for Download</span>
                         </td>
                       </tr>
                     </table>
@@ -557,25 +779,29 @@
 
           <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
 
-          <!-- Resolution Details -->
+          <!-- What's Included -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
-                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Resolution Summary</h3>
+                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">What's Included</h3>
                     <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      [RESOLUTION_DETAILS]
+                      Your data export contains the following information:
                     </p>
-                    <div style="margin:20px 0; padding:16px; background:#f0fdf4; border-left:4px solid #0d9488; border-radius:4px;">
+                    <ul style="margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.7;" class="dm-muted">
+                      <li style="margin:8px 0;"><strong>Account Information:</strong> Profile details, settings, and preferences</li>
+                      <li style="margin:8px 0;"><strong>Health Data:</strong> All wellness metrics, assessments, and tracking data</li>
+                      <li style="margin:8px 0;"><strong>Activity History:</strong> Complete log of your platform interactions</li>
+                      <li style="margin:8px 0;"><strong>Goals & Progress:</strong> Personal goals, milestones, and achievements</li>
+                      <li style="margin:8px 0;"><strong>Communication History:</strong> Support tickets and correspondence</li>
+                      <li style="margin:8px 0;"><strong>Billing Information:</strong> Payment history and subscription details</li>
+                    </ul>
+                    <div style="margin:20px 0; padding:16px; background:#fef3c7; border-left:4px solid #f59e0b; border-radius:4px;" class="dm-alert">
                       <p style="margin:0; font-size:14px; font-weight:500; color:#0a1216;" class="dm-text">
-                        <strong>Next Steps:</strong> [NEXT_STEPS_INSTRUCTIONS]
+                        <strong>Important:</strong> This file contains sensitive personal information. Please store it securely and delete it when no longer needed.
                       </p>
                     </div>
-                    <p style="margin:16px 0 0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      <strong>Support Agent:</strong> [AGENT_NAME]<br>
-                      <strong>Resolution Time:</strong> [RESOLUTION_TIME]
-                    </p>
                   </td>
                 </tr>
               </table>
@@ -584,18 +810,18 @@
 
           <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
 
-          <!-- Feedback Request -->
+          <!-- Download Instructions -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:20px; text-align:center;">
-                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">How Was Your Experience?</h3>
+                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">Download Instructions</h3>
                     <p style="margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
-                      Your feedback helps us improve our support services. Please take a moment to rate your experience.
+                      Click the button below to download your data export. The file will be available for 7 days from the date of this email.
                     </p>
-                    <a href="https://app.zomohealth.com/support/feedback/[TICKET_NUMBER]" target="_blank" style="background:#0d9488;color:#FFFFFF;display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
-                      Provide Feedback
+                    <a href="https://app.zomohealth.com/account/data-export/[EXPORT_ID]" target="_blank" style="background:#0d9488;color:#FFFFFF;display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
+                      Download Data Export
                     </a>
                   </td>
                 </tr>
@@ -605,17 +831,23 @@
 
           <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
 
-          <!-- Action Buttons -->
+          <!-- Security Notice -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
-              <div style="text-align:center;">
-                <a href="https://app.zomohealth.com/support/tickets/[TICKET_NUMBER]" target="_blank" style="background:#0d9488;color:#FFFFFF;display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;margin:0 8px 8px 0;" class="dm-cta btn-primary btn-primary-dark">
-                  View Ticket Details
-                </a>
-                <a href="https://app.zomohealth.com/support" target="_blank" style="background:transparent;display:inline-block;padding:12px 24px;border:1px solid #0d9488;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;margin:0 8px 8px 0;" class="btn-link btn-link-dark">
-                  Contact Support
-                </a>
-              </div>
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:20px; text-align:center;">
+                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">Data Security & Privacy</h3>
+                    <p style="margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                      Your data export is encrypted and can only be accessed through the secure download link. We never store your exported data on our servers.
+                    </p>
+                    <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                      📧 <a href="mailto:privacy@zomohealth.com" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">privacy@zomohealth.com</a><br>
+                      📞 <a href="tel:1-877-378-8880" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
@@ -633,7 +865,7 @@
                       <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
                         1980 Post Oak Blvd., Ste 100<br>
                         Houston, TX 77056<br>
-                        <a href="mailto:support@zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">support@zomohealth.com</a><br>
+                        <a href="mailto:privacy@zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">privacy@zomohealth.com</a><br>
                         <a href="tel:1-877-378-8880" class="btn-link btn-link-dark" class="btn-link btn-link-dark">1-877-378-8880</a>
                       </p>
                     </td>
@@ -645,7 +877,7 @@
               </div>
               
               <p style="margin:0 0 12px; font-size:12px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
-                This is a support ticket resolution notification from ZOMO Health. Thank you for your patience.
+                This is a data export notification from ZOMO Health. Your data export is ready for download.
               </p>
               
               <p style="margin:0 0 8px; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
@@ -745,12 +977,20 @@
       <span class="material-icons">download</span>
       Download HTML
     </button>
-  </div>  <script>
+  </div>
+
+  <script>
     function downloadHTML() {
-      // Open the download page for this email template
-      window.open('../../download-pages/ticket-resolution-download.html', '_blank');
+      // Get the current page's HTML content
+      const htmlContent = document.documentElement.outerHTML;
+      
+      // Encode the HTML content for URL
+      const encodedHtml = encodeURIComponent(htmlContent);
+      
+      // Open the code viewer page with the HTML content
+      const codeViewerUrl = `../code-pages/template.html?html=${encodedHtml}`;
+      window.open(codeViewerUrl, '_blank');
     }
-  </script>
       
       // Create a temporary URL for the blob
       const url = URL.createObjectURL(blob);
@@ -767,5 +1007,40 @@
       URL.revokeObjectURL(url);
     }
   </script>
+</body>
+</html>
+</pre>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Copy code to clipboard
+        async function copyCode() {
+            const codeContent = document.getElementById('code-content').textContent;
+            const copyBtn = document.querySelector('.copy-btn');
+            const copyText = document.querySelector('.copy-text');
+            
+            try {
+                await navigator.clipboard.writeText(codeContent);
+                
+                // Update button state
+                copyBtn.classList.add('copied');
+                copyText.textContent = 'Copied!';
+                
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    copyBtn.classList.remove('copied');
+                    copyText.textContent = 'Copy Code';
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy: ', err);
+                copyText.textContent = 'Failed';
+                setTimeout(() => {
+                    copyText.textContent = 'Copy Code';
+                }, 2000);
+            }
+        }
+    </script>
 </body>
 </html>
