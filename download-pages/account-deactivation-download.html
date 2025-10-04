@@ -35,6 +35,7 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
+            min-height: 100vh;
         }
         
         .header {
@@ -57,7 +58,7 @@
         
         .copy-btn {
             background: var(--primary-color);
-            color: white;
+            color: white !important;
             border: none;
             border-radius: 8px;
             padding: 12px 24px;
@@ -87,6 +88,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 24px;
+            min-height: calc(100vh - 80px);
         }
         
         .code-container {
@@ -95,6 +97,9 @@
             border-radius: 12px;
             overflow: hidden;
             margin-top: 24px;
+            max-height: calc(100vh - 200px);
+            display: flex;
+            flex-direction: column;
         }
         
         .code-header {
@@ -104,6 +109,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-shrink: 0;
         }
         
         .code-header h3 {
@@ -114,7 +120,8 @@
         
         .code-content {
             padding: 0;
-            overflow-x: auto;
+            overflow: auto;
+            flex: 1;
         }
         
         pre {
@@ -976,20 +983,12 @@
       <span class="material-icons">download</span>
       Download HTML
     </button>
-  </div>
-
-  <script>
+  </div>  <script>
     function downloadHTML() {
-      // Get the current page's HTML content
-      const htmlContent = document.documentElement.outerHTML;
-      
-      // Encode the HTML content for URL
-      const encodedHtml = encodeURIComponent(htmlContent);
-      
-      // Open the code viewer page with the HTML content
-      const codeViewerUrl = `../code-pages/template.html?html=${encodedHtml}`;
-      window.open(codeViewerUrl, '_blank');
+      // Open the download page for this email template
+      window.open('../../download-pages/account-deactivation-download.html', '_blank');
     }
+  </script>
       
       // Create a temporary URL for the blob
       const url = URL.createObjectURL(blob);
