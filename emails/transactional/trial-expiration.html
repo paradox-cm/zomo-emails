@@ -531,7 +531,16 @@
     .force-dark .btn-primary-dark .material-icons { color: #0a1216 !important; }
     @media (prefers-color-scheme: dark) {
       .btn-primary .material-icons { color: #0a1216 !important; }
-      .btn-primary-dark .material-icons { color: #0a1216 !important; }
+      .btn-primary-dark .material-icons { color: #0a1216 !important; }    }
+    
+    /* Alert theming */
+    .force-light .dm-alert { background: #f0fdf4 !important; border-left: 4px solid #0d9488 !important; }
+    .force-dark .dm-alert { background: #064e3b !important; border-left: 4px solid #2dd4bf !important; }
+    .force-light .dm-alert-hero { background: #f0fdf4 !important; border: 1px solid #bbf7d0 !important; }
+    .force-dark .dm-alert-hero { background: #064e3b !important; border: 1px solid #2dd4bf !important; }
+    @media (prefers-color-scheme: dark) {
+      .dm-alert { background: #064e3b !important; border-left: 4px solid #2dd4bf !important; }
+      .dm-alert-hero { background: #064e3b !important; border: 1px solid #2dd4bf !important; }
     }
   </style>
 </head>
@@ -683,7 +692,7 @@
                       <li style="margin:8px 0;"><strong>Advanced Analytics:</strong> Detailed reports and progress tracking</li>
                       <li style="margin:8px 0;"><strong>Mobile App Access:</strong> Full features on all your devices</li>
                     </ul>
-                    <div style="margin:20px 0; padding:16px; background:#f0fdf4; border-left:4px solid #0d9488; border-radius:4px;">
+                    <div style="margin:20px 0; padding:16px; border-radius:4px;" class="dm-alert">
                       <p style="margin:0; font-size:14px; font-weight:500; ;" class="dm-text">
                         <strong>Special Offer:</strong> Get 20% off your first year when you upgrade today!
                       </p>

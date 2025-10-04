@@ -536,6 +536,16 @@
       .btn-primary .material-icons { color: #0a1216 !important; }
       .btn-primary-dark .material-icons { color: #0a1216 !important; }
     }
+    
+    /* Alert theming */
+    .force-light .dm-alert { background: #f0fdf4 !important; border-left: 4px solid #0d9488 !important; }
+    .force-dark .dm-alert { background: #064e3b !important; border-left: 4px solid #2dd4bf !important; }
+    .force-light .dm-alert-hero { background: #f0fdf4 !important; border: 1px solid #bbf7d0 !important; }
+    .force-dark .dm-alert-hero { background: #064e3b !important; border: 1px solid #2dd4bf !important; }
+    @media (prefers-color-scheme: dark) {
+      .dm-alert { background: #064e3b !important; border-left: 4px solid #2dd4bf !important; }
+      .dm-alert-hero { background: #064e3b !important; border: 1px solid #2dd4bf !important; }
+    }
   </style>
 </head>
 <body id="body" style="margin:0; padding:0; background:#FFFFFF;" class="dm-bg">
@@ -612,7 +622,7 @@
           <!-- Confirmation Hero -->
           <tr>
             <td style="padding:0 20px 24px;">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px;" class="dm-hero">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="border-radius:8px;" class="dm-hero dm-alert-hero">
                 <tr>
                   <td style="padding:32px; text-align:center;">
                     <div style="width:80px; height:80px; background:#0d9488; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
