@@ -25,38 +25,15 @@
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
     
     .view-switcher {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #FFFFFF;
-      color: #05151d;
-      padding: 8px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 1000;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      font-size: 14px;
-      border-bottom: 1px solid #e2e8f0;
+      position: fixed; top: 0; left: 0; right: 0; background: #FFFFFF; color: #05151d; padding: 8px 16px; display: flex; align-items: center; justify-content: space-between; z-index: 1000; font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; font-size: 14px; border-bottom: 1px solid #e2e8f0;
     }
     
     .view-switcher h3 {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin: 0; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;
     }
     
     .back-link {
-      color: inherit;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: opacity 0.2s ease;
+      color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: opacity 0.2s ease;
     }
     
     .back-link:hover {
@@ -64,13 +41,11 @@
     }
     
     .back-arrow {
-      font-size: 18px;
-      line-height: 1;
+      font-size: 18px; line-height: 1;
     }
     
     .view-buttons {
-      display: flex;
-      gap: 8px;
+      display: flex; gap: 8px;
     }
     
     .theme-switcher {
@@ -78,19 +53,7 @@
     }
     
     .theme-toggle-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      min-width: 40px;
+      background: #f8fafc; border: 1px solid #e2e8f0; color: #05151d; padding: 6px 8px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s ease; display: flex; align-items: center; gap: 4px; min-width: 40px;
     }
     
     .theme-toggle-btn:hover {
@@ -98,16 +61,7 @@
     }
     
     .theme-dropdown {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background: #FFFFFF;
-      border: 1px solid #e2e8f0;
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 1001;
-      min-width: 120px;
-      display: none;
+      position: absolute; top: 100%; right: 0; background: #FFFFFF; border: 1px solid #e2e8f0; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 1001; min-width: 120px; display: none;
     }
     
     .theme-dropdown.show {
@@ -115,14 +69,7 @@
     }
     
     .theme-option {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      cursor: pointer;
-      font-size: 13px;
-      color: #05151d;
-      transition: background 0.2s ease;
+      display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer; font-size: 13px; color: #05151d; transition: background 0.2s ease;
     }
     
     .theme-option:hover {
@@ -130,8 +77,7 @@
     }
     
     .theme-option.active {
-      background: #0d9488;
-      color: white;
+      background: #0d9488; color: white;
     }
     
     .theme-option:first-child {
@@ -143,15 +89,7 @@
     }
     
     .view-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      transition: all 0.2s ease;
+      background: #f8fafc; border: 1px solid #e2e8f0; color: #05151d; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.2s ease;
     }
     
     .view-btn:hover {
@@ -159,31 +97,19 @@
     }
     
     .view-btn.active {
-      background: #0d9488;
-      color: white;
-      border-color: #0d9488;
+      background: #0d9488; color: white; border-color: #0d9488;
     }
     
     .email-container {
-      margin-top: 48px;
-      padding-top: 0;
-          margin-bottom: 80px;
+      margin-top: 48px; padding-top: 0; margin-bottom: 80px;
     }
     
     .mobile-preview .email-container {
-      margin-top: 0;
-      padding-top: 0;
-          margin-bottom: 80px;
+      margin-top: 0; padding-top: 0; margin-bottom: 80px;
     }
     
     .mobile-preview {
-      max-width: 375px;
-      width: 375px;
-      margin: 60px auto 20px;
-      border: 2px solid #e2e8f0;
-      border-radius: 8px;
-      overflow: hidden;
-      box-sizing: border-box;
+      max-width: 375px; width: 375px; margin: 60px auto 20px; border: 2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-sizing: border-box;
     }
     
     .mobile-preview .mobile-container { width: 100% !important; max-width: 100% !important; }
@@ -216,9 +142,7 @@
       .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
       
       .view-switcher {
-        background: #0a1216 !important;
-        color: #f8fafc !important;
-        border-bottom-color: #1e293b !important;
+        background: #0a1216 !important; color: #f8fafc !important; border-bottom-color: #1e293b !important;
       }
       
       .back-link {
@@ -230,9 +154,7 @@
       }
       
       .view-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
+        background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important;
       }
       
       .view-btn:hover {
@@ -240,9 +162,7 @@
       }
       
       .view-btn.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-        border-color: #2dd4bf !important;
+        background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important;
       }
       
       .btn-link-dark {
@@ -254,9 +174,7 @@
       }
       
       .theme-toggle-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
+        background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important;
       }
       
       .theme-toggle-btn:hover {
@@ -264,9 +182,7 @@
       }
       
       .theme-dropdown {
-        background: #0a1216 !important;
-        border-color: #1e293b !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+        background: #0a1216 !important; border-color: #1e293b !important; box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
       }
       
       .theme-option {
@@ -278,8 +194,7 @@
       }
       
       .theme-option.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
+        background: #2dd4bf !important; color: #0a1216 !important;
       }
     }
     
@@ -369,26 +284,10 @@
       .mobile-text-large { font-size: 32px !important; line-height: 1.3 !important; }
     }    /* Bottom Navigation */
     .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 16px;
+      position: fixed; bottom: 0; right: 0; z-index: 1000; padding: 16px;
     }    
     .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
+      background: #0d9488; color: #FFFFFF; border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 500; font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s ease;
     }    
     .download-btn:hover {
       background: #0b7a6b;
@@ -409,8 +308,7 @@
       /* No background needed - container is invisible */
     }    
     .force-dark .download-btn {
-      background: #2dd4bf;
-      color: #0a1216;
+      background: #2dd4bf; color: #0a1216;
     }    
     .force-dark .download-btn:hover {
       background: #26c4b1;
@@ -421,19 +319,7 @@
         /* No background needed - container is invisible */
       }    
     .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
+      background: #0d9488; color: #FFFFFF; border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 500; font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s ease;
     }    
     .download-btn:hover {
       background: #0b7a6b;
@@ -496,7 +382,7 @@
                     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
                   </td>
                   <td align="right" style="vertical-align:middle;">
-                    <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">Feature Spotlight</p>
+                    <p style="margin:0; line-height:1.6; font-size:14px; font-weight:500; color:#64748b; line-height:1.6;" class="dm-muted">Feature Spotlight</p>
                   </td>
                 </tr>
               </table>
@@ -506,7 +392,7 @@
           <!-- Feature Introduction Message -->
           <tr>
             <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
-              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" class="dm-text mobile-text-large">
+              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" line-height:1.4; class="dm-text mobile-text-large">
                 Discover <span class="btn-link btn-link-dark" class="dm-headline-accent">[FEATURE_NAME]</span>
               </h1>
             </td>
@@ -522,7 +408,7 @@
                       <span class="material-icons" style="color:#FFFFFF; font-size:40px;">[FEATURE_ICON]</span>
                     </div>
                     <h2 style="margin:0 0 12px; font-size:24px; font-weight:600; class="dm-hero-text">Ready to Try [FEATURE_NAME]?</h2>
-                    <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                    <p style="margin:0; line-height:1.6; font-size:16px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                       [FEATURE_NAME] is now available in your ZOMO Health dashboard. This powerful feature will help you [BENEFIT_DESCRIPTION].
                     </p>
                   </td>
@@ -537,7 +423,7 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
-                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">Why You'll Love [FEATURE_NAME]</h3>
+                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" line-height:1.4; class="dm-text">Why You'll Love [FEATURE_NAME]</h3>
                     <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       Here's how [FEATURE_NAME] can enhance your wellness journey:
                     </p>
@@ -553,7 +439,7 @@
             </td>
           </tr>
 
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
 
           <!-- How to Use -->
           <tr>
@@ -561,7 +447,7 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:24px;" class="mobile-padding-small">
-                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" class="dm-text">How to Get Started</h3>
+                    <h3 style="margin:0 0 16px; font-size:20px; font-weight:600; color:#0a1216;" line-height:1.4; class="dm-text">How to Get Started</h3>
                     <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       Getting started with [FEATURE_NAME] is easy:
                     </p>
@@ -572,7 +458,7 @@
                       <li style="margin:8px 0;">Follow the setup wizard to configure your preferences</li>
                     </ol>
                     <div style="margin:20px 0; padding:16px; background:#f0fdf4; border-left:4px solid #0d9488; border-radius:4px;">
-                      <p style="margin:0; font-size:14px; font-weight:500; color:#0a1216;" class="dm-text">
+                      <p style="margin:0; line-height:1.6; font-size:14px; font-weight:500; color:#0a1216; line-height:1.6;" class="dm-text">
                         <strong>Pro Tip:</strong> [FEATURE_NAME] works best when combined with your existing health data and goals.
                       </p>
                     </div>
@@ -582,20 +468,20 @@
             </td>
           </tr>
 
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
 
           <!-- CTA Button -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <div style="text-align:center;">
-                <a href="https://app.zomohealth.com/features/[FEATURE_SLUG]" target="_blank" style="background:#0d9488;color:#FFFFFF;display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
+                <a href="https://app.zomohealth.com/features/[FEATURE_SLUG]" target="_blank" style="background:#0d9488; color:#FFFFFF; display:inline-block; padding:12px 24px; border-radius:6px; text-decoration:none; font-size:16px; font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
                   Try [FEATURE_NAME] Now
                 </a>
               </div>
             </td>
           </tr>
 
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
 
           <!-- Success Stories -->
           <tr>
@@ -603,11 +489,11 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:20px; text-align:center;">
-                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">Join Thousands of Happy Users</h3>
+                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" line-height:1.4; class="dm-text">Join Thousands of Happy Users</h3>
                     <p style="margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       "[FEATURE_NAME] has transformed how I track my wellness goals. The insights are incredible!" - Sarah M.
                     </p>
-                    <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                    <p style="margin:0; line-height:1.6; font-size:15px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                       "I love how easy it is to use. It's become an essential part of my daily routine." - Michael R.
                     </p>
                   </td>
@@ -617,7 +503,7 @@
           </tr>
 
           <!-- Footer -->
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <div style="margin:0 0 12px; padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;" class="dm-box mobile-padding-small">
@@ -627,7 +513,7 @@
                       <div style="margin:0 0 8px; text-align:left;">
                         <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="112" alt="Zomo Health" style="display:block; border:0;" class="logo-filter">
                       </div>
-                      <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
+                      <p style="margin:0; line-height:1.6; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; line-height:1.6;" class="dm-muted">
                         1980 Post Oak Blvd., Ste 100<br>
                         Houston, TX 77056<br>
                         <a href="mailto:info@zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">info@zomohealth.com</a><br>
@@ -653,7 +539,7 @@
             </td>
           </tr>
 
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
         </table>
       </td>
     </tr>

@@ -26,38 +26,15 @@
     
     /* View Switcher Toolbar */
     .view-switcher {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #FFFFFF;
-      color: #05151d;
-      padding: 8px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 1000;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      font-size: 14px;
-      border-bottom: 1px solid #e2e8f0;
+      position: fixed; top: 0; left: 0; right: 0; background: #FFFFFF; color: #05151d; padding: 8px 16px; display: flex; align-items: center; justify-content: space-between; z-index: 1000; font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; font-size: 14px; border-bottom: 1px solid #e2e8f0;
     }
     
     .view-switcher h3 {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      margin: 0; font-size: 14px; font-weight: 600; display: flex; align-items: center; gap: 8px;
     }
     
     .back-link {
-      color: inherit;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: opacity 0.2s ease;
+      color: inherit; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: opacity 0.2s ease;
     }
     
     .back-link:hover {
@@ -65,13 +42,11 @@
     }
     
     .back-arrow {
-      font-size: 18px;
-      line-height: 1;
+      font-size: 18px; line-height: 1;
     }
     
     .view-buttons {
-      display: flex;
-      gap: 8px;
+      display: flex; gap: 8px;
     }
     
     .theme-switcher {
@@ -79,19 +54,7 @@
     }
     
     .theme-toggle-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      min-width: 40px;
+      background: #f8fafc; border: 1px solid #e2e8f0; color: #05151d; padding: 6px 8px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: 500; transition: all 0.2s ease; display: flex; align-items: center; gap: 4px; min-width: 40px;
     }
     
     .theme-toggle-btn:hover {
@@ -99,16 +62,7 @@
     }
     
     .theme-dropdown {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background: #FFFFFF;
-      border: 1px solid #e2e8f0;
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 1001;
-      min-width: 120px;
-      display: none;
+      position: absolute; top: 100%; right: 0; background: #FFFFFF; border: 1px solid #e2e8f0; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 1001; min-width: 120px; display: none;
     }
     
     .theme-dropdown.show {
@@ -116,14 +70,7 @@
     }
     
     .theme-option {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      cursor: pointer;
-      font-size: 13px;
-      color: #05151d;
-      transition: background 0.2s ease;
+      display: flex; align-items: center; gap: 8px; padding: 8px 12px; cursor: pointer; font-size: 13px; color: #05151d; transition: background 0.2s ease;
     }
     
     .theme-option:hover {
@@ -131,8 +78,7 @@
     }
     
     .theme-option.active {
-      background: #0d9488;
-      color: white;
+      background: #0d9488; color: white;
     }
     
     .theme-option:first-child {
@@ -144,15 +90,7 @@
     }
     
     .view-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      transition: all 0.2s ease;
+      background: #f8fafc; border: 1px solid #e2e8f0; color: #05151d; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 13px; font-weight: 500; transition: all 0.2s ease;
     }
     
     .view-btn:hover {
@@ -160,21 +98,15 @@
     }
     
     .view-btn.active {
-      background: #0d9488;
-      color: white;
-      border-color: #0d9488;
+      background: #0d9488; color: white; border-color: #0d9488;
     }
     
     .email-container {
-      margin-top: 48px;
-      padding-top: 0;
-          margin-bottom: 80px;
+      margin-top: 48px; padding-top: 0; margin-bottom: 80px;
     }
     
     .mobile-preview .email-container {
-      margin-top: 0;
-      padding-top: 0;
-          margin-bottom: 80px;
+      margin-top: 0; padding-top: 0; margin-bottom: 80px;
     }
     
     /* Force theme overrides for preview */
@@ -235,13 +167,7 @@
     .force-dark .footer-symbol img svg * { stroke-width: 2px !important; }
     
     .mobile-preview {
-      max-width: 375px;
-      width: 375px;
-      margin: 60px auto 20px;
-      border: 2px solid #e2e8f0;
-      border-radius: 8px;
-      overflow: hidden;
-      box-sizing: border-box;
+      max-width: 375px; width: 375px; margin: 60px auto 20px; border: 2px solid #e2e8f0; border-radius: 8px; overflow: hidden; box-sizing: border-box;
     }
     
     .mobile-preview .mobile-container { width: 100% !important; max-width: 100% !important; }
@@ -276,33 +202,19 @@
     .mobile-preview .mobile-avatar-stack table[role="presentation"] tr { display: block !important; }
     .mobile-preview .mobile-avatar-stack table[role="presentation"] tr td { display: block !important; width: 100% !important; }
     .mobile-preview .mobile-avatar-stack table[role="presentation"] tr td:first-child { 
-      text-align: center !important; 
-      padding-right: 0 !important; 
-      padding-bottom: 16px !important;
-      margin-bottom: 16px !important;
+      text-align: center !important; padding-right: 0 !important; padding-bottom: 16px !important; margin-bottom: 16px !important;
     }
     .mobile-preview .mobile-avatar-stack .dm-avatar { 
-      width: 120px !important; 
-      height: 120px !important; 
-      min-width: 120px !important; 
-      min-height: 120px !important; 
-      max-width: 120px !important; 
-      max-height: 120px !important; 
-      margin: 0 auto !important;
-      flex-shrink: 0 !important;
+      width: 120px !important; height: 120px !important; min-width: 120px !important; min-height: 120px !important; max-width: 120px !important; max-height: 120px !important; margin: 0 auto !important; flex-shrink: 0 !important;
     }
     
     /* Cards stack - single column layout */
     .mobile-preview .mobile-cards-stack table[role="presentation"] tr { display: block !important; }
     .mobile-preview .mobile-cards-stack table[role="presentation"] tr td { 
-      display: block !important; 
-      width: 100% !important; 
-      padding-right: 0 !important;
-      margin-bottom: 12px !important;
+      display: block !important; width: 100% !important; padding-right: 0 !important; margin-bottom: 12px !important;
     }
     .mobile-preview .mobile-cards-stack .mobile-card { 
-      width: 100% !important; 
-      margin-bottom: 12px !important; 
+      width: 100% !important; margin-bottom: 12px !important; 
     }
     
     /* Mobile preview cards responsive layout - force mobile stacking */
@@ -310,25 +222,14 @@
     .mobile-preview .cards-container table[role="presentation"] { display: block !important; width: 100% !important; }
     .mobile-preview .cards-container table[role="presentation"] tr { display: block !important; width: 100% !important; }
     .mobile-preview .cards-container table[role="presentation"] tr td { 
-      display: block !important; 
-      width: 100% !important; 
-      max-width: 100% !important;
-      padding-right: 0 !important;
-      padding-left: 0 !important;
-      margin-bottom: 12px !important;
-      float: none !important;
+      display: block !important; width: 100% !important; max-width: 100% !important; padding-right: 0 !important; padding-left: 0 !important; margin-bottom: 12px !important; float: none !important;
     }
     .mobile-preview .cards-container .card-cell { 
-      width: 100% !important; 
-      max-width: 100% !important;
-      margin-bottom: 12px !important; 
-      display: block !important;
-      float: none !important;
+      width: 100% !important; max-width: 100% !important; margin-bottom: 12px !important; display: block !important; float: none !important;
     }
     .mobile-preview .cards-container .card-cell table[role="presentation"] { height: auto !important; }
     .mobile-preview .cards-container .card-cell table[role="presentation"] tr td { 
-      height: auto !important; 
-      padding: 12px 16px !important; 
+      height: auto !important; padding: 12px 16px !important; 
     }
     
     .desktop-preview {
@@ -366,9 +267,7 @@
       .footer-symbol img svg * { stroke-width: 2px; }
       
       .view-switcher {
-        background: #0a1216 !important;
-        color: #f8fafc !important;
-        border-bottom-color: #1e293b !important;
+        background: #0a1216 !important; color: #f8fafc !important; border-bottom-color: #1e293b !important;
       }
       
       .back-link {
@@ -380,9 +279,7 @@
       }
       
       .view-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
+        background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important;
       }
       
       .view-btn:hover {
@@ -390,15 +287,11 @@
       }
       
       .view-btn.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-        border-color: #2dd4bf !important;
+        background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important;
       }
       
       .theme-toggle-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
+        background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important;
       }
       
       .theme-toggle-btn:hover {
@@ -406,9 +299,7 @@
       }
       
       .theme-dropdown {
-        background: #0a1216 !important;
-        border-color: #1e293b !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+        background: #0a1216 !important; border-color: #1e293b !important; box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
       }
       
       .theme-option {
@@ -420,8 +311,7 @@
       }
       
       .theme-option.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
+        background: #2dd4bf !important; color: #0a1216 !important;
       }
       
       .btn-link-dark {
@@ -467,33 +357,19 @@
       .mobile-avatar-stack table[role="presentation"] tr { display: block !important; }
       .mobile-avatar-stack table[role="presentation"] tr td { display: block !important; width: 100% !important; }
       .mobile-avatar-stack table[role="presentation"] tr td:first-child { 
-        text-align: center !important; 
-        padding-right: 0 !important; 
-        padding-bottom: 16px !important;
-        margin-bottom: 16px !important;
+        text-align: center !important; padding-right: 0 !important; padding-bottom: 16px !important; margin-bottom: 16px !important;
       }
       .mobile-avatar-stack .dm-avatar { 
-        width: 120px !important; 
-        height: 120px !important; 
-        min-width: 120px !important; 
-        min-height: 120px !important; 
-        max-width: 120px !important; 
-        max-height: 120px !important; 
-        margin: 0 auto !important;
-        flex-shrink: 0 !important;
+        width: 120px !important; height: 120px !important; min-width: 120px !important; min-height: 120px !important; max-width: 120px !important; max-height: 120px !important; margin: 0 auto !important; flex-shrink: 0 !important;
       }
       
       /* Mobile cards stack - single column layout */
       .mobile-cards-stack table[role="presentation"] tr { display: block !important; }
       .mobile-cards-stack table[role="presentation"] tr td { 
-        display: block !important; 
-        width: 100% !important; 
-        padding-right: 0 !important;
-        margin-bottom: 12px !important;
+        display: block !important; width: 100% !important; padding-right: 0 !important; margin-bottom: 12px !important;
       }
       .mobile-cards-stack .mobile-card { 
-        width: 100% !important; 
-        margin-bottom: 12px !important; 
+        width: 100% !important; margin-bottom: 12px !important; 
       }
       
       /* Cards responsive layout - force mobile stacking */
@@ -501,25 +377,14 @@
       .cards-container table[role="presentation"] { display: block !important; width: 100% !important; }
       .cards-container table[role="presentation"] tr { display: block !important; width: 100% !important; }
       .cards-container table[role="presentation"] tr td { 
-        display: block !important; 
-        width: 100% !important; 
-        max-width: 100% !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        margin-bottom: 12px !important;
-        float: none !important;
+        display: block !important; width: 100% !important; max-width: 100% !important; padding-right: 0 !important; padding-left: 0 !important; margin-bottom: 12px !important; float: none !important;
       }
       .cards-container .card-cell { 
-        width: 100% !important; 
-        max-width: 100% !important;
-        margin-bottom: 12px !important; 
-        display: block !important;
-        float: none !important;
+        width: 100% !important; max-width: 100% !important; margin-bottom: 12px !important; display: block !important; float: none !important;
       }
       .cards-container .card-cell table[role="presentation"] { height: auto !important; }
       .cards-container .card-cell table[role="presentation"] tr td { 
-        height: auto !important; 
-        padding: 12px 16px !important; 
+        height: auto !important; padding: 12px 16px !important; 
       }
     }
     
@@ -531,26 +396,10 @@
       .mobile-content-image { max-height: 200px !important; }
     }    /* Bottom Navigation */
     .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 16px;
+      position: fixed; bottom: 0; right: 0; z-index: 1000; padding: 16px;
     }    
     .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
+      background: #0d9488; color: #FFFFFF; border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 500; font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s ease;
     }    
     .download-btn:hover {
       background: #0b7a6b;
@@ -566,8 +415,7 @@
       /* No background needed - container is invisible */
     }    
     .force-dark .download-btn {
-      background: #2dd4bf;
-      color: #0a1216;
+      background: #2dd4bf; color: #0a1216;
     }    
     .force-dark .download-btn:hover {
       background: #26c4b1;
@@ -578,19 +426,7 @@
         /* No background needed - container is invisible */
       }    
     .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
+      background: #0d9488; color: #FFFFFF; border: none; border-radius: 8px; padding: 12px 24px; font-size: 14px; font-weight: 500; font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background-color 0.2s ease;
     }    
     .download-btn:hover {
       background: #0b7a6b;
@@ -658,7 +494,7 @@
                     <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
                   </td>
                   <td align="right" style="vertical-align:middle;">
-                    <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">September, 2025</p>
+                    <p style="margin:0; line-height:1.6; font-size:14px; font-weight:500; color:#64748b; line-height:1.6;" class="dm-muted">September, 2025</p>
                   </td>
                 </tr>
               </table>
@@ -668,7 +504,7 @@
           <!-- Headline -->
           <tr>
             <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
-              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" class="dm-text mobile-text-large">
+              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; color:#0a1216;" line-height:1.4; class="dm-text mobile-text-large">
                 <span class="btn-link btn-link-dark" class="dm-headline-accent">Your September Partner Update:</span> New Zomo Tools &amp; Digital Health Strategy
               </h1>
             </td>
@@ -684,7 +520,7 @@
           <!-- Greeting & Intro -->
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
-                          <p style="margin:0; font-size:18px; font-weight:400; line-height:1.7; color:#0a1216;" class="dm-text mobile-text-medium">
+                          <p style="margin:0; line-height:1.6; font-size:18px; font-weight:400; line-height:1.7; color:#0a1216; line-height:1.6;" class="dm-text mobile-text-medium">
                 Dear Valued Partner,
               </p>
                           <p style="margin:12px 0 0; font-size:18px; font-weight:400; line-height:1.7; color:#64748b;" class="dm-muted mobile-text-small">
@@ -693,7 +529,7 @@
             </td>
           </tr>
 
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
 
           <!-- In This Issue -->
           <tr>
@@ -701,7 +537,7 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
                 <tr>
                   <td style="padding:20px;">
-                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" class="dm-text">In This Issue</h3>
+                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; color:#0a1216;" line-height:1.4; class="dm-text">In This Issue</h3>
                     <ul style="margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.6;" class="dm-muted">
                       <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">handshake</span>Partnership with Marsh McLennan</li>
                       <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">local_shipping</span>Ward Transport & Logistics case study</li>
@@ -717,7 +553,7 @@
           </tr>
 
           <!-- Section: Partnership -->
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
@@ -726,7 +562,7 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
-                          <h2 style="margin:0; font-size:24px; font-weight:400; line-height:1.35; color:#0a1216;" class="dm-text mobile-text-medium">
+                          <h2 style="margin:0; font-size:24px; font-weight:400; line-height:1.35; color:#0a1216;" line-height:1.4; class="dm-text mobile-text-medium">
                             Zomo Health &amp; Marsh McLennan: Partnering on Digital and Data Strategy
                           </h2>
                         </td>
@@ -734,7 +570,7 @@
                       <tr>
                         <td style="padding-top:12px;">
                           <img src="https://zomo-emails.vercel.app/assets/images/Marsh-Image.png" alt="ZOMO Health and Marsh McLennan Partnership" style="width:100%; height:200px; border-radius:8px; margin-bottom:16px; object-fit:cover;" class="dm-bg mobile-content-image">
-                          <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                          <p style="margin:0; line-height:1.6; font-size:16px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                             Our partnership is built to address your clients' strategic priorities: <strong>digital transformation</strong> and <strong>global risk management</strong>. Zomo Health supports Mercer Marsh Benefits' (MMB) core strategy by providing the <strong>globally consistent, consumer-grade wellness platform</strong> you need to manage people risk and prove ROI. Our platform delivers the intuitive, mobile-first, "digital front door" experience MMB advocates for, while our successful multi-year renewal with a large California County proves our ability to deliver <strong>global data consistency</strong> at scale.
                           </p>
                         </td>
@@ -747,7 +583,7 @@
           </tr>
 
           <!-- Ward Transport & Logistics -->
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
@@ -756,7 +592,7 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
-                          <h2 style="margin:0; font-size:24px; font-weight:400; line-height:1.35; color:#0a1216;" class="dm-text mobile-text-medium">
+                          <h2 style="margin:0; font-size:24px; font-weight:400; line-height:1.35; color:#0a1216;" line-height:1.4; class="dm-text mobile-text-medium">
                             Driving Industry-Specific Risk Management: Ward Transport &amp; Logistics
                           </h2>
                         </td>
@@ -773,12 +609,12 @@
                           </ul>
                           <div style="margin-top:16px;">
                             <!--[if mso]>
-                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://example.com/demo" style="height:44px;v-text-anchor:middle;width:260px;" arcsize="12%" fillcolor="#0d9488" stroke="f">
-                              <w:anchorlock/><center style="color:#FFFFFF;font-family:Arial,sans-serif;font-size:16px;">Schedule a Zomo Demo</center>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://example.com/demo" style="height:44px; v-text-anchor:middle; width:260px;" arcsize="12%" fillcolor="#0d9488" stroke="f">
+                              <w:anchorlock/><center style="color:#FFFFFF; font-family:Arial,sans-serif; font-size:16px;">Schedule a Zomo Demo</center>
                             </v:roundrect>
                             <![endif]-->
                             <!--[if !mso]><!-- -->
-                            <a href="https://example.com/demo" target="_blank" style="background:#0d9488;color:#FFFFFF;display:block;padding:12px 20px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;text-align:center;" class="dm-cta btn-primary btn-primary-dark">
+                            <a href="https://example.com/demo" target="_blank" style="background:#0d9488; color:#FFFFFF; display:block; padding:12px 20px; border-radius:6px; text-decoration:none; font-size:16px; font-weight:500; text-align:center;" class="dm-cta btn-primary btn-primary-dark">
                               Schedule a Zomo Demo
                             </a>
                             <!--<![endif]-->
@@ -793,7 +629,7 @@
           </tr>
 
           <!-- What's New -->
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
@@ -802,7 +638,7 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
-                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" class="dm-text">What's New at Zomo</h2>
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" line-height:1.4; class="dm-text">What's New at Zomo</h2>
                         </td>
                       </tr>
                       <tr>
@@ -817,8 +653,8 @@
                                       <div style="text-align:center; margin-bottom:12px;">
                                         <span class="material-icons" style="font-size:32px; color:#0d9488;">security</span>
                                       </div>
-                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; color:#0a1216; text-align:center;" class="dm-text">SOC 2 Certified</h3>
-                                      <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">Unwavering commitment to data security and compliance.</p>
+                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; color:#0a1216; text-align:center;" line-height:1.4; class="dm-text">SOC 2 Certified</h3>
+                                      <p style="margin:0; line-height:1.6; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; line-height:1.6; text-align:center;" class="dm-muted">Unwavering commitment to data security and compliance.</p>
                                     </td>
                                   </tr>
                                 </table>
@@ -831,8 +667,8 @@
                                       <div style="text-align:center; margin-bottom:12px;">
                                         <span class="material-icons" style="font-size:32px; color:#0d9488;">speed</span>
                                       </div>
-                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; color:#0a1216; text-align:center;" class="dm-text">Faster Implementation</h3>
-                                      <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">3–6 week launches help clients see ROI sooner.</p>
+                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; color:#0a1216; text-align:center;" line-height:1.4; class="dm-text">Faster Implementation</h3>
+                                      <p style="margin:0; line-height:1.6; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; line-height:1.6; text-align:center;" class="dm-muted">3–6 week launches help clients see ROI sooner.</p>
                                     </td>
                                   </tr>
                                 </table>
@@ -845,8 +681,8 @@
                                       <div style="text-align:center; margin-bottom:12px;">
                                         <span class="material-icons" style="font-size:32px; color:#0d9488;">integration_instructions</span>
                                       </div>
-                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; color:#0a1216; text-align:center;" class="dm-text">HRIS Integrations</h3>
-                                      <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">Expanding integrations to decrease HR workload.</p>
+                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; color:#0a1216; text-align:center;" line-height:1.4; class="dm-text">HRIS Integrations</h3>
+                                      <p style="margin:0; line-height:1.6; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; line-height:1.6; text-align:center;" class="dm-muted">Expanding integrations to decrease HR workload.</p>
                                     </td>
                                   </tr>
                                 </table>
@@ -863,7 +699,7 @@
           </tr>
 
           <!-- Meet Our Team -->
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
@@ -872,7 +708,7 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
-                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" class="dm-text">Meet Our Team</h2>
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" line-height:1.4; class="dm-text">Meet Our Team</h2>
                         </td>
                       </tr>
                       <tr>
@@ -905,7 +741,7 @@
           </tr>
 
           <!-- Client Highlight -->
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
@@ -914,7 +750,7 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
-                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" class="dm-text">
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" line-height:1.4; class="dm-text">
                             Client Highlight: How a Manufacturing Client Achieved 78% Engagement
                           </h2>
                         </td>
@@ -944,7 +780,7 @@
           </tr>
 
           <!-- Health News & Resources -->
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
@@ -953,7 +789,7 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
-                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" class="dm-text">Health News &amp; Resources for Your Clients</h2>
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" line-height:1.4; class="dm-text">Health News &amp; Resources for Your Clients</h2>
                         </td>
                       </tr>
                       <tr>
@@ -976,7 +812,7 @@
                                       <p style="margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                                         Job strain and effort-reward imbalance linked to a <strong>97% increased risk for AFib</strong> in office workers. Zomo Health addresses this with our <strong>Emotional Wellbeing Modules</strong> and <strong>Stress Management Coaching Tracks</strong>.
                                       </p>
-                                      <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                      <p style="margin:0; line-height:1.6; font-size:15px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                                         👉 <a href="https://www.heart.org/en/news/2024/08/14/job-stress-among-office-workers-linked-to-higher-risk-for-irregular-heart-rhythm" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Read the full AHA article →</a>
                                       </p>
                                     </td>
@@ -998,7 +834,7 @@
                                       <p style="margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                                         Structured wellness programs down to 39% in 2025. Employers must <strong>redesign</strong> offerings with a <strong>holistic lens</strong>—integrating mental health and physical well-being. Zomo Health provides this comprehensive, digital-first solution.
                                       </p>
-                                      <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                      <p style="margin:0; line-height:1.6; font-size:15px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                                         👉 <a href="https://www.benefitnews.com/news/shrm-benefits-survey-reveals-key-shifts-in-employer-priorities" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Read the full SHRM Survey Insights →</a>
                                       </p>
                                     </td>
@@ -1020,7 +856,7 @@
                                       <p style="margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                                         "Navigating New Trends: Digital Wellness Platforms and Their Impact on Insurance Broking" explores the future of wellness and broking.
                                       </p>
-                                      <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                      <p style="margin:0; line-height:1.6; font-size:15px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                                         👉 <a href="https://example.com/blog/digital-wellness-and-broking" style="font-weight:500;" class="btn-link btn-link-dark" class="btn-link btn-link-dark">Read the article →</a>
                                       </p>
                                     </td>
@@ -1039,7 +875,7 @@
           </tr>
 
           <!-- Contact -->
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
@@ -1048,7 +884,7 @@
                     <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
                         <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
-                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" class="dm-text">Your Zomo Health Contact</h2>
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; color:#0a1216;" line-height:1.4; class="dm-text">Your Zomo Health Contact</h2>
                         </td>
                       </tr>
                       <tr>
@@ -1056,7 +892,7 @@
                           <p style="margin:0 0 8px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                             For any questions, support, or to discuss a new client opportunity, please reach out to your dedicated representative:
                           </p>
-                          <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                          <p style="margin:0; line-height:1.6; font-size:16px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                             [Name]<br>[Title]<br>[Email] | [Phone]
                           </p>
                         </td>
@@ -1069,10 +905,10 @@
           </tr>
 
           <!-- Sign-off -->
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
-              <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+              <p style="margin:0; line-height:1.6; font-size:16px; font-weight:400; line-height:1.6; color:#64748b; " class="dm-muted">
                 Sincerely,
               </p>
               <p style="margin:8px 0 0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
@@ -1082,7 +918,7 @@
           </tr>
 
           <!-- Social Bar -->
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border-radius:8px;" class="dm-box">
@@ -1102,7 +938,7 @@
           </tr>
 
           <!-- Footer -->
-          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr><td style="line-height:24px; height:24px;">&nbsp;</td></tr>
           <tr>
             <td style="padding:0 20px;" class="dm-bg mobile-padding">
               <!-- Contact Information -->
@@ -1113,7 +949,7 @@
                       <div style="margin:0 0 8px; text-align:left;">
                   <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="112" alt="Zomo Health" style="display:block; border:0;" class="logo-filter">
                 </div>
-                <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
+                <p style="margin:0; line-height:1.6; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; line-height:1.6;" class="dm-muted">
                   1980 Post Oak Blvd., Ste 100<br>
                   Houston, TX 77056<br>
                   <a href="mailto:info@zomohealth.com" class="btn-link btn-link-dark" class="btn-link btn-link-dark">info@zomohealth.com</a><br>
@@ -1141,7 +977,7 @@
             </td>
           </tr>
 
-          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr><td style="line-height:32px; height:32px;">&nbsp;</td></tr>
         </table>
       </td>
     </tr>
