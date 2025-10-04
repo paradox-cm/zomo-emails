@@ -149,7 +149,7 @@
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
       .dm-text { color:#f8fafc !important; }
       .dm-muted { color:#94a3b8 !important; }
-      .dm-cta { background:#2dd4bf !important; color:#05151d !important; }
+      .dm-cta { background:#2dd4bf !important; color:#0a1216 !important; }
       .dm-hr { border-color:#1e293b !important; }
       .dm-hero { background:#0f1a21 !important; border-color:#2dd4bf !important; }
       .dm-hero-text { color:#2dd4bf !important; }
@@ -208,17 +208,6 @@
     
     /* Light mode button text override */
     .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
-    /* Dark mode primary button text override */
-    .force-dark .btn-primary, .force-dark .btn-primary-dark {
-      color: #0a1216 !important;
-    }
-    
-    @media (prefers-color-scheme: dark) {
-      .btn-primary, .btn-primary-dark {
-        color: #0a1216 !important;
-      }
-    }
-
     
     /* Force Dark Mode Classes */
     .force-dark .dm-bg { background: #0a1216 !important; }
@@ -271,6 +260,19 @@
       -webkit-font-feature-settings: 'liga';
       -webkit-font-smoothing: antialiased;
       vertical-align: middle;
+    }
+    /* Light mode button text override */
+    .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
+    
+    /* Dark mode primary button text override */
+    .force-dark .btn-primary, .force-dark .btn-primary-dark {
+      color: #0a1216 !important;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      .btn-primary, .btn-primary-dark {
+        color: #0a1216 !important;
+      }
     }
     
     .btn-primary:hover { background:#0b7a6b !important; }

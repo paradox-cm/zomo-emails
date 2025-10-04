@@ -189,7 +189,7 @@
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
       .dm-text { color:#f8fafc !important; }
       .dm-muted { color:#94a3b8 !important; }
-      .dm-cta { background:#2dd4bf !important; color:#05151d !important; }
+      .dm-cta { background: #2dd4bf !important; color: #0a1216 !important; }
       .dm-hr { border-color:#1e293b !important; }
       .dm-hero { background:#0f1a21 !important; border-color:#2dd4bf !important; }
       .dm-hero-text { color:#2dd4bf !important; }
@@ -289,9 +289,7 @@
     .force-light .btn-link-dark { color: #05151d !important; }
     
     /* Light mode button text override */
-    .btn-primary, .btn-primary-dark {
-      color: #FFFFFF !important;
-    }
+    .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
     
     /* Force Dark Mode Classes */
     .force-dark .dm-bg { background: #0a1216 !important; }
@@ -329,6 +327,19 @@
     u + #body a { text-decoration:none !important; }
     body, table, td, a { font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important; color: #05151d !important; }
     .material-icons { font-family: 'Material Icons' !important; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased; vertical-align: middle; }
+    /* Light mode button text override */
+    .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
+    
+    /* Dark mode primary button text override */
+    .force-dark .btn-primary, .force-dark .btn-primary-dark {
+      color: #0a1216 !important;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      .btn-primary, .btn-primary-dark {
+        color: #0a1216 !important;
+      }
+    }
     
     .btn-primary:hover { background:#0b7a6b !important; }
     .btn-primary-dark:hover { background:#26c4b1 !important; }
