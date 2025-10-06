@@ -629,6 +629,16 @@
       .btn-primary .material-icons { color: #0a1216 !important; }
       .btn-primary-dark .material-icons { color: #0a1216 !important; }
     }
+
+    /* CRITICAL: Override general material-icons rule for colored backgrounds - must come after all other rules */
+    div[style*="background:#0d9488"] .material-icons,
+    div[style*="background: #0d9488"] .material-icons,
+    div[style*="background-color:#0d9488"] .material-icons,
+    div[style*="background-color: #0d9488"] .material-icons { color: #FFFFFF !important; }
+    div[style*="background:#2dd4bf"] .material-icons,
+    div[style*="background: #2dd4bf"] .material-icons,
+    div[style*="background-color:#2dd4bf"] .material-icons,
+    div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
   </style>
 </head>
 <body id="body" style="margin:0; padding:0; background:#FFFFFF;" class="dm-bg">
