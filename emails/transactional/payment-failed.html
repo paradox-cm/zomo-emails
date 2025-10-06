@@ -305,7 +305,14 @@
     div[style*="background-color:#2dd4bf"] .material-icons,
     div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
 @media (prefers-color-scheme: dark) {
-      .dm-bg { background:#0a1216 !important; }
+      .dm-bg { background:#0a1216 !important; 
+    @media (prefers-color-scheme: dark) {
+      .btn-primary { background: #2dd4bf !important; color: #0a1216 !important; }
+      .btn-primary-dark { background: #2dd4bf !important; color: #0a1216 !important; }
+      .btn-primary .material-icons { color: #0a1216 !important; }
+      .btn-primary-dark .material-icons { color: #0a1216 !important; }
+    }
+    }
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
       .dm-text { color:#f8fafc !important; }
       .dm-muted { color:#94a3b8 !important; }
