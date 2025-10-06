@@ -200,7 +200,11 @@
     
     
     
-    @media (prefers-color-scheme: dark) {
+    
+    /* Baseline primary button text/icon color (default light) */
+    .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
+    .btn-primary .material-icons, .btn-primary-dark .material-icons { color: #FFFFFF !important; }
+@media (prefers-color-scheme: dark) {
       .dm-bg { background:#0a1216 !important; }
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
       .dm-text { color:#f8fafc !important; }

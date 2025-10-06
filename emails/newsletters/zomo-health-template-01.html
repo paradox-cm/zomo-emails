@@ -336,6 +336,10 @@
     }
     /* Logo color filters - Light mode: #05151d, Dark mode: #2dd4bf */
     .logo-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%); }
+
+    /* Baseline primary button text/icon color (default light) */
+    .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
+    .btn-primary .material-icons, .btn-primary-dark .material-icons { color: #FFFFFF !important; }
 @media (prefers-color-scheme: dark) {
       .dm-bg { background:#0a1216 !important; }
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
