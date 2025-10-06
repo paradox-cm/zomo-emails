@@ -680,6 +680,44 @@
       .btn-primary .material-icons { color: #0a1216 !important; }
       .btn-primary-dark .material-icons { color: #0a1216 !important; }
     }
+
+    /* Special theming for icons in any colored background */
+    .force-light div[style*="background:#0d9488"],
+    .force-light div[style*="background: #0d9488"],
+    .force-light div[style*="background-color:#0d9488"],
+    .force-light div[style*="background-color: #0d9488"] { }
+    .force-light div[style*="background:#0d9488"] .material-icons,
+    .force-light div[style*="background: #0d9488"] .material-icons,
+    .force-light div[style*="background-color:#0d9488"] .material-icons,
+    .force-light div[style*="background-color: #0d9488"] .material-icons { color: #FFFFFF !important; }
+    .force-dark div[style*="background:#0d9488"] .material-icons,
+    .force-dark div[style*="background: #0d9488"] .material-icons,
+    .force-dark div[style*="background-color:#0d9488"] .material-icons,
+    .force-dark div[style*="background-color: #0d9488"] .material-icons { color: #FFFFFF !important; }
+
+    .force-light div[style*="background:#2dd4bf"],
+    .force-light div[style*="background: #2dd4bf"],
+    .force-light div[style*="background-color:#2dd4bf"],
+    .force-light div[style*="background-color: #2dd4bf"] { }
+    .force-light div[style*="background:#2dd4bf"] .material-icons,
+    .force-light div[style*="background: #2dd4bf"] .material-icons,
+    .force-light div[style*="background-color:#2dd4bf"] .material-icons,
+    .force-light div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
+    .force-dark div[style*="background:#2dd4bf"] .material-icons,
+    .force-dark div[style*="background: #2dd4bf"] .material-icons,
+    .force-dark div[style*="background-color:#2dd4bf"] .material-icons,
+    .force-dark div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
+
+    @media (prefers-color-scheme: dark) {
+      div[style*="background:#0d9488"] .material-icons,
+      div[style*="background: #0d9488"] .material-icons,
+      div[style*="background-color:#0d9488"] .material-icons,
+      div[style*="background-color: #0d9488"] .material-icons,
+      div[style*="background:#2dd4bf"] .material-icons,
+      div[style*="background: #2dd4bf"] .material-icons,
+      div[style*="background-color:#2dd4bf"] .material-icons,
+      div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
+    }
   </style>
 
   <!--[if mso]>
