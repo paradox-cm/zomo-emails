@@ -285,127 +285,45 @@
   &lt;style&gt;
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
     
-    /* View Switcher Toolbar */
-    .view-switcher {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #FFFFFF;
-      color: #05151d;
-      padding: 8px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 1000;
-      font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
-      font-size: 14px;
-      border-bottom: 1px solid #e2e8f0;
-    }
-    
-    .view-switcher h3 {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .back-link {
-      color: inherit;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: opacity 0.2s ease;
-    }
-    
-    .back-link:hover {
-      opacity: 0.7;
-    }
-    
-    .back-arrow {
-      font-size: 18px;
-      line-height: 1;
-    }
-    
-    
-    
-    .theme-switcher {
-      position: relative;
-    }
     
     
     
     
     
-    .theme-dropdown {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background: #FFFFFF;
-      border: 1px solid #e2e8f0;
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 1001;
-      min-width: 120px;
-      display: none;
-    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     .theme-dropdown.show {
       display: block;
     }
     
-    .theme-option {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      cursor: pointer;
-      font-size: 13px;
-      color: #05151d;
-      transition: background 0.2s ease;
-    }
     
-    .theme-option:hover {
-      background: #f8fafc;
-    }
     
-    .theme-option.active {
-      background: #0d9488;
-      color: white;
-    }
     
-    .theme-option:first-child {
-      border-radius: 4px 4px 0 0;
-    }
     
-    .theme-option:last-child {
-      border-radius: 0 0 4px 4px;
-    }
     
-    .view-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
     
-    .view-btn:hover {
-      background: #e2e8f0;
-    }
     
-    .view-btn.active {
-      background: #0d9488;
-      color: white;
-      border-color: #0d9488;
-    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     .email-container {
       margin-top: 48px;
@@ -431,19 +349,19 @@
     .force-light .dm-avatar { border-color: #e2e8f0 !important; }
     .force-light 
     .force-light 
-    .force-light .theme-dropdown { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
-    .force-light .theme-option { color: #05151d !important; }
-    .force-light .theme-option:hover { background: #f8fafc !important; }
-    .force-light .theme-option.active { background: #0d9488 !important; color: white !important; }
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
     .force-light .dm-box { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
     .force-light .dm-avatar { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
     .force-light .mobile-preview { border-color: #e2e8f0 !important; }
-    .force-light .back-link { color: #05151d !important; }
-    .force-light .back-arrow { color: #05151d !important; }
-    .force-light .view-switcher { background: #FFFFFF !important; color: #05151d !important; border-bottom-color: #e2e8f0 !important; }
-    .force-light .view-btn { background: #f8fafc !important; border-color: #e2e8f0 !important; color: #05151d !important; }
-    .force-light .view-btn:hover { background: #e2e8f0 !important; }
-    .force-light .view-btn.active { background: #0d9488 !important; color: white !important; border-color: #0d9488 !important; }
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
     .force-light .dm-headline-accent { color: #0d9488 !important; }
     .force-light .logo-filter { filter: none !important; }
     .force-light .symbol-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
@@ -464,12 +382,12 @@
     .force-dark .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
     .force-dark .dm-avatar { background: #0f1a21 !important; border-color: #2dd4bf !important; }
     .force-dark .mobile-preview { border-color: #1e293b !important; }
-    .force-dark .back-link { color: #f8fafc !important; }
-    .force-dark .back-arrow { color: #f8fafc !important; }
-    .force-dark .view-switcher { background: #0a1216 !important; color: #f8fafc !important; border-bottom-color: #1e293b !important; }
-    .force-dark .view-btn { background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important; }
-    .force-dark .view-btn:hover { background: #1e293b !important; }
-    .force-dark .view-btn.active { background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important; }
+    .force-dark 
+    .force-dark 
+    .force-dark 
+    .force-dark 
+    .force-dark 
+    .force-dark 
     .force-dark .btn-link-dark { color: #2dd4bf !important; }
     .force-dark .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
     .force-dark .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
@@ -604,58 +522,29 @@
       .footer-symbol img svg { stroke-width: 2px; }
       .footer-symbol img svg * { stroke-width: 2px; }
       
-      .view-switcher {
-        background: #0a1216 !important;
-        color: #f8fafc !important;
-        border-bottom-color: #1e293b !important;
-      }
-      
-      .back-link {
-        color: #f8fafc !important;
-      }
-      
-      .back-arrow {
-        color: #f8fafc !important;
-      }
-      
-      .view-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
-      }
-      
-      .view-btn:hover {
-        background: #1e293b !important;
-      }
-      
-      .view-btn.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-        border-color: #2dd4bf !important;
-      }
       
       
       
       
       
-      .theme-dropdown {
-        background: #0a1216 !important;
-        border-color: #1e293b !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-      }
       
-      .theme-option {
-        color: #f8fafc !important;
-      }
       
-      .theme-option:hover {
-        background: #1e293b !important;
-      }
       
-      .theme-option.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       .btn-link-dark {
         color: #2dd4bf !important;
@@ -980,17 +869,12 @@
   &lt;![endif]--&gt;
 &lt;/head&gt;
 &lt;body id=&quot;body&quot; style=&quot;margin:0; padding:0; background:#FFFFFF;&quot; class=&quot;dm-bg&quot;&gt;
-  &lt;!-- View Switcher Toolbar --&gt;
-  &lt;div class=&quot;view-switcher&quot;&gt;
-    &lt;h3&gt;
-      &lt;a href=&quot;../../index.html&quot; class=&quot;back-link&quot;&gt;
-        &lt;span class=&quot;material-icons back-arrow&quot;&gt;arrow_back&lt;/span&gt;
-        Email Preview
-      &lt;/a&gt;
-    &lt;/h3&gt;
-    
+  
     &lt;div class=&quot;theme-switcher&quot;&gt;
-      
+      &lt;button class=&quot;theme-toggle-btn&quot; onclick=&quot;toggleThemeDropdown()&quot;&gt;
+        &lt;span class=&quot;material-icons&quot; id=&quot;theme-icon&quot;&gt;monitor&lt;/span&gt;
+        &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 12px;&quot;&gt;keyboard_arrow_down&lt;/span&gt;
+      &lt;/button&gt;
       &lt;div class=&quot;theme-dropdown&quot; id=&quot;theme-dropdown&quot;&gt;
         &lt;div class=&quot;theme-option&quot; onclick=&quot;switchTheme(&#x27;light&#x27;)&quot;&gt;
           &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;light_mode&lt;/span&gt;
@@ -1529,31 +1413,12 @@
   &lt;/div&gt; &lt;!-- End Email Container --&gt;
 
   &lt;script&gt;
-     else {
-        container.className = &#x27;email-container desktop-preview&#x27;;
-      }
+    
     }
     
     
     
-    function switchTheme(theme) {
-      const body = document.getElementById(&#x27;body&#x27;);
-      const options = document.querySelectorAll(&#x27;.theme-option&#x27;);
-      const themeIcon = document.getElementById(&#x27;theme-icon&#x27;);
-      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
-      
-      // Remove active class from all theme options
-      options.forEach(option =&gt; option.classList.remove(&#x27;active&#x27;));
-      
-      // Add active class to clicked option
-      event.target.classList.add(&#x27;active&#x27;);
-      
-      // Update theme icon
-      if (theme === &#x27;light&#x27;) {
-        themeIcon.textContent = &#x27;light_mode&#x27;;
-      } else if (theme === &#x27;dark&#x27;) {
-        themeIcon.textContent = &#x27;dark_mode&#x27;;
-      } else {
+     else {
         themeIcon.textContent = &#x27;monitor&#x27;;
       }
       

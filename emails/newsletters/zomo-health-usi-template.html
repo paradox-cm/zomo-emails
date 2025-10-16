@@ -24,146 +24,45 @@
   <style>
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
     
-    /* View Switcher Toolbar */
-    .view-switcher {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #FFFFFF;
-      color: #05151d;
-      padding: 8px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 1000;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      font-size: 14px;
-      border-bottom: 1px solid #e2e8f0;
-    }
     
-    .view-switcher h3 {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
     
-    .back-link {
-      color: inherit;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: opacity 0.2s ease;
-    }
     
-    .back-link:hover {
-      opacity: 0.7;
-    }
     
-    .back-arrow {
-      font-size: 18px;
-      line-height: 1;
-    }
     
-    .view-buttons {
-      display: flex;
-      gap: 8px;
-    }
     
-    .theme-switcher {
-      position: relative;
-    }
     
-    .theme-toggle-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      min-width: 40px;
-    }
     
-    .theme-toggle-btn:hover {
-      background: #e2e8f0;
-    }
     
-    .theme-dropdown {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background: #FFFFFF;
-      border: 1px solid #e2e8f0;
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 1001;
-      min-width: 120px;
-      display: none;
-    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     .theme-dropdown.show {
       display: block;
     }
     
-    .theme-option {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      cursor: pointer;
-      font-size: 13px;
-      color: #05151d;
-      transition: background 0.2s ease;
-    }
     
-    .theme-option:hover {
-      background: #f8fafc;
-    }
     
-    .theme-option.active {
-      background: #0d9488;
-      color: white;
-    }
     
-    .theme-option:first-child {
-      border-radius: 4px 4px 0 0;
-    }
     
-    .theme-option:last-child {
-      border-radius: 0 0 4px 4px;
-    }
     
-    .view-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
     
-    .view-btn:hover {
-      background: #e2e8f0;
-    }
     
-    .view-btn.active {
-      background: #0d9488;
-      color: white;
-      border-color: #0d9488;
-    }
+    
+    
+    
+    
+    
+    
+    
+    
     
     .email-container {
       margin-top: 48px;
@@ -187,21 +86,21 @@
     .force-light .dm-hero-text { color: #0d9488 !important; }
     .force-light .dm-placeholder { background: #f1f5f9 !important; }
     .force-light .dm-avatar { border-color: #e2e8f0 !important; }
-    .force-light .theme-toggle-btn { background: #f8fafc !important; border-color: #e2e8f0 !important; color: #05151d !important; }
-    .force-light .theme-toggle-btn:hover { background: #e2e8f0 !important; }
-    .force-light .theme-dropdown { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
-    .force-light .theme-option { color: #05151d !important; }
-    .force-light .theme-option:hover { background: #f8fafc !important; }
-    .force-light .theme-option.active { background: #0d9488 !important; color: white !important; }
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
     .force-light .dm-box { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
     .force-light .dm-avatar { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
     .force-light .mobile-preview { border-color: #e2e8f0 !important; }
-    .force-light .back-link { color: #05151d !important; }
-    .force-light .back-arrow { color: #05151d !important; }
-    .force-light .view-switcher { background: #FFFFFF !important; color: #05151d !important; border-bottom-color: #e2e8f0 !important; }
-    .force-light .view-btn { background: #f8fafc !important; border-color: #e2e8f0 !important; color: #05151d !important; }
-    .force-light .view-btn:hover { background: #e2e8f0 !important; }
-    .force-light .view-btn.active { background: #0d9488 !important; color: white !important; border-color: #0d9488 !important; }
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
+    .force-light 
     .force-light .dm-headline-accent { color: #0d9488 !important; }
     .force-light .logo-filter { filter: none !important; }
     .force-light .symbol-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
@@ -222,12 +121,12 @@
     .force-dark .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
     .force-dark .dm-avatar { background: #0f1a21 !important; border-color: #2dd4bf !important; }
     .force-dark .mobile-preview { border-color: #1e293b !important; }
-    .force-dark .back-link { color: #f8fafc !important; }
-    .force-dark .back-arrow { color: #f8fafc !important; }
-    .force-dark .view-switcher { background: #0a1216 !important; color: #f8fafc !important; border-bottom-color: #1e293b !important; }
-    .force-dark .view-btn { background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important; }
-    .force-dark .view-btn:hover { background: #1e293b !important; }
-    .force-dark .view-btn.active { background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important; }
+    .force-dark 
+    .force-dark 
+    .force-dark 
+    .force-dark 
+    .force-dark 
+    .force-dark 
     .force-dark .btn-link-dark { color: #2dd4bf !important; }
     .force-dark .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
     .force-dark .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
@@ -362,64 +261,29 @@
       .footer-symbol img svg { stroke-width: 2px; }
       .footer-symbol img svg * { stroke-width: 2px; }
       
-      .view-switcher {
-        background: #0a1216 !important;
-        color: #f8fafc !important;
-        border-bottom-color: #1e293b !important;
-      }
       
-      .back-link {
-        color: #f8fafc !important;
-      }
       
-      .back-arrow {
-        color: #f8fafc !important;
-      }
       
-      .view-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
-      }
       
-      .view-btn:hover {
-        background: #1e293b !important;
-      }
       
-      .view-btn.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-        border-color: #2dd4bf !important;
-      }
       
-      .theme-toggle-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
-      }
       
-      .theme-toggle-btn:hover {
-        background: #1e293b !important;
-      }
       
-      .theme-dropdown {
-        background: #0a1216 !important;
-        border-color: #1e293b !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-      }
       
-      .theme-option {
-        color: #f8fafc !important;
-      }
       
-      .theme-option:hover {
-        background: #1e293b !important;
-      }
       
-      .theme-option.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
       .btn-link-dark {
         color: #2dd4bf !important;
@@ -527,71 +391,22 @@
       .mobile-hero { max-height: none !important; }
       .mobile-content-image { max-height: 200px !important; }
     }    /* Bottom Navigation */
-    .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 16px;
-    }    
-    .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
-    }    
-    .download-btn:hover {
-      background: #0b7a6b;
-    }
+        
+        
+    
 
-    .download-btn .material-icons {
-      font-size: 18px;
-    }
+    
 
     /* Dark mode styles for bottom nav */    
     
-    .force-dark .bottom-nav {
-      /* No background needed - container is invisible */
-    }    
-    .force-dark .download-btn {
-      background: #2dd4bf;
-      color: #0a1216;
-    }    
-    .force-dark .download-btn:hover {
-      background: #26c4b1;
-    }    
+    .force-dark     
+    .force-dark     
+    .force-dark     
     
     @media (prefers-color-scheme: dark) {
-      .bottom-nav {
-        /* No background needed - container is invisible */
-      }    
-    .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
-    }    
-    .download-btn:hover {
-      background: #0b7a6b;
-    }
+          
+        
+    
     }
     
 /* Dark mode primary button text override */
@@ -793,18 +608,7 @@
   <![endif]-->
 </head>
 <body id="body" style="margin:0; padding:0; background:#FFFFFF;" class="dm-bg">
-  <!-- View Switcher Toolbar -->
-  <div class="view-switcher">
-    <h3>
-      <a href="../../index.html" class="back-link">
-        <span class="material-icons back-arrow">arrow_back</span>
-        Email Preview
-      </a>
-    </h3>
-    <div class="view-buttons">
-      <button class="view-btn active" onclick="switchView('desktop')">Desktop</button>
-      <button class="view-btn" onclick="switchView('mobile')">Mobile</button>
-    </div>
+  
     <div class="theme-switcher">
       <button class="theme-toggle-btn" onclick="toggleThemeDropdown()">
         <span class="material-icons" id="theme-icon">monitor</span>
@@ -1341,47 +1145,12 @@
   </div> <!-- End Email Container -->
 
   <script>
-    function switchView(view) {
-      const container = document.getElementById('email-container');
-      const buttons = document.querySelectorAll('.view-btn');
-      
-      // Remove active class from all buttons
-      buttons.forEach(btn => btn.classList.remove('active'));
-      
-      // Add active class to clicked button
-      event.target.classList.add('active');
-      
-      // Switch container class
-      if (view === 'mobile') {
-        container.className = 'email-container mobile-preview';
-      } else {
-        container.className = 'email-container desktop-preview';
-      }
+    
     }
     
-    function toggleThemeDropdown() {
-      const dropdown = document.getElementById('theme-dropdown');
-      dropdown.classList.toggle('show');
-    }
     
-    function switchTheme(theme) {
-      const body = document.getElementById('body');
-      const options = document.querySelectorAll('.theme-option');
-      const themeIcon = document.getElementById('theme-icon');
-      const dropdown = document.getElementById('theme-dropdown');
-      
-      // Remove active class from all theme options
-      options.forEach(option => option.classList.remove('active'));
-      
-      // Add active class to clicked option
-      event.target.classList.add('active');
-      
-      // Update theme icon
-      if (theme === 'light') {
-        themeIcon.textContent = 'light_mode';
-      } else if (theme === 'dark') {
-        themeIcon.textContent = 'dark_mode';
-      } else {
+    
+     else {
         themeIcon.textContent = 'monitor';
       }
       
@@ -1421,16 +1190,8 @@
   </script>
 
   <!-- Bottom Navigation -->
-  <div class="bottom-nav">
-    <button class="download-btn" onclick="downloadHTML()">
-      <span class="material-icons">download</span>
-      Download HTML
-    </button>
-  </div>  <script>
-    function downloadHTML() {
-      // Open the download page for this email template
-      window.open('../../download-pages/zomo-health-usi-template-download.html', '_blank');
-    }
+    <script>
+    
   </script>
       
       
