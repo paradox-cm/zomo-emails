@@ -238,6 +238,11 @@
       .dm-hr { border-color:#1e293b !important; }
       .dm-hero { background:#0f1a21 !important; border-color:#2dd4bf !important; }
       .dm-hero-text { color:#2dd4bf !important; }
+      /* Specific styling for feature introduction banner */
+      .dm-hero[style*="background:#fef3c7"] { background:#0f1a21 !important; border-color:#2dd4bf !important; }
+      table[style*="background:#fef3c7"] { background:#0f1a21 !important; border-color:#2dd4bf !important; }
+      /* Specific styling for info boxes */
+      div[style*="background:#f0fdf4"] { background:#0f1a21 !important; border-left-color:#2dd4bf !important; }
       .dm-headline-accent { color:#2dd4bf !important; }
       .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
       .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
@@ -319,6 +324,10 @@
     .force-light .dm-accent-bar { border-left-color: #0d9488 !important; }
     .force-light .dm-hero { background: #fef3c7 !important; border-color: #fde68a !important; }
     .force-light .dm-hero-text { color: #f59e0b !important; }
+    /* Specific styling for feature introduction banner in light mode */
+    .force-light .dm-hero[style*="background:#fef3c7"] { background: #fef3c7 !important; border-color: #fde68a !important; }
+    .force-light table[style*="background:#fef3c7"] { background: #fef3c7 !important; border-color: #fde68a !important; }
+    .force-light div[style*="background:#f0fdf4"] { background: #f0fdf4 !important; border-left-color: #0d9488 !important; }
     .force-light .dm-placeholder { background: #f8fafc !important; }
     .force-light .dm-box { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
     .force-light .dm-avatar { background: #FFFFFF !important; border-color: #0d9488 !important; }
@@ -349,6 +358,10 @@
     .force-dark .dm-accent-bar { border-left-color: #2dd4bf !important; }
     .force-dark .dm-hero { background: #0f1a21 !important; border-color: #2dd4bf !important; }
     .force-dark .dm-hero-text { color: #2dd4bf !important; }
+    /* Specific styling for feature introduction banner in dark mode */
+    .force-dark .dm-hero[style*="background:#fef3c7"] { background: #0f1a21 !important; border-color: #2dd4bf !important; }
+    .force-dark table[style*="background:#fef3c7"] { background: #0f1a21 !important; border-color: #2dd4bf !important; }
+    .force-dark div[style*="background:#f0fdf4"] { background: #0f1a21 !important; border-left-color: #2dd4bf !important; }
     .force-dark .dm-placeholder { background: #1e293b !important; }
     .force-dark .dm-headline-accent { color: #2dd4bf !important; }
     .force-dark .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
@@ -641,11 +654,11 @@
           <!-- Feature Hero -->
           <tr>
             <td style="padding:0 20px 24px;">
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:8px;" class="dm-hero">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#fef3c7; border:1px solid #fde68a; border-radius:8px;" class="dm-hero">
                 <tr>
                   <td style="padding:32px; text-align:center;">
                     <div style="width:80px; height:80px; background:#0d9488; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px;">
-                      <span class="material-icons" style="font-size:40px;">[FEATURE_ICON]</span>
+                      <span class="material-icons" style="font-size:40px;">star</span>
                     </div>
                     <h2 style="margin:0 0 12px; font-size:24px; font-weight:600;" class="dm-hero-text">Ready to Try [FEATURE_NAME]?</h2>
                     <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
