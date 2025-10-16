@@ -285,45 +285,146 @@
   &lt;style&gt;
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
     
+    /* View Switcher Toolbar */
+    .view-switcher {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #FFFFFF;
+      color: #05151d;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+      font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
     
+    .view-switcher h3 {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
     
+    .back-link {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: opacity 0.2s ease;
+    }
     
+    .back-link:hover {
+      opacity: 0.7;
+    }
     
+    .back-arrow {
+      font-size: 18px;
+      line-height: 1;
+    }
     
+    .view-buttons {
+      display: flex;
+      gap: 8px;
+    }
     
+    .theme-switcher {
+      position: relative;
+    }
     
+    .theme-toggle-btn {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      color: #05151d;
+      padding: 6px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      min-width: 40px;
+    }
     
+    .theme-toggle-btn:hover {
+      background: #e2e8f0;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    .theme-dropdown {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #FFFFFF;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 1001;
+      min-width: 120px;
+      display: none;
+    }
     
     .theme-dropdown.show {
       display: block;
     }
     
+    .theme-option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 13px;
+      color: #05151d;
+      transition: background 0.2s ease;
+    }
     
+    .theme-option:hover {
+      background: #f8fafc;
+    }
     
+    .theme-option.active {
+      background: #0d9488;
+      color: white;
+    }
     
+    .theme-option:first-child {
+      border-radius: 4px 4px 0 0;
+    }
     
+    .theme-option:last-child {
+      border-radius: 0 0 4px 4px;
+    }
     
+    .view-btn {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      color: #05151d;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
     
+    .view-btn:hover {
+      background: #e2e8f0;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    .view-btn.active {
+      background: #0d9488;
+      color: white;
+      border-color: #0d9488;
+    }
     
     .email-container {
       margin-top: 48px;
@@ -347,21 +448,21 @@
     .force-light .dm-hero-text { color: #0d9488 !important; }
     .force-light .dm-placeholder { background: #f1f5f9 !important; }
     .force-light .dm-avatar { border-color: #e2e8f0 !important; }
-    .force-light 
-    .force-light 
-    .force-light 
-    .force-light 
-    .force-light 
-    .force-light 
+    .force-light .theme-toggle-btn { background: #f8fafc !important; border-color: #e2e8f0 !important; color: #05151d !important; }
+    .force-light .theme-toggle-btn:hover { background: #e2e8f0 !important; }
+    .force-light .theme-dropdown { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
+    .force-light .theme-option { color: #05151d !important; }
+    .force-light .theme-option:hover { background: #f8fafc !important; }
+    .force-light .theme-option.active { background: #0d9488 !important; color: white !important; }
     .force-light .dm-box { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
     .force-light .dm-avatar { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
     .force-light .mobile-preview { border-color: #e2e8f0 !important; }
-    .force-light 
-    .force-light 
-    .force-light 
-    .force-light 
-    .force-light 
-    .force-light 
+    .force-light .back-link { color: #05151d !important; }
+    .force-light .back-arrow { color: #05151d !important; }
+    .force-light .view-switcher { background: #FFFFFF !important; color: #05151d !important; border-bottom-color: #e2e8f0 !important; }
+    .force-light .view-btn { background: #f8fafc !important; border-color: #e2e8f0 !important; color: #05151d !important; }
+    .force-light .view-btn:hover { background: #e2e8f0 !important; }
+    .force-light .view-btn.active { background: #0d9488 !important; color: white !important; border-color: #0d9488 !important; }
     .force-light .dm-headline-accent { color: #0d9488 !important; }
     .force-light .logo-filter { filter: none !important; }
     .force-light .symbol-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
@@ -382,12 +483,12 @@
     .force-dark .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
     .force-dark .dm-avatar { background: #0f1a21 !important; border-color: #2dd4bf !important; }
     .force-dark .mobile-preview { border-color: #1e293b !important; }
-    .force-dark 
-    .force-dark 
-    .force-dark 
-    .force-dark 
-    .force-dark 
-    .force-dark 
+    .force-dark .back-link { color: #f8fafc !important; }
+    .force-dark .back-arrow { color: #f8fafc !important; }
+    .force-dark .view-switcher { background: #0a1216 !important; color: #f8fafc !important; border-bottom-color: #1e293b !important; }
+    .force-dark .view-btn { background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important; }
+    .force-dark .view-btn:hover { background: #1e293b !important; }
+    .force-dark .view-btn.active { background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important; }
     .force-dark .btn-link-dark { color: #2dd4bf !important; }
     .force-dark .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
     .force-dark .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
@@ -522,29 +623,64 @@
       .footer-symbol img svg { stroke-width: 2px; }
       .footer-symbol img svg * { stroke-width: 2px; }
       
+      .view-switcher {
+        background: #0a1216 !important;
+        color: #f8fafc !important;
+        border-bottom-color: #1e293b !important;
+      }
       
+      .back-link {
+        color: #f8fafc !important;
+      }
       
+      .back-arrow {
+        color: #f8fafc !important;
+      }
       
+      .view-btn {
+        background: #0f1a21 !important;
+        border-color: #1e293b !important;
+        color: #f8fafc !important;
+      }
       
+      .view-btn:hover {
+        background: #1e293b !important;
+      }
       
+      .view-btn.active {
+        background: #2dd4bf !important;
+        color: #0a1216 !important;
+        border-color: #2dd4bf !important;
+      }
       
+      .theme-toggle-btn {
+        background: #0f1a21 !important;
+        border-color: #1e293b !important;
+        color: #f8fafc !important;
+      }
       
+      .theme-toggle-btn:hover {
+        background: #1e293b !important;
+      }
       
+      .theme-dropdown {
+        background: #0a1216 !important;
+        border-color: #1e293b !important;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
+      }
       
+      .theme-option {
+        color: #f8fafc !important;
+      }
       
+      .theme-option:hover {
+        background: #1e293b !important;
+      }
       
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+      .theme-option.active {
+        background: #2dd4bf !important;
+        color: #0a1216 !important;
+      }
       
       .btn-link-dark {
         color: #2dd4bf !important;
@@ -652,22 +788,71 @@
       .mobile-hero { max-height: none !important; }
       .mobile-content-image { max-height: 200px !important; }
     }    /* Bottom Navigation */
-        
-        
-    
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      z-index: 1000;
+      padding: 16px;
+    }    
+    .download-btn {
+      background: #0d9488;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.2s ease;
+    }    
+    .download-btn:hover {
+      background: #0b7a6b;
+    }
 
-    
+    .download-btn .material-icons {
+      font-size: 18px;
+    }
 
     /* Dark mode styles for bottom nav */    
     
-    .force-dark     
-    .force-dark     
-    .force-dark     
+    .force-dark .bottom-nav {
+      /* No background needed - container is invisible */
+    }    
+    .force-dark .download-btn {
+      background: #2dd4bf;
+      color: #0a1216;
+    }    
+    .force-dark .download-btn:hover {
+      background: #26c4b1;
+    }    
     
     @media (prefers-color-scheme: dark) {
-          
-        
-    
+      .bottom-nav {
+        /* No background needed - container is invisible */
+      }    
+    .download-btn {
+      background: #0d9488;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.2s ease;
+    }    
+    .download-btn:hover {
+      background: #0b7a6b;
+    }
     }
     
 /* Dark mode primary button text override */
@@ -869,30 +1054,7 @@
   &lt;![endif]--&gt;
 &lt;/head&gt;
 &lt;body id=&quot;body&quot; style=&quot;margin:0; padding:0; background:#FFFFFF;&quot; class=&quot;dm-bg&quot;&gt;
-  
-    &lt;div class=&quot;theme-switcher&quot;&gt;
-      &lt;button class=&quot;theme-toggle-btn&quot; onclick=&quot;toggleThemeDropdown()&quot;&gt;
-        &lt;span class=&quot;material-icons&quot; id=&quot;theme-icon&quot;&gt;monitor&lt;/span&gt;
-        &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 12px;&quot;&gt;keyboard_arrow_down&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;div class=&quot;theme-dropdown&quot; id=&quot;theme-dropdown&quot;&gt;
-        &lt;div class=&quot;theme-option&quot; onclick=&quot;switchTheme(&#x27;light&#x27;)&quot;&gt;
-          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;light_mode&lt;/span&gt;
-          Light
-        &lt;/div&gt;
-        &lt;div class=&quot;theme-option&quot; onclick=&quot;switchTheme(&#x27;dark&#x27;)&quot;&gt;
-          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;dark_mode&lt;/span&gt;
-          Dark
-        &lt;/div&gt;
-        &lt;div class=&quot;theme-option active&quot; onclick=&quot;switchTheme(&#x27;system&#x27;)&quot;&gt;
-          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;monitor&lt;/span&gt;
-          System
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Email Container --&gt;
+&lt;!-- Email Container --&gt;
   &lt;div id=&quot;email-container&quot; class=&quot;email-container desktop-preview&quot;&gt;
   &lt;!-- Hidden Preheader (edit per send) --&gt;
   &lt;div style=&quot;display:none; max-height:0; overflow:hidden; mso-hide:all; opacity:0; color:transparent; height:0;&quot;&gt;
@@ -1410,62 +1572,9 @@
       &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
-  &lt;/div&gt; &lt;!-- End Email Container --&gt;
-
-  &lt;script&gt;
-    
-    }
-    
-    
-    
-     else {
-        themeIcon.textContent = &#x27;monitor&#x27;;
-      }
-      
-      // Apply theme
-      if (theme === &#x27;light&#x27;) {
-        body.style.colorScheme = &#x27;light&#x27;;
-        body.style.setProperty(&#x27;--prefers-color-scheme&#x27;, &#x27;light&#x27;);
-        // Force light mode by overriding media query
-        body.classList.add(&#x27;force-light&#x27;);
-        body.classList.remove(&#x27;force-dark&#x27;);
-      } else if (theme === &#x27;dark&#x27;) {
-        body.style.colorScheme = &#x27;dark&#x27;;
-        body.style.setProperty(&#x27;--prefers-color-scheme&#x27;, &#x27;dark&#x27;);
-        // Force dark mode by overriding media query
-        body.classList.add(&#x27;force-dark&#x27;);
-        body.classList.remove(&#x27;force-light&#x27;);
-      } else {
-        // System theme - remove forced classes and let CSS media query handle it
-        body.classList.remove(&#x27;force-light&#x27;, &#x27;force-dark&#x27;);
-        body.style.colorScheme = &#x27;&#x27;;
-        body.style.removeProperty(&#x27;--prefers-color-scheme&#x27;);
-      }
-      
-      // Close dropdown
-      dropdown.classList.remove(&#x27;show&#x27;);
-    }
-    
-    // Close dropdown when clicking outside
-    document.addEventListener(&#x27;click&#x27;, function(event) {
-      const themeSwitcher = document.querySelector(&#x27;.theme-switcher&#x27;);
-      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
-      
-      if (!themeSwitcher.contains(event.target)) {
-        dropdown.classList.remove(&#x27;show&#x27;);
-      }
-    });
-  &lt;/script&gt;
-
-  &lt;!-- Bottom Navigation --&gt;
-    &lt;script&gt;
-    
-  &lt;/script&gt;
-      
-      
+  &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;
-</pre>
+&lt;/html&gt;</pre>
             </div>
         </div>
     </div>
