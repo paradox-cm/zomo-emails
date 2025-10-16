@@ -259,349 +259,135 @@
                 <h3>HTML Source Code</h3>
             </div>
             <div class="code-content">
-                <pre id="code-content">&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
-&lt;head&gt;
-  &lt;!--[if gte mso 9]&gt;&lt;xml&gt;&lt;o:OfficeDocumentSettings&gt;&lt;o:AllowPNG/&gt;&lt;o:PixelsPerInch&gt;96&lt;/o:PixelsPerInch&gt;&lt;/o:OfficeDocumentSettings&gt;&lt;/xml&gt;&lt;![endif]--&gt;
-  &lt;meta charset=&quot;utf-8&quot;&gt;
-  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
-  &lt;meta name=&quot;x-apple-disable-message-reformatting&quot;&gt;
-  &lt;meCta name=&quot;color-scheme&quot; content=&quot;light dark&quot;&gt;
-  &lt;meta name=&quot;supported-color-schemes&quot; content=&quot;light dark&quot;&gt;
-  &lt;title&gt;Your September Partner Update: New Zomo Tools &amp; Data-Driven Employee Experience&lt;/title&gt;
+                <pre id="code-content"><!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <!--[if gte mso 9]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-schemes" content="light dark">
+  <title>Your September Partner Update: New Zomo Tools & Data-Driven Employee Experience</title>
 
-  &lt;!-- Epilogue Font --&gt;
-  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-  &lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+  <!-- Epilogue Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  &lt;!-- Google Material Icons --&gt;
-  &lt;link href=&quot;https://fonts.googleapis.com/icon?family=Material+Icons&quot; rel=&quot;stylesheet&quot;&gt;
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  &lt;!-- ZOMO HEALTH COLOR PALETTE --&gt;
-  &lt;!-- Light Mode: Background #FFFFFF / Foreground #05151d / Primary #0d9488 / Muted #64748b --&gt;
-  &lt;!-- Dark Mode: Background #0a1216 / Foreground #f8fafc / Primary #2dd4bf / Muted #94a3b8 --&gt;
-
-  &lt;style&gt;
+  <style>
     :root { color-scheme: light dark; supported-color-schemes: light dark; }
     
-    /* View Switcher Toolbar */
-    .view-switcher {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background: #FFFFFF;
-      color: #05151d;
-      padding: 8px 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      z-index: 1000;
-      font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
-      font-size: 14px;
-      border-bottom: 1px solid #e2e8f0;
+    u + #body a { text-decoration:none !important; }
+    body, table, td, a { font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important; color: #05151d !important; }
+    .material-icons { font-family: 'Material Icons' !important; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased; vertical-align: middle; }
+    
+    /* Button hover effects */
+    .btn-primary:hover { background:#0b7a6b !important; }
+    .btn-primary-dark:hover { background:#26c4b1 !important; }
+    .btn-link:hover { color:#0b7a6b !important; }
+    .btn-link-dark:hover { color:#26c4b1 !important; }
+    
+    /* Symbol filter for light mode */
+    .symbol-filter { 
+      filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%);
     }
     
-    .view-switcher h3 {
-      margin: 0;
-      font-size: 14px;
-      font-weight: 600;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    
-    .back-link {
-      color: inherit;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: opacity 0.2s ease;
-    }
-    
-    .back-link:hover {
-      opacity: 0.7;
-    }
-    
-    .back-arrow {
-      font-size: 18px;
-      line-height: 1;
-    }
-    
-    .view-buttons {
-      display: flex;
-      gap: 8px;
-    }
-    
-    .theme-switcher {
-      position: relative;
-    }
-    
-    .theme-toggle-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      min-width: 40px;
-    }
-    
-    .theme-toggle-btn:hover {
-      background: #e2e8f0;
-    }
-    
-    .theme-dropdown {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background: #FFFFFF;
-      border: 1px solid #e2e8f0;
-      border-radius: 4px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      z-index: 1001;
-      min-width: 120px;
-      display: none;
-    }
-    
-    .theme-dropdown.show {
-      display: block;
-    }
-    
-    .theme-option {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 12px;
-      cursor: pointer;
-      font-size: 13px;
-      color: #05151d;
-      transition: background 0.2s ease;
-    }
-    
-    .theme-option:hover {
-      background: #f8fafc;
-    }
-    
-    .theme-option.active {
-      background: #0d9488;
-      color: white;
-    }
-    
-    .theme-option:first-child {
-      border-radius: 4px 4px 0 0;
-    }
-    
-    .theme-option:last-child {
-      border-radius: 0 0 4px 4px;
-    }
-    
-    .view-btn {
-      background: #f8fafc;
-      border: 1px solid #e2e8f0;
-      color: #05151d;
-      padding: 6px 12px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 13px;
-      font-weight: 500;
-      transition: all 0.2s ease;
-    }
-    
-    .view-btn:hover {
-      background: #e2e8f0;
-    }
-    
-    .view-btn.active {
-      background: #0d9488;
-      color: white;
-      border-color: #0d9488;
-    }
-    
-    .email-container {
-      margin-top: 48px;
-      padding-top: 0;
-          margin-bottom: 80px;
-    }
-    
-    .mobile-preview .email-container {
-      margin-top: 0;
-      padding-top: 0;
-          margin-bottom: 80px;
-    }
-    
-    /* Force theme overrides for preview */
-    .force-light .dm-bg { background: #FFFFFF !important; }
-    .force-light .dm-text { color: #05151d !important; }
-    .force-light .dm-muted { color: #64748b !important; }
-    .force-light .dm-accent { color: #0d9488 !important; }
-    .force-light .dm-accent-bar { border-left-color: #0d9488 !important; }
-    .force-light .dm-hero { background: #f8fafc !important; border-color: #e2e8f0 !important; }
-    .force-light .dm-hero-text { color: #0d9488 !important; }
-    .force-light .dm-placeholder { background: #f1f5f9 !important; }
-    .force-light .dm-avatar { border-color: #e2e8f0 !important; }
-    .force-light .theme-toggle-btn { background: #f8fafc !important; border-color: #e2e8f0 !important; color: #05151d !important; }
-    .force-light .theme-toggle-btn:hover { background: #e2e8f0 !important; }
-    .force-light .theme-dropdown { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
-    .force-light .theme-option { color: #05151d !important; }
-    .force-light .theme-option:hover { background: #f8fafc !important; }
-    .force-light .theme-option.active { background: #0d9488 !important; color: white !important; }
-    .force-light .dm-box { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
-    .force-light .dm-avatar { background: #FFFFFF !important; border-color: #e2e8f0 !important; }
-    .force-light .mobile-preview { border-color: #e2e8f0 !important; }
-    .force-light .back-link { color: #05151d !important; }
-    .force-light .back-arrow { color: #05151d !important; }
-    .force-light .view-switcher { background: #FFFFFF !important; color: #05151d !important; border-bottom-color: #e2e8f0 !important; }
-    .force-light .view-btn { background: #f8fafc !important; border-color: #e2e8f0 !important; color: #05151d !important; }
-    .force-light .view-btn:hover { background: #e2e8f0 !important; }
-    .force-light .view-btn.active { background: #0d9488 !important; color: white !important; border-color: #0d9488 !important; }
-    .force-light .dm-headline-accent { color: #0d9488 !important; }
-    .force-light .logo-filter { filter: none !important; }
-    .force-light .symbol-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
-    .force-light .footer-symbol img { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
-    .force-light .footer-symbol img svg { stroke-width: 2px !important; }
-    .force-light .footer-symbol img svg * { stroke-width: 2px !important; }
-    
-    .force-dark .dm-bg { background: #0a1216 !important; }
-    .force-dark .dm-text { color: #f8fafc !important; }
-    .force-dark .dm-muted { color: #94a3b8 !important; }
-    .force-dark .dm-accent { color: #2dd4bf !important; }
-    .force-dark .dm-accent-bar { border-left-color: #2dd4bf !important; }
-    .force-dark .dm-hero { background: #0f1a21 !important; border-color: #2dd4bf !important; }
-    .force-dark .dm-hero-text { color: #2dd4bf !important; }
-    .force-dark .dm-placeholder { background: #1e293b !important; }
-    .force-dark .dm-headline-accent { color: #2dd4bf !important; }
-    .force-dark .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
-    .force-dark .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
-    .force-dark .dm-avatar { background: #0f1a21 !important; border-color: #2dd4bf !important; }
-    .force-dark .mobile-preview { border-color: #1e293b !important; }
-    .force-dark .back-link { color: #f8fafc !important; }
-    .force-dark .back-arrow { color: #f8fafc !important; }
-    .force-dark .view-switcher { background: #0a1216 !important; color: #f8fafc !important; border-bottom-color: #1e293b !important; }
-    .force-dark .view-btn { background: #0f1a21 !important; border-color: #1e293b !important; color: #f8fafc !important; }
-    .force-dark .view-btn:hover { background: #1e293b !important; }
-    .force-dark .view-btn.active { background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important; }
-    .force-dark .btn-link-dark { color: #2dd4bf !important; }
-    .force-dark .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
-    .force-dark .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
-    .force-dark .footer-symbol img svg { stroke-width: 2px !important; }
-    .force-dark .footer-symbol img svg * { stroke-width: 2px !important; }
-    
-    .mobile-preview {
-      max-width: 375px;
-      width: 375px;
-      margin: 60px auto 20px;
-      border: 2px solid #e2e8f0;
-      border-radius: 8px;
-      overflow: hidden;
-      box-sizing: border-box;
-    }
-    
-    .mobile-preview .mobile-container { width: 100% !important; max-width: 100% !important; }
-    .mobile-preview table[role=&quot;presentation&quot;] { width: 100% !important; max-width: 100% !important; table-layout: fixed !important; }
-    .mobile-preview td { max-width: 100% !important; word-wrap: break-word !important; }
-    .mobile-preview img { max-width: 100% !important; height: auto !important; }
-    .mobile-preview .mobile-hero { width: 100% !important; max-width: 100% !important; }
-    .mobile-preview .mobile-content-image { width: 100% !important; max-width: 100% !important; }
-    .mobile-preview table[width=&quot;100%&quot;] { width: 100% !important; max-width: 100% !important; }
-    .mobile-preview table[width=&quot;600&quot;] { width: 100% !important; max-width: 100% !important; }
-    .mobile-preview .mobile-logo { max-width: 100% !important; }
-    .mobile-preview .footer-table td { width: 100% !important; display: block !important; }
-    .mobile-preview .footer-symbol { text-align: center !important; margin-top: 12px !important; height: auto !important; }
-    .mobile-preview .footer-symbol img { height: auto !important; width: 80px !important; }
-    .mobile-preview &gt; table { width: 100% !important; max-width: 100% !important; }
-    .mobile-preview * { max-width: 100% !important; box-sizing: border-box !important; }
-    .mobile-preview .mobile-padding { padding: 16px !important; }
-    .mobile-preview .mobile-padding-small { padding: 12px !important; }
-    .mobile-preview .mobile-text-large { font-size: 32px !important; line-height: 1.3 !important; }
-    .mobile-preview .mobile-text-medium { font-size: 26px !important; line-height: 1.4 !important; }
-    .mobile-preview .mobile-text-small { font-size: 14px !important; line-height: 1.5 !important; }
-    .mobile-preview .mobile-hero { width: 100% !important; height: auto !important; max-height: none !important; }
-    .mobile-preview .mobile-logo { width: 150px !important; }
-    .mobile-preview .mobile-hide { display: none !important; }
-    .mobile-preview .mobile-stack { display: block !important; width: 100% !important; }
-    .mobile-preview .mobile-center { text-align: center !important; }
-    .mobile-preview .mobile-card { width: 100% !important; margin-bottom: 12px !important; }
-    .mobile-preview .mobile-content-image { height: auto !important; max-height: 250px !important; object-fit: contain !important; }
-    
-    /* Mobile preview - exact replica of @media query mobile styles */
-    /* Avatar layout - stack above text */
-    .mobile-preview .mobile-avatar-stack table[role=&quot;presentation&quot;] tr { display: block !important; }
-    .mobile-preview .mobile-avatar-stack table[role=&quot;presentation&quot;] tr td { display: block !important; width: 100% !important; }
-    .mobile-preview .mobile-avatar-stack table[role=&quot;presentation&quot;] tr td:first-child { 
-      text-align: center !important; 
-      padding-right: 0 !important; 
-      padding-bottom: 16px !important;
-      margin-bottom: 16px !important;
-    }
-    .mobile-preview .mobile-avatar-stack .dm-avatar { 
-      width: 120px !important; 
-      height: 120px !important; 
-      min-width: 120px !important; 
-      min-height: 120px !important; 
-      max-width: 120px !important; 
-      max-height: 120px !important; 
-      margin: 0 auto !important;
-      flex-shrink: 0 !important;
-    }
-    
-    /* Cards stack - single column layout */
-    .mobile-preview .mobile-cards-stack table[role=&quot;presentation&quot;] tr { display: block !important; }
-    .mobile-preview .mobile-cards-stack table[role=&quot;presentation&quot;] tr td { 
-      display: block !important; 
-      width: 100% !important; 
-      padding-right: 0 !important;
-      margin-bottom: 12px !important;
-    }
-    .mobile-preview .mobile-cards-stack .mobile-card { 
-      width: 100% !important; 
-      margin-bottom: 12px !important; 
-    }
-    
-    /* Mobile preview cards responsive layout - force mobile stacking */
-    .mobile-preview .cards-container { display: block !important; }
-    .mobile-preview .cards-container table[role=&quot;presentation&quot;] { display: block !important; width: 100% !important; }
-    .mobile-preview .cards-container table[role=&quot;presentation&quot;] tr { display: block !important; width: 100% !important; }
-    .mobile-preview .cards-container table[role=&quot;presentation&quot;] tr td { 
-      display: block !important; 
-      width: 100% !important; 
-      max-width: 100% !important;
-      padding-right: 0 !important;
-      padding-left: 0 !important;
-      margin-bottom: 12px !important;
-      float: none !important;
-    }
-    .mobile-preview .cards-container .card-cell { 
-      width: 100% !important; 
-      max-width: 100% !important;
-      margin-bottom: 12px !important; 
-      display: block !important;
-      float: none !important;
-    }
-    .mobile-preview .cards-container .card-cell table[role=&quot;presentation&quot;] { height: auto !important; }
-    .mobile-preview .cards-container .card-cell table[role=&quot;presentation&quot;] tr td { 
-      height: auto !important; 
-      padding: 12px 16px !important; 
-    }
-    
-    .desktop-preview {
-      max-width: 100%;
-    }
     /* Logo color filters - Light mode: #05151d, Dark mode: #2dd4bf */
     .logo-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%); }
 
     /* Baseline primary button text/icon color (default light) */
     .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
     .btn-primary .material-icons, .btn-primary-dark .material-icons { color: #FFFFFF !important; }
-@media (prefers-color-scheme: dark) {
+
+    /* Mobile Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      .mobile-container { width: 100% !important; max-width: 100% !important; }
+      .mobile-padding { padding: 16px !important; }
+      .mobile-padding-small { padding: 12px !important; }
+      .mobile-text-large { font-size: 32px !important; line-height: 1.3 !important; }
+      .mobile-text-medium { font-size: 26px !important; line-height: 1.4 !important; }
+      .mobile-text-small { font-size: 14px !important; line-height: 1.5 !important; }
+      .mobile-hero { width: 100% !important; height: auto !important; max-height: none !important; }
+      .mobile-logo { width: 150px !important; }
+      .mobile-hide { display: none !important; }
+      .mobile-stack { display: block !important; width: 100% !important; }
+      .mobile-center { text-align: center !important; }
+      .mobile-card { width: 100% !important; margin-bottom: 12px !important; }
+      .mobile-content-image { height: auto !important; max-height: 250px !important; object-fit: contain !important; }
+      
+      /* Mobile avatar layout - stack above text */
+      .mobile-avatar-stack table[role="presentation"] tr { display: block !important; }
+      .mobile-avatar-stack table[role="presentation"] tr td { display: block !important; width: 100% !important; }
+      .mobile-avatar-stack table[role="presentation"] tr td:first-child { 
+        text-align: center !important; 
+        padding-right: 0 !important; 
+        padding-bottom: 16px !important;
+        margin-bottom: 16px !important;
+      }
+      .mobile-avatar-stack .dm-avatar { 
+        width: 120px !important; 
+        height: 120px !important; 
+        min-width: 120px !important; 
+        min-height: 120px !important; 
+        max-width: 120px !important; 
+        max-height: 120px !important; 
+        margin: 0 auto !important;
+        flex-shrink: 0 !important;
+      }
+      
+      /* Mobile cards stack - single column layout */
+      .mobile-cards-stack table[role="presentation"] tr { display: block !important; }
+      .mobile-cards-stack table[role="presentation"] tr td { 
+        display: block !important; 
+        width: 100% !important; 
+        padding-right: 0 !important;
+        margin-bottom: 12px !important;
+      }
+      .mobile-cards-stack .mobile-card { 
+        width: 100% !important; 
+        margin-bottom: 12px !important; 
+      }
+      
+      /* Cards responsive layout - force mobile stacking */
+      .cards-container { display: block !important; }
+      .cards-container table[role="presentation"] { display: block !important; width: 100% !important; }
+      .cards-container table[role="presentation"] tr { display: block !important; width: 100% !important; }
+      .cards-container table[role="presentation"] tr td { 
+        display: block !important; 
+        width: 100% !important; 
+        max-width: 100% !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-bottom: 12px !important;
+        float: none !important;
+      }
+      .cards-container .card-cell { 
+        width: 100% !important; 
+        max-width: 100% !important;
+        margin-bottom: 12px !important; 
+        display: block !important;
+        float: none !important;
+      }
+      .cards-container .card-cell table[role="presentation"] { height: auto !important; }
+      .cards-container .card-cell table[role="presentation"] tr td { 
+        height: auto !important; 
+        padding: 12px 16px !important; 
+      }
+    }
+    
+    @media only screen and (max-width: 480px) {
+      .mobile-text-large { font-size: 28px !important; }
+      .mobile-text-medium { font-size: 24px !important; }
+      .mobile-padding { padding: 12px !important; }
+      .mobile-hero { max-height: none !important; }
+      .mobile-content-image { max-height: 200px !important; }
+    }
+
+    @media (prefers-color-scheme: dark) {
       .dm-bg { background:#0a1216 !important; }
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
       .dm-text { color:#f8fafc !important; }
@@ -622,1079 +408,521 @@
       .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
       .footer-symbol img svg { stroke-width: 2px; }
       .footer-symbol img svg * { stroke-width: 2px; }
-      
-      .view-switcher {
-        background: #0a1216 !important;
-        color: #f8fafc !important;
-        border-bottom-color: #1e293b !important;
-      }
-      
-      .back-link {
-        color: #f8fafc !important;
-      }
-      
-      .back-arrow {
-        color: #f8fafc !important;
-      }
-      
-      .view-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
-      }
-      
-      .view-btn:hover {
-        background: #1e293b !important;
-      }
-      
-      .view-btn.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-        border-color: #2dd4bf !important;
-      }
-      
-      .theme-toggle-btn {
-        background: #0f1a21 !important;
-        border-color: #1e293b !important;
-        color: #f8fafc !important;
-      }
-      
-      .theme-toggle-btn:hover {
-        background: #1e293b !important;
-      }
-      
-      .theme-dropdown {
-        background: #0a1216 !important;
-        border-color: #1e293b !important;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3) !important;
-      }
-      
-      .theme-option {
-        color: #f8fafc !important;
-      }
-      
-      .theme-option:hover {
-        background: #1e293b !important;
-      }
-      
-      .theme-option.active {
-        background: #2dd4bf !important;
-        color: #0a1216 !important;
-      }
-      
-      .btn-link-dark {
-        color: #2dd4bf !important;
-      }
-      
-      .mobile-preview {
-        border-color: #1e293b !important;
-      }
     }
-    u + #body a { text-decoration:none !important; }
-    body, table, td, a { font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif !important; color: #05151d !important; }
-    .material-icons { font-family: &#x27;Material Icons&#x27; !important; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: &#x27;liga&#x27;; -webkit-font-smoothing: antialiased; vertical-align: middle; }
-    
-    /* Button hover effects */
-    .btn-primary:hover { background:#0b7a6b !important; }
-    .btn-primary-dark:hover { background:#26c4b1 !important; }
-    .btn-link:hover { color:#0b7a6b !important; }
-    .btn-link-dark:hover { color:#26c4b1 !important; }
-    
-    /* Symbol filter for light mode */
-    .symbol-filter { 
-      filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%);
-    }
-    
-    /* Mobile Responsive Styles */
-    @media only screen and (max-width: 600px) {
-      .mobile-container { width: 100% !important; max-width: 100% !important; }
-      .mobile-padding { padding: 16px !important; }
-      .mobile-padding-small { padding: 12px !important; }
-      .mobile-text-large { font-size: 32px !important; line-height: 1.3 !important; }
-      .mobile-text-medium { font-size: 26px !important; line-height: 1.4 !important; }
-      .mobile-text-small { font-size: 14px !important; line-height: 1.5 !important; }
-      .mobile-hero { width: 100% !important; height: auto !important; max-height: none !important; }
-      .mobile-logo { width: 150px !important; }
-      .mobile-hide { display: none !important; }
-      .mobile-stack { display: block !important; width: 100% !important; }
-      .mobile-center { text-align: center !important; }
-      .mobile-card { width: 100% !important; margin-bottom: 12px !important; }
-      .mobile-content-image { height: auto !important; max-height: 250px !important; object-fit: contain !important; }
-      
-      /* Mobile avatar layout - stack above text */
-      .mobile-avatar-stack table[role=&quot;presentation&quot;] tr { display: block !important; }
-      .mobile-avatar-stack table[role=&quot;presentation&quot;] tr td { display: block !important; width: 100% !important; }
-      .mobile-avatar-stack table[role=&quot;presentation&quot;] tr td:first-child { 
-        text-align: center !important; 
-        padding-right: 0 !important; 
-        padding-bottom: 16px !important;
-        margin-bottom: 16px !important;
-      }
-      .mobile-avatar-stack .dm-avatar { 
-        width: 120px !important; 
-        height: 120px !important; 
-        min-width: 120px !important; 
-        min-height: 120px !important; 
-        max-width: 120px !important; 
-        max-height: 120px !important; 
-        margin: 0 auto !important;
-        flex-shrink: 0 !important;
-      }
-      
-      /* Mobile cards stack - single column layout */
-      .mobile-cards-stack table[role=&quot;presentation&quot;] tr { display: block !important; }
-      .mobile-cards-stack table[role=&quot;presentation&quot;] tr td { 
-        display: block !important; 
-        width: 100% !important; 
-        padding-right: 0 !important;
-        margin-bottom: 12px !important;
-      }
-      .mobile-cards-stack .mobile-card { 
-        width: 100% !important; 
-        margin-bottom: 12px !important; 
-      }
-      
-      /* Cards responsive layout - force mobile stacking */
-      .cards-container { display: block !important; }
-      .cards-container table[role=&quot;presentation&quot;] { display: block !important; width: 100% !important; }
-      .cards-container table[role=&quot;presentation&quot;] tr { display: block !important; width: 100% !important; }
-      .cards-container table[role=&quot;presentation&quot;] tr td { 
-        display: block !important; 
-        width: 100% !important; 
-        max-width: 100% !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-        margin-bottom: 12px !important;
-        float: none !important;
-      }
-      .cards-container .card-cell { 
-        width: 100% !important; 
-        max-width: 100% !important;
-        margin-bottom: 12px !important; 
-        display: block !important;
-        float: none !important;
-      }
-      .cards-container .card-cell table[role=&quot;presentation&quot;] { height: auto !important; }
-      .cards-container .card-cell table[role=&quot;presentation&quot;] tr td { 
-        height: auto !important; 
-        padding: 12px 16px !important; 
-      }
-    }
-    
-    @media only screen and (max-width: 480px) {
-      .mobile-text-large { font-size: 28px !important; }
-      .mobile-text-medium { font-size: 24px !important; }
-      .mobile-padding { padding: 12px !important; }
-      .mobile-hero { max-height: none !important; }
-      .mobile-content-image { max-height: 200px !important; }
-    }    /* Bottom Navigation */
-    .bottom-nav {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      z-index: 1000;
-      padding: 16px;
-    }    
-    .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
-    }    
-    .download-btn:hover {
-      background: #0b7a6b;
-    }
+  </style>
 
-    .download-btn .material-icons {
-      font-size: 18px;
-    }
-
-    /* Dark mode styles for bottom nav */    
-    
-    .force-dark .bottom-nav {
-      /* No background needed - container is invisible */
-    }    
-    .force-dark .download-btn {
-      background: #2dd4bf;
-      color: #0a1216;
-    }    
-    .force-dark .download-btn:hover {
-      background: #26c4b1;
-    }    
-    
-    @media (prefers-color-scheme: dark) {
-      .bottom-nav {
-        /* No background needed - container is invisible */
-      }    
-    .download-btn {
-      background: #0d9488;
-      color: #FFFFFF;
-      border: none;
-      border-radius: 8px;
-      padding: 12px 24px;
-      font-size: 14px;
-      font-weight: 500;
-      font-family: &#x27;Epilogue&#x27;, -apple-system, BlinkMacSystemFont, &#x27;Segoe UI&#x27;, Roboto, Arial, sans-serif;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      transition: background-color 0.2s ease;
-    }    
-    .download-btn:hover {
-      background: #0b7a6b;
-    }
-    }
-    
-/* Dark mode primary button text override */
-    .force-dark .btn-primary, .force-dark .btn-primary-dark {
-      color: #0a1216 !important;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      .btn-primary, .btn-primary-dark {
-        color: #0a1216 !important;
-      }    }
-    
-    /* Comprehensive Light Mode Theming */
-    .force-light .dm-hr { border-color: #e2e8f0 !important; }
-    .force-light .dm-placeholder { background: #f8fafc !important; }
-    .force-light .dm-hero-icon { background: #0d9488 !important; }
-    .force-light .dm-avatar-icon { color: #0d9488 !important; }
-    .force-light .dm-cta { background: #0d9488 !important; color: #FFFFFF !important; }
-    .force-light .btn-primary { background: #0d9488 !important; color: #FFFFFF !important; }
-    .force-light .btn-primary-dark { background: #0d9488 !important; color: #FFFFFF !important; }
-    .force-light .btn-link { color: #0d9488 !important; }
-    .force-light .btn-link-dark { color: #0d9488 !important; }
-    
-    /* Comprehensive Dark Mode Theming */
-    .force-dark .dm-hr { border-color: #1e293b !important; }
-    .force-dark .dm-placeholder { background: #1e293b !important; }
-    .force-dark .dm-hero-icon { background: #2dd4bf !important; }
-    .force-dark .dm-avatar-icon { color: #2dd4bf !important; }
-    .force-dark .dm-cta { background: #2dd4bf !important; color: #0a1216 !important; }
-    .force-dark .btn-primary { background: #2dd4bf !important; color: #0a1216 !important; }
-    .force-dark .btn-primary-dark { background: #2dd4bf !important; color: #0a1216 !important; }
-    .force-dark .btn-link { color: #2dd4bf !important; }
-    .force-dark .btn-link-dark { color: #2dd4bf !important; }
-    
-    /* Media Query Dark Mode Theming */
-    @media (prefers-color-scheme: dark) {
-      .dm-hr { border-color: #1e293b !important; }
-      .dm-placeholder { background: #1e293b !important; }
-      .dm-hero-icon { background: #2dd4bf !important; }
-      .dm-avatar-icon { color: #2dd4bf !important; }
-      .dm-cta { background: #2dd4bf !important; color: #0a1216 !important; }
-      .btn-primary { background: #2dd4bf !important; color: #0a1216 !important; }
-      .btn-primary-dark { background: #2dd4bf !important; color: #0a1216 !important; }
-      .btn-link { color: #2dd4bf !important; }
-      .btn-link-dark { color: #2dd4bf !important; }    }
-    
-    /* Icon Theming - Light Mode */
-    .force-light .material-icons { color: #0d9488 !important; }
-    .force-light .dm-icon { color: #0d9488 !important; }
-    .force-light .dm-icon-accent { color: #0d9488 !important; }
-    
-    /* Icon Theming - Dark Mode */
-    .force-dark .material-icons { color: #2dd4bf !important; }
-    .force-dark .dm-icon { color: #2dd4bf !important; }
-    .force-dark .dm-icon-accent { color: #2dd4bf !important; }
-    
-    /* Icon Theming - Media Query Dark Mode */
-    @media (prefers-color-scheme: dark) {
-      .material-icons { color: #2dd4bf !important; }
-      .dm-icon { color: #2dd4bf !important; }
-      .dm-icon-accent { color: #2dd4bf !important; }    }
-    
-    /* Special theming for icons in colored backgrounds */
-    .force-light .dm-hero .material-icons { color: #FFFFFF !important; }
-    .force-dark .dm-hero .material-icons { color: #FFFFFF !important; }
-    @media (prefers-color-scheme: dark) {
-      .dm-hero .material-icons { color: #FFFFFF !important; }
-    }
-    
-    /* Special theming for icons in any colored background */
-    .force-light div[style*=&quot;background:#0d9488&quot;] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*=&quot;background:#0d9488&quot;] .material-icons { color: #FFFFFF !important; }
-    .force-light div[style*=&quot;background:#2dd4bf&quot;] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*=&quot;background:#2dd4bf&quot;] .material-icons { color: #FFFFFF !important; }
-    @media (prefers-color-scheme: dark) {
-      div[style*=&quot;background:#0d9488&quot;] .material-icons { color: #FFFFFF !important; }
-      div[style*=&quot;background:#2dd4bf&quot;] .material-icons { color: #FFFFFF !important; }
-    }
-    
-    /* Special theming for button icons */
-    .force-light .btn-primary .material-icons { color: #FFFFFF !important; }
-    .force-dark .btn-primary .material-icons { color: #0a1216 !important; }
-    .force-light .btn-primary-dark .material-icons { color: #FFFFFF !important; }
-    .force-dark .btn-primary-dark .material-icons { color: #0a1216 !important; }
-    @media (prefers-color-scheme: dark) {
-      .btn-primary .material-icons { color: #0a1216 !important; }
-      .btn-primary-dark .material-icons { color: #0a1216 !important; }
-    }
-
-    /* Special theming for icons in any colored background */
-    .force-light div[style*=&quot;background:#0d9488&quot;],
-    .force-light div[style*=&quot;background: #0d9488&quot;],
-    .force-light div[style*=&quot;background-color:#0d9488&quot;],
-    .force-light div[style*=&quot;background-color: #0d9488&quot;] { }
-    .force-light div[style*=&quot;background:#0d9488&quot;] .material-icons,
-    .force-light div[style*=&quot;background: #0d9488&quot;] .material-icons,
-    .force-light div[style*=&quot;background-color:#0d9488&quot;] .material-icons,
-    .force-light div[style*=&quot;background-color: #0d9488&quot;] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*=&quot;background:#0d9488&quot;] .material-icons,
-    .force-dark div[style*=&quot;background: #0d9488&quot;] .material-icons,
-    .force-dark div[style*=&quot;background-color:#0d9488&quot;] .material-icons,
-    .force-dark div[style*=&quot;background-color: #0d9488&quot;] .material-icons { color: #FFFFFF !important; }
-
-    .force-light div[style*=&quot;background:#2dd4bf&quot;],
-    .force-light div[style*=&quot;background: #2dd4bf&quot;],
-    .force-light div[style*=&quot;background-color:#2dd4bf&quot;],
-    .force-light div[style*=&quot;background-color: #2dd4bf&quot;] { }
-    .force-light div[style*=&quot;background:#2dd4bf&quot;] .material-icons,
-    .force-light div[style*=&quot;background: #2dd4bf&quot;] .material-icons,
-    .force-light div[style*=&quot;background-color:#2dd4bf&quot;] .material-icons,
-    .force-light div[style*=&quot;background-color: #2dd4bf&quot;] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*=&quot;background:#2dd4bf&quot;] .material-icons,
-    .force-dark div[style*=&quot;background: #2dd4bf&quot;] .material-icons,
-    .force-dark div[style*=&quot;background-color:#2dd4bf&quot;] .material-icons,
-    .force-dark div[style*=&quot;background-color: #2dd4bf&quot;] .material-icons { color: #FFFFFF !important; }
-
-    @media (prefers-color-scheme: dark) {
-      div[style*=&quot;background:#0d9488&quot;] .material-icons,
-      div[style*=&quot;background: #0d9488&quot;] .material-icons,
-      div[style*=&quot;background-color:#0d9488&quot;] .material-icons,
-      div[style*=&quot;background-color: #0d9488&quot;] .material-icons,
-      div[style*=&quot;background:#2dd4bf&quot;] .material-icons,
-      div[style*=&quot;background: #2dd4bf&quot;] .material-icons,
-      div[style*=&quot;background-color:#2dd4bf&quot;] .material-icons,
-      div[style*=&quot;background-color: #2dd4bf&quot;] .material-icons { color: #FFFFFF !important; }
-    }
-    
-    /* CRITICAL: Override general material-icons rule for colored backgrounds - must come after all other rules */
-    div[style*=&quot;background:#0d9488&quot;] .material-icons,
-    div[style*=&quot;background: #0d9488&quot;] .material-icons,
-    div[style*=&quot;background-color:#0d9488&quot;] .material-icons,
-    div[style*=&quot;background-color: #0d9488&quot;] .material-icons { color: #FFFFFF !important; }
-    div[style*=&quot;background:#2dd4bf&quot;] .material-icons,
-    div[style*=&quot;background: #2dd4bf&quot;] .material-icons,
-    div[style*=&quot;background-color:#2dd4bf&quot;] .material-icons,
-    div[style*=&quot;background-color: #2dd4bf&quot;] .material-icons { color: #FFFFFF !important; }
-  &lt;/style&gt;
-
-  &lt;!--[if mso]&gt;
-  &lt;style type=&quot;text/css&quot;&gt; body, table, td, a { font-family: &#x27;Epilogue&#x27;, Arial, sans-serif !important;    }
-    
-    /* Comprehensive Light Mode Theming */
-    .force-light .dm-hr { border-color: #e2e8f0 !important; }
-    .force-light .dm-placeholder { background: #f8fafc !important; }
-    .force-light .dm-hero-icon { background: #0d9488 !important; }
-    .force-light .dm-avatar-icon { color: #0d9488 !important; }
-    .force-light .dm-cta { background: #0d9488 !important; color: #FFFFFF !important; }
-    .force-light .btn-primary { background: #0d9488 !important; color: #FFFFFF !important; }
-    .force-light .btn-primary-dark { background: #0d9488 !important; color: #FFFFFF !important; }
-    .force-light .btn-link { color: #0d9488 !important; }
-    .force-light .btn-link-dark { color: #0d9488 !important; }
-    
-    /* Comprehensive Dark Mode Theming */
-    .force-dark .dm-hr { border-color: #1e293b !important; }
-    .force-dark .dm-placeholder { background: #1e293b !important; }
-    .force-dark .dm-hero-icon { background: #2dd4bf !important; }
-    .force-dark .dm-avatar-icon { color: #2dd4bf !important; }
-    .force-dark .dm-cta { background: #2dd4bf !important; color: #0a1216 !important; }
-    .force-dark .btn-primary { background: #2dd4bf !important; color: #0a1216 !important; }
-    .force-dark .btn-primary-dark { background: #2dd4bf !important; color: #0a1216 !important; }
-    .force-dark .btn-link { color: #2dd4bf !important; }
-    .force-dark .btn-link-dark { color: #2dd4bf !important; }
-    
-    /* Media Query Dark Mode Theming */
-    @media (prefers-color-scheme: dark) {
-      .dm-hr { border-color: #1e293b !important; }
-      .dm-placeholder { background: #1e293b !important; }
-      .dm-hero-icon { background: #2dd4bf !important; }
-      .dm-avatar-icon { color: #2dd4bf !important; }
-      .dm-cta { background: #2dd4bf !important; color: #0a1216 !important; }
-      .btn-primary { background: #2dd4bf !important; color: #0a1216 !important; }
-      .btn-primary-dark { background: #2dd4bf !important; color: #0a1216 !important; }
-      .btn-link { color: #2dd4bf !important; }
-      .btn-link-dark { color: #2dd4bf !important; }    }
-    
-    /* Icon Theming - Light Mode */
-    .force-light .material-icons { color: #0d9488 !important; }
-    .force-light .dm-icon { color: #0d9488 !important; }
-    .force-light .dm-icon-accent { color: #0d9488 !important; }
-    
-    /* Icon Theming - Dark Mode */
-    .force-dark .material-icons { color: #2dd4bf !important; }
-    .force-dark .dm-icon { color: #2dd4bf !important; }
-    .force-dark .dm-icon-accent { color: #2dd4bf !important; }
-    
-    /* Icon Theming - Media Query Dark Mode */
-    @media (prefers-color-scheme: dark) {
-      .material-icons { color: #2dd4bf !important; }
-      .dm-icon { color: #2dd4bf !important; }
-      .dm-icon-accent { color: #2dd4bf !important; }    }
-    
-    /* Special theming for icons in colored backgrounds */
-    .force-light .dm-hero .material-icons { color: #FFFFFF !important; }
-    .force-dark .dm-hero .material-icons { color: #FFFFFF !important; }
-    @media (prefers-color-scheme: dark) {
-      .dm-hero .material-icons { color: #FFFFFF !important; }
-    }
-  &lt;/style&gt;
-  &lt;![endif]--&gt;
-&lt;/head&gt;
-&lt;body id=&quot;body&quot; style=&quot;margin:0; padding:0; background:#FFFFFF;&quot; class=&quot;dm-bg&quot;&gt;
-  &lt;!-- View Switcher Toolbar --&gt;
-  &lt;div class=&quot;view-switcher&quot;&gt;
-    &lt;h3&gt;
-      &lt;a href=&quot;../../index.html&quot; class=&quot;back-link&quot;&gt;
-        &lt;span class=&quot;material-icons back-arrow&quot;&gt;arrow_back&lt;/span&gt;
-        Email Preview
-      &lt;/a&gt;
-    &lt;/h3&gt;
-    &lt;div class=&quot;view-buttons&quot;&gt;
-      &lt;button class=&quot;view-btn active&quot; onclick=&quot;switchView(&#x27;desktop&#x27;)&quot;&gt;Desktop&lt;/button&gt;
-      &lt;button class=&quot;view-btn&quot; onclick=&quot;switchView(&#x27;mobile&#x27;)&quot;&gt;Mobile&lt;/button&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;theme-switcher&quot;&gt;
-      &lt;button class=&quot;theme-toggle-btn&quot; onclick=&quot;toggleThemeDropdown()&quot;&gt;
-        &lt;span class=&quot;material-icons&quot; id=&quot;theme-icon&quot;&gt;monitor&lt;/span&gt;
-        &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 12px;&quot;&gt;keyboard_arrow_down&lt;/span&gt;
-      &lt;/button&gt;
-      &lt;div class=&quot;theme-dropdown&quot; id=&quot;theme-dropdown&quot;&gt;
-        &lt;div class=&quot;theme-option&quot; onclick=&quot;switchTheme(&#x27;light&#x27;)&quot;&gt;
-          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;light_mode&lt;/span&gt;
-          Light
-        &lt;/div&gt;
-        &lt;div class=&quot;theme-option&quot; onclick=&quot;switchTheme(&#x27;dark&#x27;)&quot;&gt;
-          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;dark_mode&lt;/span&gt;
-          Dark
-        &lt;/div&gt;
-        &lt;div class=&quot;theme-option active&quot; onclick=&quot;switchTheme(&#x27;system&#x27;)&quot;&gt;
-          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;monitor&lt;/span&gt;
-          System
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;!-- Email Container --&gt;
-  &lt;div id=&quot;email-container&quot; class=&quot;email-container desktop-preview&quot;&gt;
-  &lt;!-- Hidden Preheader (edit per send) --&gt;
-  &lt;div style=&quot;display:none; max-height:0; overflow:hidden; mso-hide:all; opacity:0; color:transparent; height:0;&quot;&gt;
+  <!--[if mso]>
+  <style type="text/css"> body, table, td, a { font-family: 'Epilogue', Arial, sans-serif !important; }
+  </style>
+  <![endif]-->
+</head>
+<body id="body" style="margin:0; padding:0; background:#FFFFFF;" class="dm-bg">
+  <!-- Hidden Preheader (edit per send) -->
+  <div style="display:none; max-height:0; overflow:hidden; mso-hide:all; opacity:0; color:transparent; height:0;">
     Your September partner update from ZOMO Health—news, wins, and resources inside.
-  &lt;/div&gt;
+  </div>
   
 
-  &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF;&quot; class=&quot;dm-bg&quot;&gt;
-    &lt;tr&gt;
-      &lt;td align=&quot;center&quot;&gt;
-        &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;600&quot; style=&quot;width:600px; max-width:100%;&quot; class=&quot;mobile-container&quot;&gt;
-          &lt;!-- Header --&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:24px 20px 8px; background:#FFFFFF;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td align=&quot;left&quot; style=&quot;vertical-align:middle;&quot;&gt;
-                    &lt;img src=&quot;https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg&quot; width=&quot;165&quot; alt=&quot;ZOMO Health&quot; style=&quot;display:block; border:0;&quot; class=&quot;logo-filter mobile-logo&quot;&gt;
-                  &lt;/td&gt;
-                  &lt;td align=&quot;right&quot; style=&quot;vertical-align:middle;&quot;&gt;
-                    &lt;p style=&quot;margin:0; font-size:14px; font-weight:500; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;September, 2025&lt;/p&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF;" class="dm-bg">
+    <tr>
+      <td align="center">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" style="width:600px; max-width:100%;" class="mobile-container">
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px 20px 8px; background:#FFFFFF;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td align="left" style="vertical-align:middle;">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
+                  </td>
+                  <td align="right" style="vertical-align:middle;">
+                    <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">September, 2025</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
           
-          &lt;!-- Headline --&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:40px 20px 16px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;h1 style=&quot;margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; ;&quot; class=&quot;dm-text mobile-text-large&quot;&gt;
-                &lt;span class=&quot;btn-link btn-link-dark dm-headline-accent&quot;&gt;Your September Partner Update:&lt;/span&gt; New Zomo Tools &amp;amp; Data-Driven Employee Experience
-              &lt;/h1&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+          <!-- Headline -->
+          <tr>
+            <td style="padding:40px 20px 16px;" class="dm-bg mobile-padding">
+              <h1 style="margin:0; font-size:30px; font-weight:700; line-height:1.4; letter-spacing:-0.025em; ;" class="dm-text mobile-text-large">
+                <span class="btn-link btn-link-dark dm-headline-accent">Your September Partner Update:</span> New Zomo Tools &amp; Data-Driven Employee Experience
+              </h1>
+            </td>
+          </tr>
           
-          &lt;!-- Hero Image --&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px 24px;&quot;&gt;
-              &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/Header.png&quot; alt=&quot;ZOMO Health Newsletter Header&quot; style=&quot;width:560px; max-width:100%; height:auto; border-radius:8px; margin:0 auto; display:block;&quot; class=&quot;mobile-hero&quot;&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+          <!-- Hero Image -->
+          <tr>
+            <td style="padding:0 20px 24px;">
+              <img src="https://zomo-emails.vercel.app/assets/images/Header.png" alt="ZOMO Health Newsletter Header" style="width:560px; max-width:100%; height:auto; border-radius:8px; margin:0 auto; display:block;" class="mobile-hero">
+            </td>
+          </tr>
 
-          &lt;!-- Greeting &amp; Intro --&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-                          &lt;p style=&quot;margin:0; font-size:18px; font-weight:400; line-height:1.7; ;&quot; class=&quot;dm-text mobile-text-medium&quot;&gt;
+          <!-- Greeting & Intro -->
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+                          <p style="margin:0; font-size:18px; font-weight:400; line-height:1.7; ;" class="dm-text mobile-text-medium">
                 Dear Valued Partner,
-              &lt;/p&gt;
-                          &lt;p style=&quot;margin:12px 0 0; font-size:18px; font-weight:400; line-height:1.7; color:#64748b;&quot; class=&quot;dm-muted mobile-text-small&quot;&gt;
-                As the leaves change and we prepare for the final quarter, we want to thank you for your continued partnership. This is the first edition of our new periodic newsletter, designed to keep you &lt;strong&gt;updated and informed&lt;/strong&gt; on everything happening at Zomo Health. We are committed to your success and are excited to share key updates that will help you bring even more value to your clients.
-              &lt;/p&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+              </p>
+                          <p style="margin:12px 0 0; font-size:18px; font-weight:400; line-height:1.7; color:#64748b;" class="dm-muted mobile-text-small">
+                As the leaves change and we prepare for the final quarter, we want to thank you for your continued partnership. This is the first edition of our new periodic newsletter, designed to keep you <strong>updated and informed</strong> on everything happening at Zomo Health. We are committed to your success and are excited to share key updates that will help you bring even more value to your clients.
+              </p>
+            </td>
+          </tr>
 
-          &lt;tr&gt;&lt;td style=&quot;line-height:24px;height:24px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
+          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
 
-          &lt;!-- In This Issue --&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:20px;&quot;&gt;
-                    &lt;h3 style=&quot;margin:0 0 12px; font-size:18px; font-weight:600; ;&quot; class=&quot;dm-text&quot;&gt;In This Issue&lt;/h3&gt;
-                    &lt;ul style=&quot;margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.6;&quot; class=&quot;dm-muted&quot;&gt;
-                      &lt;li style=&quot;margin:4px 0;&quot;&gt;&lt;span class=&quot;material-icons&quot; style=&quot;font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;&quot;&gt;handshake&lt;/span&gt;Partnership with CBIZ&lt;/li&gt;
-                      &lt;li style=&quot;margin:4px 0;&quot;&gt;&lt;span class=&quot;material-icons&quot; style=&quot;font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;&quot;&gt;business&lt;/span&gt;IEEE long-term success story&lt;/li&gt;
-                      &lt;li style=&quot;margin:4px 0;&quot;&gt;&lt;span class=&quot;material-icons&quot; style=&quot;font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;&quot;&gt;new_releases&lt;/span&gt;What&#x27;s new at Zomo&lt;/li&gt;
-                      &lt;li style=&quot;margin:4px 0;&quot;&gt;&lt;span class=&quot;material-icons&quot; style=&quot;font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;&quot;&gt;person&lt;/span&gt;Meet our team: Nikki Herndon&lt;/li&gt;
-                      &lt;li style=&quot;margin:4px 0;&quot;&gt;&lt;span class=&quot;material-icons&quot; style=&quot;font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;&quot;&gt;emoji_events&lt;/span&gt;Client success story: 78% engagement&lt;/li&gt;
-                      &lt;li style=&quot;margin:4px 0;&quot;&gt;&lt;span class=&quot;material-icons&quot; style=&quot;font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;&quot;&gt;health_and_safety&lt;/span&gt;Health news &amp; resources&lt;/li&gt;
-                    &lt;/ul&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+          <!-- In This Issue -->
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:20px;">
+                    <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; ;" class="dm-text">In This Issue</h3>
+                    <ul style="margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.6;" class="dm-muted">
+                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">handshake</span>Partnership with CBIZ</li>
+                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">business</span>IEEE long-term success story</li>
+                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">new_releases</span>What's new at Zomo</li>
+                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">person</span>Meet our team: Nikki Herndon</li>
+                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">emoji_events</span>Client success story: 78% engagement</li>
+                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">health_and_safety</span>Health news & resources</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Section: Partnership --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:24px;&quot; class=&quot;mobile-padding-small&quot;&gt;
-                    &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;&quot; class=&quot;dm-accent-bar&quot;&gt;
-                          &lt;h2 style=&quot;margin:0; font-size:24px; font-weight:400; line-height:1.35; ;&quot; class=&quot;dm-text mobile-text-medium&quot;&gt;
-                            Zomo Health &amp;amp; CBIZ: Powering Your Client-Centric Strategy
-                          &lt;/h2&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;padding-top:12px;&quot;&gt;
-                          &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/Images-Template-Main.png&quot; alt=&quot;ZOMO Health and CBIZ Partnership&quot; style=&quot;width:100%; height:200px; border-radius:8px; margin-bottom:16px; object-fit:cover;&quot; class=&quot;dm-bg mobile-content-image&quot;&gt;
-                          &lt;p style=&quot;margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                            Our partnership is founded on the shared commitment to client success and the belief that &lt;strong&gt;Wellbeing Solutions&lt;/strong&gt; must be &lt;strong&gt;consultative and data-driven&lt;/strong&gt;. Zomo Health&#x27;s &lt;strong&gt;physician-integrated platform&lt;/strong&gt; is engineered to support CBIZ&#x27;s comprehensive approach, which addresses the &lt;strong&gt;five core components of wellbeing&lt;/strong&gt; (social, physical, financial, community, and purpose). We leverage robust analytics and behavioral economics insights to drive the development of your clients&#x27; multi-year wellbeing strategies. Our track record of enterprise support is strong, &lt;strong&gt;including servicing clients like IEEE for over a decade&lt;/strong&gt; and securing renewal three times with one of the largest counties in California, proving our sustained ability to drive measurable outcomes.
-                          &lt;/p&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+          <!-- Section: Partnership -->
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:24px;" class="mobile-padding-small">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
+                          <h2 style="margin:0; font-size:24px; font-weight:400; line-height:1.35; ;" class="dm-text mobile-text-medium">
+                            Zomo Health &amp; CBIZ: Powering Your Client-Centric Strategy
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <img src="https://zomo-emails.vercel.app/assets/images/Logo-cBiz.png" alt="ZOMO Health and CBIZ Partnership" style="width:100%; height:200px; border-radius:8px; margin-bottom:16px; object-fit:cover;" class="dm-bg mobile-content-image">
+                          <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                            Our partnership is founded on the shared commitment to client success and the belief that <strong>Wellbeing Solutions</strong> must be <strong>consultative and data-driven</strong>. Zomo Health's <strong>physician-integrated platform</strong> is engineered to support CBIZ's comprehensive approach, which addresses the <strong>five core components of wellbeing</strong> (social, physical, financial, community, and purpose). We leverage robust analytics and behavioral economics insights to drive the development of your clients' multi-year wellbeing strategies. Our track record of enterprise support is strong, <strong>including servicing clients like IEEE for over a decade</strong> and securing renewal three times with one of the largest counties in California, proving our sustained ability to drive measurable outcomes.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Long-Term Enterprise Success: IEEE --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:24px;&quot; class=&quot;mobile-padding-small&quot;&gt;
-                    &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;&quot; class=&quot;dm-accent-bar&quot;&gt;
-                          &lt;h2 style=&quot;margin:0; font-size:24px; font-weight:400; line-height:1.35; ;&quot; class=&quot;dm-text mobile-text-medium&quot;&gt;
+          <!-- Long-Term Enterprise Success: IEEE -->
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:24px;" class="mobile-padding-small">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
+                          <h2 style="margin:0; font-size:24px; font-weight:400; line-height:1.35; ;" class="dm-text mobile-text-medium">
                             Long-Term Enterprise Success: IEEE
-                          &lt;/h2&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;padding-top:12px;&quot;&gt;
-                          &lt;p style=&quot;margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                            As a testament to our long-term partnership capabilities, Zomo Health has successfully supported IEEE for &lt;strong&gt;over a decade&lt;/strong&gt;. We provide a comprehensive, multi-faceted program that engages their diverse, &lt;strong&gt;global population&lt;/strong&gt;:
-                          &lt;/p&gt;
-                          &lt;ul style=&quot;margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.7;&quot; class=&quot;dm-muted&quot;&gt;
-                            &lt;li style=&quot;margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;&quot; class=&quot;dm-hr&quot;&gt;&lt;strong&gt;Custom Program Components:&lt;/strong&gt; The IEEE program includes robust elements such as Physician Forms, Health Risk Assessments (HRA), Tobacco Affidavits, five distinct challenges per year, monthly webinars, fitness activities, and on-site health coaching.&lt;/li&gt;
-                            &lt;li style=&quot;margin:8px 0;&quot;&gt;&lt;strong&gt;Engagement Strategy:&lt;/strong&gt; This approach provides continuous support and education, driving high engagement across a global workforce with varying cultural and clinical needs.&lt;/li&gt;
-                          &lt;/ul&gt;
-                          &lt;div style=&quot;margin-top:16px;&quot;&gt;
-                            &lt;!--[if mso]&gt;
-                            &lt;v:roundrect xmlns:v=&quot;urn:schemas-microsoft-com:vml&quot; href=&quot;https://example.com/demo&quot; style=&quot;height:44px;v-text-anchor:middle;width:260px;&quot; arcsize=&quot;12%&quot; fillcolor=&quot;#0d9488&quot; stroke=&quot;f&quot;&gt;
-                              &lt;w:anchorlock/&gt;&lt;center style=&quot;color:#FFFFFF;font-family:Arial,sans-serif;font-size:16px;&quot;&gt;Schedule a Zomo Demo&lt;/center&gt;
-                            &lt;/v:roundrect&gt;
-                            &lt;![endif]--&gt;
-                            &lt;!--[if !mso]&gt;&lt;!-- --&gt;
-                            &lt;a href=&quot;https://example.com/demo&quot; target=&quot;_blank&quot; style=&quot;background:#0d9488;color:#FFFFFF;display:block;padding:12px 20px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;text-align:center;&quot; class=&quot;dm-cta btn-primary btn-primary-dark&quot;&gt;
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <p style="margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                            As a testament to our long-term partnership capabilities, Zomo Health has successfully supported IEEE for <strong>over a decade</strong>. We provide a comprehensive, multi-faceted program that engages their diverse, <strong>global population</strong>:
+                          </p>
+                          <ul style="margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.7;" class="dm-muted">
+                            <li style="margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;" class="dm-hr"><strong>Custom Program Components:</strong> The IEEE program includes robust elements such as Physician Forms, Health Risk Assessments (HRA), Tobacco Affidavits, five distinct challenges per year, monthly webinars, fitness activities, and on-site health coaching.</li>
+                            <li style="margin:8px 0;"><strong>Engagement Strategy:</strong> This approach provides continuous support and education, driving high engagement across a global workforce with varying cultural and clinical needs.</li>
+                          </ul>
+                          <div style="margin-top:16px;">
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://calendly.com/nimazomohealth/60min?month=2025-10" style="height:44px;v-text-anchor:middle;width:260px;" arcsize="12%" fillcolor="#0d9488" stroke="f">
+                              <w:anchorlock/><center style="color:#FFFFFF;font-family:Arial,sans-serif;font-size:16px;">Schedule a Zomo Demo</center>
+                            </v:roundrect>
+                            <![endif]-->
+                            <!--[if !mso]><!-- -->
+                            <a href="https://calendly.com/nimazomohealth/60min?month=2025-10" target="_blank" style="background:#0d9488;color:#FFFFFF;display:block;padding:12px 20px;border-radius:6px;text-decoration:none;font-size:16px;font-weight:500;text-align:center;" class="dm-cta btn-primary btn-primary-dark">
                               Schedule a Zomo Demo
-                            &lt;/a&gt;
-                            &lt;!--&lt;![endif]--&gt;
-                          &lt;/div&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+                            </a>
+                            <!--<![endif]-->
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- What&#x27;s New --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:24px;&quot; class=&quot;mobile-padding-small&quot;&gt;
-                    &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;&quot; class=&quot;dm-accent-bar&quot;&gt;
-                          &lt;h2 style=&quot;margin:0; font-size:20px; font-weight:700; line-height:1.35; ;&quot; class=&quot;dm-text&quot;&gt;What&#x27;s New at Zomo&lt;/h2&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;padding-top:16px;&quot;&gt;
-                          &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; class=&quot;cards-container&quot;&gt;
-                            &lt;tr&gt;
-                              &lt;!-- Card 1: SOC 2 --&gt;
-                              &lt;td style=&quot;width:180px; vertical-align:top; padding-right:12px;&quot; class=&quot;card-cell&quot;&gt;
-                                &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; height=&quot;180&quot; style=&quot;background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                                  &lt;tr&gt;
-                                    &lt;td style=&quot;padding:16px; vertical-align:middle; height:180px;&quot;&gt;
-                                      &lt;div style=&quot;text-align:center; margin-bottom:12px;&quot;&gt;
-                                        &lt;span class=&quot;material-icons&quot; style=&quot;font-size:32px; color:#0d9488;&quot;&gt;security&lt;/span&gt;
-                                      &lt;/div&gt;
-                                      &lt;h3 style=&quot;margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;&quot; class=&quot;dm-text&quot;&gt;SOC 2 Certified&lt;/h3&gt;
-                                      &lt;p style=&quot;margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;&quot; class=&quot;dm-muted&quot;&gt;Unwavering commitment to data security and compliance.&lt;/p&gt;
-                                    &lt;/td&gt;
-                                  &lt;/tr&gt;
-                                &lt;/table&gt;
-                              &lt;/td&gt;
-                              &lt;!-- Card 2: Faster Implementation --&gt;
-                              &lt;td style=&quot;width:180px; vertical-align:top; padding-right:12px;&quot; class=&quot;card-cell&quot;&gt;
-                                &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; height=&quot;180&quot; style=&quot;background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                                  &lt;tr&gt;
-                                    &lt;td style=&quot;padding:16px; vertical-align:middle; height:180px;&quot;&gt;
-                                      &lt;div style=&quot;text-align:center; margin-bottom:12px;&quot;&gt;
-                                        &lt;span class=&quot;material-icons&quot; style=&quot;font-size:32px; color:#0d9488;&quot;&gt;speed&lt;/span&gt;
-                                      &lt;/div&gt;
-                                      &lt;h3 style=&quot;margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;&quot; class=&quot;dm-text&quot;&gt;Faster Implementation&lt;/h3&gt;
-                                      &lt;p style=&quot;margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;&quot; class=&quot;dm-muted&quot;&gt;3–6 week launches help clients see ROI sooner.&lt;/p&gt;
-                                    &lt;/td&gt;
-                                  &lt;/tr&gt;
-                                &lt;/table&gt;
-                              &lt;/td&gt;
-                              &lt;!-- Card 3: HRIS Integrations --&gt;
-                              &lt;td style=&quot;width:180px; vertical-align:top;&quot; class=&quot;card-cell&quot;&gt;
-                                &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; height=&quot;180&quot; style=&quot;background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                                  &lt;tr&gt;
-                                    &lt;td style=&quot;padding:16px; vertical-align:middle; height:180px;&quot;&gt;
-                                      &lt;div style=&quot;text-align:center; margin-bottom:12px;&quot;&gt;
-                                        &lt;span class=&quot;material-icons&quot; style=&quot;font-size:32px; color:#0d9488;&quot;&gt;integration_instructions&lt;/span&gt;
-                                      &lt;/div&gt;
-                                      &lt;h3 style=&quot;margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;&quot; class=&quot;dm-text&quot;&gt;HRIS Integrations&lt;/h3&gt;
-                                      &lt;p style=&quot;margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;&quot; class=&quot;dm-muted&quot;&gt;Expanding integrations to decrease HR workload.&lt;/p&gt;
-                                    &lt;/td&gt;
-                                  &lt;/tr&gt;
-                                &lt;/table&gt;
-                              &lt;/td&gt;
-                            &lt;/tr&gt;
-                          &lt;/table&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+          <!-- What's New -->
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:24px;" class="mobile-padding-small">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; ;" class="dm-text">What's New at Zomo</h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:16px;">
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="cards-container">
+                            <tr>
+                              <!-- Card 1: SOC 2 -->
+                              <td style="width:180px; vertical-align:top; padding-right:12px;" class="card-cell">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                                  <tr>
+                                    <td style="padding:16px; vertical-align:middle; height:180px;">
+                                      <div style="text-align:center; margin-bottom:12px;">
+                                        <span class="material-icons" style="font-size:32px; color:#0d9488;">security</span>
+                                      </div>
+                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;" class="dm-text">SOC 2 Certified</h3>
+                                      <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">Unwavering commitment to data security and compliance.</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <!-- Card 2: Faster Implementation -->
+                              <td style="width:180px; vertical-align:top; padding-right:12px;" class="card-cell">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                                  <tr>
+                                    <td style="padding:16px; vertical-align:middle; height:180px;">
+                                      <div style="text-align:center; margin-bottom:12px;">
+                                        <span class="material-icons" style="font-size:32px; color:#0d9488;">speed</span>
+                                      </div>
+                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;" class="dm-text">Faster Implementation</h3>
+                                      <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">3–6 week launches help clients see ROI sooner.</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                              <!-- Card 3: HRIS Integrations -->
+                              <td style="width:180px; vertical-align:top;" class="card-cell">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" height="180" style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                                  <tr>
+                                    <td style="padding:16px; vertical-align:middle; height:180px;">
+                                      <div style="text-align:center; margin-bottom:12px;">
+                                        <span class="material-icons" style="font-size:32px; color:#0d9488;">integration_instructions</span>
+                                      </div>
+                                      <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;" class="dm-text">HRIS Integrations</h3>
+                                      <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">Expanding integrations to decrease HR workload.</p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Meet Our Team --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:24px;&quot; class=&quot;mobile-padding-small&quot;&gt;
-                    &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;&quot; class=&quot;dm-accent-bar&quot;&gt;
-                          &lt;h2 style=&quot;margin:0; font-size:20px; font-weight:700; line-height:1.35; ;&quot; class=&quot;dm-text&quot;&gt;Meet Our Team&lt;/h2&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;padding-top:12px;&quot;&gt;
-                          &lt;p style=&quot;margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                            At Zomo Health, our success is built on a deep understanding of the brokerage world. Our team&#x27;s extensive experience working with firms across the country ensures we can anticipate your needs and provide the best support.
-                          &lt;/p&gt;
-                          &lt;!-- Avatar and text container --&gt;
-                          &lt;div style=&quot;display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px;&quot;&gt;
-                            &lt;!-- Avatar --&gt;
-                            &lt;div style=&quot;flex: 0 0 auto; text-align: center; min-width: 120px;&quot;&gt;
-                              &lt;div style=&quot;width: 120px; height: 120px; background: #FFFFFF; border: 2px solid #e2e8f0; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto;&quot; class=&quot;dm-bg dm-placeholder dm-avatar&quot;&gt;
-                                &lt;span class=&quot;material-icons dm-avatar-icon&quot; style=&quot;color: #0d9488; font-size: 48px;&quot;&gt;person&lt;/span&gt;
-                              &lt;/div&gt;
-                            &lt;/div&gt;
-                            &lt;!-- Text content --&gt;
-                            &lt;div style=&quot;flex: 1; min-width: 200px;&quot;&gt;
-                              &lt;p style=&quot;margin: 0; font-size: 16px; font-weight: 400; line-height: 1.6; color: #64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                                &lt;strong&gt;Nikki Herndon, Senior VP of Operations:&lt;/strong&gt; Nikki has been a cornerstone of our team since 2013. With a Master&#x27;s in Healthcare Administration and Management from Texas A&amp;amp;M, her expertise ensures smooth program implementation and operational excellence for our partners and their clients. Along with leading our national relationships with some of the largest brokerage firms in the United States, she leads a family including Rhett, 2 years old, Maggie, 5 years old, and her husband, Andrew.
-                              &lt;/p&gt;
-                            &lt;/div&gt;
-                          &lt;/div&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+          <!-- Meet Our Team -->
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:24px;" class="mobile-padding-small">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; ;" class="dm-text">Meet Our Team</h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                            At Zomo Health, our success is built on a deep understanding of the brokerage world. Our team's extensive experience working with firms across the country ensures we can anticipate your needs and provide the best support.
+                          </p>
+                          <!-- Avatar and text container -->
+                          <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px;">
+                            <!-- Avatar -->
+                            <div style="flex: 0 0 auto; text-align: center; min-width: 120px;">
+                              <img src="https://zomo-emails.vercel.app/assets/images/Nicki.png" alt="Nikki Herndon, Senior VP of Operations" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 2px solid #e2e8f0; margin: 0 auto; display: block;" class="dm-avatar">
+                            </div>
+                            <!-- Text content -->
+                            <div style="flex: 1; min-width: 200px;">
+                              <p style="margin: 0; font-size: 16px; font-weight: 400; line-height: 1.6; color: #64748b;" class="dm-muted">
+                                <strong>Nikki Herndon, Senior VP of Operations:</strong> Nikki has been a cornerstone of our team since 2013. With a Master's in Healthcare Administration and Management from Texas A&amp;M, her expertise ensures smooth program implementation and operational excellence for our partners and their clients. Along with leading our national relationships with some of the largest brokerage firms in the United States, she leads a family including Rhett, 2 years old, Maggie, 5 years old, and her husband, Andrew.
+                              </p>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Client Highlight --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:24px;&quot; class=&quot;mobile-padding-small&quot;&gt;
-                    &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;&quot; class=&quot;dm-accent-bar&quot;&gt;
-                          &lt;h2 style=&quot;margin:0; font-size:20px; font-weight:700; line-height:1.35; ;&quot; class=&quot;dm-text&quot;&gt;
+          <!-- Client Highlight -->
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:24px;" class="mobile-padding-small">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; ;" class="dm-text">
                             Client Highlight: How a Manufacturing Client Achieved 78% Engagement
-                          &lt;/h2&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;padding-top:12px;&quot;&gt;
-                          &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/Highlight.png&quot; alt=&quot;Manufacturing Client Success Story - 78% Engagement&quot; style=&quot;width:100%; height:200px; border-radius:8px; margin-bottom:16px; object-fit:cover;&quot; class=&quot;dm-bg mobile-content-image&quot;&gt;
-                          &lt;p style=&quot;margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                            Your clients want results. Here&#x27;s a recent success story that demonstrates how Zomo Health delivers &lt;strong&gt;measurable engagement and health improvements&lt;/strong&gt;:
-                          &lt;/p&gt;
-                          &lt;ul style=&quot;margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.7;&quot; class=&quot;dm-muted&quot;&gt;
-                            &lt;li style=&quot;margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;&quot; class=&quot;dm-hr&quot;&gt;&lt;strong&gt;The Client:&lt;/strong&gt; A regional industrial packaging manufacturer with nearly 2,000 employees.&lt;/li&gt;
-                            &lt;li style=&quot;margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;&quot; class=&quot;dm-hr&quot;&gt;&lt;strong&gt;Challenge:&lt;/strong&gt; High rates of hypertension, obesity, and stress, with low engagement in fragmented wellness resources.&lt;/li&gt;
-                            &lt;li style=&quot;margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;&quot; class=&quot;dm-hr&quot;&gt;&lt;strong&gt;Solution:&lt;/strong&gt; A three-year, data-driven program with premium incentives, on-site coaching, and tailored communications.&lt;/li&gt;
-                            &lt;li style=&quot;margin:8px 0;&quot;&gt;&lt;strong&gt;Results:&lt;/strong&gt; &lt;strong&gt;78% engagement&lt;/strong&gt; and a &lt;strong&gt;40% improvement in health scores&lt;/strong&gt;.&lt;/li&gt;
-                          &lt;/ul&gt;
-                          &lt;p style=&quot;margin:12px 0 0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                            👉 &lt;a href=&quot;https://example.com/case-study&quot; style=&quot;font-weight:500;&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;Read the full case study →&lt;/a&gt;
-                          &lt;/p&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+                          </h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <img src="https://zomo-emails.vercel.app/assets/images/Highlight.png" alt="Manufacturing Client Success Story - 78% Engagement" style="width:100%; height:200px; border-radius:8px; margin-bottom:16px; object-fit:cover;" class="dm-bg mobile-content-image">
+                          <p style="margin:0 0 12px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                            Your clients want results. Here's a recent success story that demonstrates how Zomo Health delivers <strong>measurable engagement and health improvements</strong>:
+                          </p>
+                          <ul style="margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.7;" class="dm-muted">
+                            <li style="margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;" class="dm-hr"><strong>The Client:</strong> A regional industrial packaging manufacturer with nearly 2,000 employees.</li>
+                            <li style="margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;" class="dm-hr"><strong>Challenge:</strong> High rates of hypertension, obesity, and stress, with low engagement in fragmented wellness resources.</li>
+                            <li style="margin:8px 0; padding-bottom:12px; border-bottom:1px solid #e2e8f0;" class="dm-hr"><strong>Solution:</strong> A three-year, data-driven program with premium incentives, on-site coaching, and tailored communications.</li>
+                            <li style="margin:8px 0;"><strong>Results:</strong> <strong>78% engagement</strong> and a <strong>40% improvement in health scores</strong>.</li>
+                          </ul>
+                          <p style="margin:12px 0 0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                            👉 <a href="https://www.zomohealth.com/case-studies/what-78-engagement-looks-like-at-a-mid-size-industrial-firm" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">Read the full case study →</a>
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Health News &amp; Resources --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:24px;&quot; class=&quot;mobile-padding-small&quot;&gt;
-                    &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;&quot; class=&quot;dm-accent-bar&quot;&gt;
-                          &lt;h2 style=&quot;margin:0; font-size:20px; font-weight:700; line-height:1.35; ;&quot; class=&quot;dm-text&quot;&gt;Health News &amp;amp; Resources for Your Clients&lt;/h2&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;padding-top:12px;&quot;&gt;
-                          &lt;p style=&quot;margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
+          <!-- Health News & Resources -->
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:24px;" class="mobile-padding-small">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; ;" class="dm-text">Health News &amp; Resources for Your Clients</h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <p style="margin:0 0 16px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                             Here are resources you can pass along this month:
-                          &lt;/p&gt;
-                          &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                            &lt;tr&gt;
-                              &lt;td style=&quot;padding:16px 0; border-bottom:1px solid #e2e8f0;&quot; class=&quot;dm-hr&quot;&gt;
-                                &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                  &lt;tr&gt;
-                                    &lt;td style=&quot;width:48px; vertical-align:top; padding-right:12px; text-align:center;&quot;&gt;
-                                      &lt;div style=&quot;width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;&quot;&gt;
-                                        &lt;span class=&quot;material-icons&quot; style=&quot;font-size:24px;&quot;&gt;favorite&lt;/span&gt;
-                                      &lt;/div&gt;
-                                    &lt;/td&gt;
-                                    &lt;td style=&quot;vertical-align:top;&quot;&gt;
-                                      &lt;p style=&quot;margin:0 0 8px; font-size:16px; font-weight:600; ;&quot; class=&quot;dm-text&quot;&gt;American Heart Association Study&lt;/p&gt;
-                                      &lt;p style=&quot;margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                                        Job strain and effort-reward imbalance linked to a &lt;strong&gt;97% increased risk for AFib&lt;/strong&gt; in office workers. Zomo Health addresses this with our &lt;strong&gt;Emotional Wellbeing Modules&lt;/strong&gt; and &lt;strong&gt;Stress Management Coaching Tracks&lt;/strong&gt;.
-                                      &lt;/p&gt;
-                                      &lt;p style=&quot;margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                                        👉 &lt;a href=&quot;https://www.heart.org/en/news/2024/08/14/job-stress-among-office-workers-linked-to-higher-risk-for-irregular-heart-rhythm&quot; style=&quot;font-weight:500;&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;Read the full AHA article →&lt;/a&gt;
-                                      &lt;/p&gt;
-                                    &lt;/td&gt;
-                                  &lt;/tr&gt;
-                                &lt;/table&gt;
-                              &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                              &lt;td style=&quot;padding:16px 0; border-bottom:1px solid #e2e8f0;&quot; class=&quot;dm-hr&quot;&gt;
-                                &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                  &lt;tr&gt;
-                                    &lt;td style=&quot;width:48px; vertical-align:top; padding-right:12px; text-align:center;&quot;&gt;
-                                      &lt;div style=&quot;width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;&quot;&gt;
-                                        &lt;span class=&quot;material-icons&quot; style=&quot;font-size:24px;&quot;&gt;trending_up&lt;/span&gt;
-                                      &lt;/div&gt;
-                                    &lt;/td&gt;
-                                    &lt;td style=&quot;vertical-align:top;&quot;&gt;
-                                      &lt;p style=&quot;margin:0 0 8px; font-size:16px; font-weight:600; ;&quot; class=&quot;dm-text&quot;&gt;SHRM 2025 Benefits Survey&lt;/p&gt;
-                                      &lt;p style=&quot;margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                                        Structured wellness programs down to 39% in 2025. Employers must &lt;strong&gt;redesign&lt;/strong&gt; offerings with a &lt;strong&gt;holistic lens&lt;/strong&gt;—integrating mental health and physical well-being. Zomo Health provides this comprehensive, digital-first solution.
-                                      &lt;/p&gt;
-                                      &lt;p style=&quot;margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                                        👉 &lt;a href=&quot;https://www.benefitnews.com/news/shrm-benefits-survey-reveals-key-shifts-in-employer-priorities&quot; style=&quot;font-weight:500;&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;Read the full SHRM Survey Insights →&lt;/a&gt;
-                                      &lt;/p&gt;
-                                    &lt;/td&gt;
-                                  &lt;/tr&gt;
-                                &lt;/table&gt;
-                              &lt;/td&gt;
-                            &lt;/tr&gt;
-                            &lt;tr&gt;
-                              &lt;td style=&quot;padding:16px 0;&quot;&gt;
-                                &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                                  &lt;tr&gt;
-                                    &lt;td style=&quot;width:48px; vertical-align:top; padding-right:12px; text-align:center;&quot;&gt;
-                                      &lt;div style=&quot;width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;&quot;&gt;
-                                        &lt;span class=&quot;material-icons&quot; style=&quot;font-size:24px;&quot;&gt;article&lt;/span&gt;
-                                      &lt;/div&gt;
-                                    &lt;/td&gt;
-                                    &lt;td style=&quot;vertical-align:top;&quot;&gt;
-                                      &lt;p style=&quot;margin:0 0 8px; font-size:16px; font-weight:600; ;&quot; class=&quot;dm-text&quot;&gt;Zomo Health Blog&lt;/p&gt;
-                                      &lt;p style=&quot;margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                                        &quot;Navigating New Trends: Digital Wellness Platforms and Their Impact on Insurance Broking&quot; explores the future of wellness and broking.
-                                      &lt;/p&gt;
-                                      &lt;p style=&quot;margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                                        👉 &lt;a href=&quot;https://example.com/blog/digital-wellness-and-broking&quot; style=&quot;font-weight:500;&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;Read the article →&lt;/a&gt;
-                                      &lt;/p&gt;
-                                    &lt;/td&gt;
-                                  &lt;/tr&gt;
-                                &lt;/table&gt;
-                              &lt;/td&gt;
-                            &lt;/tr&gt;
-                          &lt;/table&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+                          </p>
+                          <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="padding:16px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td style="width:48px; vertical-align:top; padding-right:12px; text-align:center;">
+                                      <div style="width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                                        <span class="material-icons" style="font-size:24px;">favorite</span>
+                                      </div>
+                                    </td>
+                                    <td style="vertical-align:top;">
+                                      <p style="margin:0 0 8px; font-size:16px; font-weight:600; ;" class="dm-text">American Heart Association Study</p>
+                                      <p style="margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                        Job strain and effort-reward imbalance linked to a <strong>97% increased risk for AFib</strong> in office workers. Zomo Health addresses this with our <strong>Emotional Wellbeing Modules</strong> and <strong>Stress Management Coaching Tracks</strong>.
+                                      </p>
+                                      <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                        👉 <a href="https://www.heart.org/en/news/2024/08/14/job-stress-among-office-workers-linked-to-higher-risk-for-irregular-heart-rhythm" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">Read the full AHA article →</a>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:16px 0; border-bottom:1px solid #e2e8f0;" class="dm-hr">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td style="width:48px; vertical-align:top; padding-right:12px; text-align:center;">
+                                      <div style="width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                                        <span class="material-icons" style="font-size:24px;">trending_up</span>
+                                      </div>
+                                    </td>
+                                    <td style="vertical-align:top;">
+                                      <p style="margin:0 0 8px; font-size:16px; font-weight:600; ;" class="dm-text">SHRM 2025 Benefits Survey</p>
+                                      <p style="margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                        Structured wellness programs down to 39% in 2025. Employers must <strong>redesign</strong> offerings with a <strong>holistic lens</strong>—integrating mental health and physical well-being. Zomo Health provides this comprehensive, digital-first solution.
+                                      </p>
+                                      <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                        👉 <a href="https://www.benefitnews.com/news/shrm-benefits-survey-reveals-key-shifts-in-employer-priorities" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">Read the full SHRM Survey Insights →</a>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding:16px 0;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td style="width:48px; vertical-align:top; padding-right:12px; text-align:center;">
+                                      <div style="width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;">
+                                        <span class="material-icons" style="font-size:24px;">article</span>
+                                      </div>
+                                    </td>
+                                    <td style="vertical-align:top;">
+                                      <p style="margin:0 0 8px; font-size:16px; font-weight:600; ;" class="dm-text">Zomo Health Blog</p>
+                                      <p style="margin:0 0 8px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                        "Navigating New Trends: Digital Wellness Platforms and Their Impact on Insurance Broking" explores the future of wellness and broking.
+                                      </p>
+                                      <p style="margin:0; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                                        👉 <a href="https://www.zomohealth.com/blogs" style="font-weight:500;" class="btn-link btn-link-dark btn-link btn-link-dark">Visit the Blog →</a>
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Contact --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:24px;&quot; class=&quot;mobile-padding-small&quot;&gt;
-                    &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;&quot; class=&quot;dm-accent-bar&quot;&gt;
-                          &lt;h2 style=&quot;margin:0; font-size:20px; font-weight:700; line-height:1.35; ;&quot; class=&quot;dm-text&quot;&gt;Your Zomo Health Contact&lt;/h2&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                      &lt;tr&gt;
-                        &lt;td style=&quot;padding-top:12px;&quot;&gt;
-                          &lt;p style=&quot;margin:0 0 8px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
+          <!-- Contact -->
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#FFFFFF; border:1px solid #e2e8f0; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:24px;" class="mobile-padding-small">
+                    <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="border-left:4px solid #0d9488; padding-left:12px; vertical-align:middle;" class="dm-accent-bar">
+                          <h2 style="margin:0; font-size:20px; font-weight:700; line-height:1.35; ;" class="dm-text">Your Zomo Health Contact</h2>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding-top:12px;">
+                          <p style="margin:0 0 8px; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                             For any questions, support, or to discuss a new client opportunity, please reach out to your dedicated representative:
-                          &lt;/p&gt;
-                          &lt;p style=&quot;margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                            [Name]&lt;br&gt;[Title]&lt;br&gt;[Email] | [Phone]
-                          &lt;/p&gt;
-                        &lt;/td&gt;
-                      &lt;/tr&gt;
-                    &lt;/table&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+                          </p>
+                          <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
+                            Nikki Herndon, MHA, VP of Operations<br><a href="mailto:nikki.h@zomohealth.com" style="color: #0d9488; text-decoration: none;" class="btn-link btn-link-dark">nikki.h@zomohealth.com</a><br>1-877-378-8880 x78
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Sign-off --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:24px;height:24px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;p style=&quot;margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
+          <!-- Sign-off -->
+          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <p style="margin:0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                 Sincerely,
-              &lt;/p&gt;
-              &lt;p style=&quot;margin:8px 0 0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
+              </p>
+              <p style="margin:8px 0 0; font-size:16px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                 The Zomo Health Partner Team
-              &lt;/p&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+              </p>
+            </td>
+          </tr>
 
-          &lt;!-- Social Bar --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:24px;height:24px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; style=&quot;background:#f8fafc; border-radius:8px;&quot; class=&quot;dm-box&quot;&gt;
-                &lt;tr&gt;
-                  &lt;td style=&quot;padding:20px; text-align:center;&quot;&gt;
-                    &lt;p style=&quot;margin:0 0 12px; font-size:16px; font-weight:600; ;&quot; class=&quot;dm-text&quot;&gt;Stay Connected&lt;/p&gt;
-                    &lt;p style=&quot;margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
+          <!-- Social Bar -->
+          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background:#f8fafc; border-radius:8px;" class="dm-box">
+                <tr>
+                  <td style="padding:20px; text-align:center;">
+                    <p style="margin:0 0 12px; font-size:16px; font-weight:600; ;" class="dm-text">Stay Connected</p>
+                    <p style="margin:0 0 16px; font-size:15px; font-weight:400; line-height:1.6; color:#64748b;" class="dm-muted">
                       Get the latest health news, product updates, and broker insights.
-                    &lt;/p&gt;
-                    &lt;a href=&quot;https://www.linkedin.com/company/zomo-health/&quot; target=&quot;_blank&quot; style=&quot;display:inline-block; padding:8px 16px; background:#0d9488; color:#FFFFFF; text-decoration:none; border-radius:6px; font-size:14px; font-weight:500;&quot; class=&quot;dm-cta btn-primary btn-primary-dark&quot;&gt;
-                      &lt;span class=&quot;material-icons&quot; style=&quot;font-size:16px; vertical-align:middle; margin-right:4px; color:#FFFFFF;&quot;&gt;linkedin&lt;/span&gt;Follow us on LinkedIn
-                    &lt;/a&gt;
-                  &lt;/td&gt;
-                &lt;/tr&gt;
-              &lt;/table&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+                    </p>
+                    <a href="https://www.linkedin.com/company/zomo-health/" target="_blank" style="display:inline-block; padding:8px 16px; background:#0d9488; color:#FFFFFF; text-decoration:none; border-radius:6px; font-size:14px; font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
+                      <span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:4px; color:#FFFFFF;">linkedin</span>Follow us on LinkedIn
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
 
-          &lt;!-- Footer --&gt;
-          &lt;tr&gt;&lt;td style=&quot;line-height:24px;height:24px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-          &lt;tr&gt;
-            &lt;td style=&quot;padding:0 20px;&quot; class=&quot;dm-bg mobile-padding&quot;&gt;
-              &lt;!-- Contact Information --&gt;
-              &lt;div style=&quot;margin:0 0 12px; padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;&quot; class=&quot;dm-box mobile-padding-small&quot;&gt;
-                &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot; class=&quot;footer-table&quot;&gt;
-                  &lt;tr&gt;
-                    &lt;td style=&quot;vertical-align:top; width:70%;&quot;&gt;
-                      &lt;div style=&quot;margin:0 0 8px; text-align:left;&quot;&gt;
-                  &lt;img src=&quot;https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg&quot; width=&quot;112&quot; alt=&quot;Zomo Health&quot; style=&quot;display:block; border:0;&quot; class=&quot;logo-filter&quot;&gt;
-                &lt;/div&gt;
-                &lt;p style=&quot;margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                  1980 Post Oak Blvd., Ste 100&lt;br&gt;
-                  Houston, TX 77056&lt;br&gt;
-                  &lt;a href=&quot;mailto:info@zomohealth.com&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;info@zomohealth.com&lt;/a&gt;&lt;br&gt;
-                  &lt;a href=&quot;tel:1-877-378-8880&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;1-877-378-8880&lt;/a&gt;
-                &lt;/p&gt;
-                    &lt;/td&gt;
-                    &lt;td style=&quot;vertical-align:middle; width:30%; text-align:right;&quot; class=&quot;footer-symbol&quot;&gt;
-                      &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/Symbol.svg&quot; width=&quot;80&quot; alt=&quot;Symbol&quot; style=&quot;display:block; border:0; margin-left:auto;&quot; class=&quot;symbol-filter&quot;&gt;
-                    &lt;/td&gt;
-                  &lt;/tr&gt;
-                &lt;/table&gt;
-              &lt;/div&gt;
+          <!-- Footer -->
+          <tr><td style="line-height:24px;height:24px;">&nbsp;</td></tr>
+          <tr>
+            <td style="padding:0 20px;" class="dm-bg mobile-padding">
+              <!-- Contact Information -->
+              <div style="margin:0 0 12px; padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;" class="dm-box mobile-padding-small">
+                <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="footer-table">
+                  <tr>
+                    <td style="vertical-align:top; width:70%;">
+                      <div style="margin:0 0 8px; text-align:left;">
+                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="112" alt="Zomo Health" style="display:block; border:0;" class="logo-filter">
+                </div>
+                <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
+                  1980 Post Oak Blvd., Ste 100<br>
+                  Houston, TX 77056<br>
+                  <a href="mailto:info@zomohealth.com" class="btn-link btn-link-dark btn-link btn-link-dark">info@zomohealth.com</a><br>
+                  <a href="tel:1-877-378-8880" class="btn-link btn-link-dark btn-link btn-link-dark">1-877-378-8880</a>
+                </p>
+                    </td>
+                    <td style="vertical-align:middle; width:30%; text-align:right;" class="footer-symbol">
+                      <img src="https://zomo-emails.vercel.app/assets/images/Symbol.svg" width="80" alt="Symbol" style="display:block; border:0; margin-left:auto;" class="symbol-filter">
+                    </td>
+                  </tr>
+                </table>
+              </div>
               
-              &lt;!-- Legal Compliance Text --&gt;
-              &lt;p style=&quot;margin:0 0 12px; font-size:12px; font-weight:400; line-height:1.5; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
+              <!-- Legal Compliance Text -->
+              <p style="margin:0 0 12px; font-size:12px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
                 You are receiving this email as a partner of ZOMO Health. If you no longer wish to receive updates, click unsubscribe.
-              &lt;/p&gt;
+              </p>
               
-              &lt;!-- Footer Links --&gt;
-              &lt;p style=&quot;margin:0 0 8px; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
-                © 2025 ZOMO Health • &lt;a href=&quot;https://example.com&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;Website&lt;/a&gt; • 
-                &lt;a href=&quot;*|UPDATE_PROFILE|*&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;Update Preferences&lt;/a&gt; • 
-                &lt;a href=&quot;*|UNSUB|*&quot; class=&quot;btn-link btn-link-dark btn-link btn-link-dark&quot;&gt;Unsubscribe&lt;/a&gt;
-              &lt;/p&gt;
-            &lt;/td&gt;
-          &lt;/tr&gt;
+              <!-- Footer Links -->
+              <p style="margin:0 0 8px; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
+                © 2025 ZOMO Health • <a href="https://www.zomohealth.com" class="btn-link btn-link-dark btn-link btn-link-dark">Website</a> • 
+                <a href="*|UPDATE_PROFILE|*" class="btn-link btn-link-dark btn-link btn-link-dark">Update Preferences</a> • 
+                <a href="*|UNSUB|*" class="btn-link btn-link-dark btn-link btn-link-dark">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
 
-          &lt;tr&gt;&lt;td style=&quot;line-height:32px;height:32px;&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;
-        &lt;/table&gt;
-      &lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/table&gt;
-  &lt;/div&gt; &lt;!-- End Email Container --&gt;
-
-  &lt;script&gt;
-    function switchView(view) {
-      const container = document.getElementById(&#x27;email-container&#x27;);
-      const buttons = document.querySelectorAll(&#x27;.view-btn&#x27;);
-      
-      // Remove active class from all buttons
-      buttons.forEach(btn =&gt; btn.classList.remove(&#x27;active&#x27;));
-      
-      // Add active class to clicked button
-      event.target.classList.add(&#x27;active&#x27;);
-      
-      // Switch container class
-      if (view === &#x27;mobile&#x27;) {
-        container.className = &#x27;email-container mobile-preview&#x27;;
-      } else {
-        container.className = &#x27;email-container desktop-preview&#x27;;
-      }
-    }
-    
-    function toggleThemeDropdown() {
-      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
-      dropdown.classList.toggle(&#x27;show&#x27;);
-    }
-    
-    function switchTheme(theme) {
-      const body = document.getElementById(&#x27;body&#x27;);
-      const options = document.querySelectorAll(&#x27;.theme-option&#x27;);
-      const themeIcon = document.getElementById(&#x27;theme-icon&#x27;);
-      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
-      
-      // Remove active class from all theme options
-      options.forEach(option =&gt; option.classList.remove(&#x27;active&#x27;));
-      
-      // Add active class to clicked option
-      event.target.classList.add(&#x27;active&#x27;);
-      
-      // Update theme icon
-      if (theme === &#x27;light&#x27;) {
-        themeIcon.textContent = &#x27;light_mode&#x27;;
-      } else if (theme === &#x27;dark&#x27;) {
-        themeIcon.textContent = &#x27;dark_mode&#x27;;
-      } else {
-        themeIcon.textContent = &#x27;monitor&#x27;;
-      }
-      
-      // Apply theme
-      if (theme === &#x27;light&#x27;) {
-        body.style.colorScheme = &#x27;light&#x27;;
-        body.style.setProperty(&#x27;--prefers-color-scheme&#x27;, &#x27;light&#x27;);
-        // Force light mode by overriding media query
-        body.classList.add(&#x27;force-light&#x27;);
-        body.classList.remove(&#x27;force-dark&#x27;);
-      } else if (theme === &#x27;dark&#x27;) {
-        body.style.colorScheme = &#x27;dark&#x27;;
-        body.style.setProperty(&#x27;--prefers-color-scheme&#x27;, &#x27;dark&#x27;);
-        // Force dark mode by overriding media query
-        body.classList.add(&#x27;force-dark&#x27;);
-        body.classList.remove(&#x27;force-light&#x27;);
-      } else {
-        // System theme - remove forced classes and let CSS media query handle it
-        body.classList.remove(&#x27;force-light&#x27;, &#x27;force-dark&#x27;);
-        body.style.colorScheme = &#x27;&#x27;;
-        body.style.removeProperty(&#x27;--prefers-color-scheme&#x27;);
-      }
-      
-      // Close dropdown
-      dropdown.classList.remove(&#x27;show&#x27;);
-    }
-    
-    // Close dropdown when clicking outside
-    document.addEventListener(&#x27;click&#x27;, function(event) {
-      const themeSwitcher = document.querySelector(&#x27;.theme-switcher&#x27;);
-      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
-      
-      if (!themeSwitcher.contains(event.target)) {
-        dropdown.classList.remove(&#x27;show&#x27;);
-      }
-    });
-  &lt;/script&gt;
-
-  &lt;!-- Bottom Navigation --&gt;
-  &lt;div class=&quot;bottom-nav&quot;&gt;
-    &lt;button class=&quot;download-btn&quot; onclick=&quot;downloadHTML()&quot;&gt;
-      &lt;span class=&quot;material-icons&quot;&gt;download&lt;/span&gt;
-      Download HTML
-    &lt;/button&gt;
-  &lt;/div&gt;  &lt;script&gt;
-    function downloadHTML() {
-      // Open the download page for this email template
-      window.open(&#x27;../../download-pages/zomo-health-cbiz-template-download.html&#x27;, &#x27;_blank&#x27;);
-    }
-  &lt;/script&gt;
-      
-      
-&lt;/body&gt;
-&lt;/html&gt;
-</pre>
+          <tr><td style="line-height:32px;height:32px;">&nbsp;</td></tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html></pre>
             </div>
         </div>
     </div>
