@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Google Material Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
 
   <!-- ZOMO HEALTH COLOR PALETTE -->
   <!-- Light Mode: Background #FFFFFF / Foreground #05151d / Primary #0d9488 / Muted #64748b -->
@@ -341,9 +341,7 @@
 
     /* Baseline primary button text/icon color (default light) */
     .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
-    .btn-primary .material-icons, .btn-primary-dark .material-icons { color: #FFFFFF !important; }
-@media (prefers-color-scheme: dark) {
-      .dm-bg { background:#0a1216 !important; }
+    .btn-primary 
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
       .dm-text { color:#f8fafc !important; }
       .dm-muted { color:#94a3b8 !important; }
@@ -432,7 +430,7 @@
     }
     u + #body a { text-decoration:none !important; }
     body, table, td, a { font-family: 'Epilogue', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif !important; color: #05151d !important; }
-    .material-icons { font-family: 'Material Icons' !important; font-weight: normal; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-feature-settings: 'liga'; -webkit-font-smoothing: antialiased; vertical-align: middle; }
+    
     
     /* Button base colors */
     .btn-link { color: #0d9488 !important; }
@@ -551,9 +549,7 @@
       background: #0b7a6b;
     }
 
-    .download-btn .material-icons {
-      font-size: 18px;
-    }
+    .download-btn 
 
     /* Dark mode styles for bottom nav */    
     
@@ -637,46 +633,46 @@
       .btn-link-dark { color: #2dd4bf !important; }    }
     
     /* Icon Theming - Light Mode */
-    .force-light .material-icons { color: #0d9488 !important; }
+    .force-light 
     .force-light .dm-icon { color: #0d9488 !important; }
     .force-light .dm-icon-accent { color: #0d9488 !important; }
     
     /* Icon Theming - Dark Mode */
-    .force-dark .material-icons { color: #2dd4bf !important; }
+    .force-dark 
     .force-dark .dm-icon { color: #2dd4bf !important; }
     .force-dark .dm-icon-accent { color: #2dd4bf !important; }
     
     /* Icon Theming - Media Query Dark Mode */
     @media (prefers-color-scheme: dark) {
-      .material-icons { color: #2dd4bf !important; }
+      
       .dm-icon { color: #2dd4bf !important; }
       .dm-icon-accent { color: #2dd4bf !important; }    }
     
     /* Special theming for icons in colored backgrounds */
-    .force-light .dm-hero .material-icons { color: #FFFFFF !important; }
-    .force-dark .dm-hero .material-icons { color: #FFFFFF !important; }
+    .force-light .dm-hero 
+    .force-dark .dm-hero 
     @media (prefers-color-scheme: dark) {
-      .dm-hero .material-icons { color: #FFFFFF !important; }
+      .dm-hero 
     }
     
     /* Special theming for icons in any colored background */
-    .force-light div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
-    .force-light div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
+    .force-light div[style*="background:#0d9488"] 
+    .force-dark div[style*="background:#0d9488"] 
+    .force-light div[style*="background:#2dd4bf"] 
+    .force-dark div[style*="background:#2dd4bf"] 
     @media (prefers-color-scheme: dark) {
-      div[style*="background:#0d9488"] .material-icons { color: #FFFFFF !important; }
-      div[style*="background:#2dd4bf"] .material-icons { color: #FFFFFF !important; }
+      div[style*="background:#0d9488"] 
+      div[style*="background:#2dd4bf"] 
     }
     
     /* Special theming for button icons */
-    .force-light .btn-primary .material-icons { color: #FFFFFF !important; }
-    .force-dark .btn-primary .material-icons { color: #0a1216 !important; }
-    .force-light .btn-primary-dark .material-icons { color: #FFFFFF !important; }
-    .force-dark .btn-primary-dark .material-icons { color: #0a1216 !important; }
+    .force-light .btn-primary 
+    .force-dark .btn-primary 
+    .force-light .btn-primary-dark 
+    .force-dark .btn-primary-dark 
     @media (prefers-color-scheme: dark) {
-      .btn-primary .material-icons { color: #0a1216 !important; }
-      .btn-primary-dark .material-icons { color: #0a1216 !important; }
+      .btn-primary 
+      .btn-primary-dark 
     }
 
     /* Special theming for icons in any colored background */
@@ -684,52 +680,11 @@
     .force-light div[style*="background: #0d9488"],
     .force-light div[style*="background-color:#0d9488"],
     .force-light div[style*="background-color: #0d9488"] { }
-    .force-light div[style*="background:#0d9488"] .material-icons,
-    .force-light div[style*="background: #0d9488"] .material-icons,
-    .force-light div[style*="background-color:#0d9488"] .material-icons,
-    .force-light div[style*="background-color: #0d9488"] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*="background:#0d9488"] .material-icons,
-    .force-dark div[style*="background: #0d9488"] .material-icons,
-    .force-dark div[style*="background-color:#0d9488"] .material-icons,
-    .force-dark div[style*="background-color: #0d9488"] .material-icons { color: #FFFFFF !important; }
-
-    .force-light div[style*="background:#2dd4bf"],
-    .force-light div[style*="background: #2dd4bf"],
-    .force-light div[style*="background-color:#2dd4bf"],
-    .force-light div[style*="background-color: #2dd4bf"] { }
-    .force-light div[style*="background:#2dd4bf"] .material-icons,
-    .force-light div[style*="background: #2dd4bf"] .material-icons,
-    .force-light div[style*="background-color:#2dd4bf"] .material-icons,
-    .force-light div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
-    .force-dark div[style*="background:#2dd4bf"] .material-icons,
-    .force-dark div[style*="background: #2dd4bf"] .material-icons,
-    .force-dark div[style*="background-color:#2dd4bf"] .material-icons,
-    .force-dark div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
-
-    @media (prefers-color-scheme: dark) {
-      div[style*="background:#0d9488"] .material-icons,
-      div[style*="background: #0d9488"] .material-icons,
-      div[style*="background-color:#0d9488"] .material-icons,
-      div[style*="background-color: #0d9488"] .material-icons,
-      div[style*="background:#2dd4bf"] .material-icons,
-      div[style*="background: #2dd4bf"] .material-icons,
-      div[style*="background-color:#2dd4bf"] .material-icons,
-      div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
-    }
+    .force-light div[style*="background:#0d9488"] 
+    .force-light div[style*="background:#2dd4bf"] 
     
     /* CRITICAL: Override general material-icons rule for colored backgrounds - must come after all other rules */
-    div[style*="background:#0d9488"] .material-icons,
-    div[style*="background: #0d9488"] .material-icons,
-    div[style*="background-color:#0d9488"] .material-icons,
-    div[style*="background-color: #0d9488"] .material-icons { color: #FFFFFF !important; }
-    div[style*="background:#2dd4bf"] .material-icons,
-    div[style*="background: #2dd4bf"] .material-icons,
-    div[style*="background-color:#2dd4bf"] .material-icons,
-    div[style*="background-color: #2dd4bf"] .material-icons { color: #FFFFFF !important; }
-  </style>
-
-  <!--[if mso]>
-  <style type="text/css"> body, table, td, a { font-family: 'Epilogue', Arial, sans-serif !important;    }
+    div[style*="background:#0d9488"] 
     
     /* Comprehensive Light Mode Theming */
     .force-light .dm-hr { border-color: #e2e8f0 !important; }
@@ -766,26 +721,26 @@
       .btn-link-dark { color: #2dd4bf !important; }    }
     
     /* Icon Theming - Light Mode */
-    .force-light .material-icons { color: #0d9488 !important; }
+    .force-light 
     .force-light .dm-icon { color: #0d9488 !important; }
     .force-light .dm-icon-accent { color: #0d9488 !important; }
     
     /* Icon Theming - Dark Mode */
-    .force-dark .material-icons { color: #2dd4bf !important; }
+    .force-dark 
     .force-dark .dm-icon { color: #2dd4bf !important; }
     .force-dark .dm-icon-accent { color: #2dd4bf !important; }
     
     /* Icon Theming - Media Query Dark Mode */
     @media (prefers-color-scheme: dark) {
-      .material-icons { color: #2dd4bf !important; }
+      
       .dm-icon { color: #2dd4bf !important; }
       .dm-icon-accent { color: #2dd4bf !important; }    }
     
     /* Special theming for icons in colored backgrounds */
-    .force-light .dm-hero .material-icons { color: #FFFFFF !important; }
-    .force-dark .dm-hero .material-icons { color: #FFFFFF !important; }
+    .force-light .dm-hero 
+    .force-dark .dm-hero 
     @media (prefers-color-scheme: dark) {
-      .dm-hero .material-icons { color: #FFFFFF !important; }
+      .dm-hero 
     }
   </style>
   <![endif]-->
@@ -805,20 +760,20 @@
     </div>
     <div class="theme-switcher">
       <button class="theme-toggle-btn" onclick="toggleThemeDropdown()">
-        <span class="material-icons" id="theme-icon">monitor</span>
-        <span class="material-icons" style="font-size: 12px;">keyboard_arrow_down</span>
+        <img src="assets/images/icons/monitor.svg" alt="monitor" style="width:16px; height:16px; vertical-align:middle;" id=theme-icon>
+        <img src="assets/images/icons/keyboard_arrow_down.svg" alt="keyboard_arrow_down" style="width:16px; height:16px; vertical-align:middle; color:currentColor">
       </button>
       <div class="theme-dropdown" id="theme-dropdown">
         <div class="theme-option" onclick="switchTheme('light')">
-          <span class="material-icons" style="font-size: 16px;">light_mode</span>
+          <img src="assets/images/icons/light_mode.svg" alt="light_mode" style="width:16px; height:16px; vertical-align:middle; color:currentColor">
           Light
         </div>
         <div class="theme-option" onclick="switchTheme('dark')">
-          <span class="material-icons" style="font-size: 16px;">dark_mode</span>
+          <img src="assets/images/icons/dark_mode.svg" alt="dark_mode" style="width:16px; height:16px; vertical-align:middle; color:currentColor">
           Dark
         </div>
         <div class="theme-option active" onclick="switchTheme('system')">
-          <span class="material-icons" style="font-size: 16px;">monitor</span>
+          <img src="assets/images/icons/monitor.svg" alt="monitor" style="width:16px; height:16px; vertical-align:middle; color:currentColor">
           System
         </div>
       </div>
@@ -892,12 +847,12 @@
                   <td style="padding:20px;">
                     <h3 style="margin:0 0 12px; font-size:18px; font-weight:600; ;" class="dm-text">In This Issue</h3>
                     <ul style="margin:0; padding-left:18px; color:#64748b; font-size:15px; font-weight:400; line-height:1.6;" class="dm-muted">
-                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">handshake</span>Partnership with Gallagher</li>
+                      <li style="margin:4px 0;"><img src="assets/images/icons/handshake.svg" alt="handshake" style="width:16px; height:16px; vertical-align:middle; color:#0d9488; margin-right:8px">Partnership with Gallagher</li>
                       <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">local_shipping</span>Ward Transport & Logistics case study</li>
-                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">new_releases</span>What's new at Zomo</li>
-                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">person</span>Meet our team: Nikki Herndon</li>
-                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">emoji_events</span>Client success story: 78% engagement</li>
-                      <li style="margin:4px 0;"><span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:8px; color:#0d9488;">health_and_safety</span>Health news & resources</li>
+                      <li style="margin:4px 0;"><img src="assets/images/icons/new_releases.svg" alt="new_releases" style="width:16px; height:16px; vertical-align:middle; color:#0d9488; margin-right:8px">What's new at Zomo</li>
+                      <li style="margin:4px 0;"><img src="assets/images/icons/person.svg" alt="person" style="width:16px; height:16px; vertical-align:middle; color:#0d9488; margin-right:8px">Meet our team: Nikki Herndon</li>
+                      <li style="margin:4px 0;"><img src="assets/images/icons/emoji_events.svg" alt="emoji_events" style="width:16px; height:16px; vertical-align:middle; color:#0d9488; margin-right:8px">Client success story: 78% engagement</li>
+                      <li style="margin:4px 0;"><img src="assets/images/icons/health_and_safety.svg" alt="health_and_safety" style="width:16px; height:16px; vertical-align:middle; color:#0d9488; margin-right:8px">Health news & resources</li>
                     </ul>
                   </td>
                 </tr>
@@ -1015,7 +970,7 @@
                                   <tr>
                                     <td style="padding:16px; vertical-align:middle; height:180px;">
                                       <div style="text-align:center; margin-bottom:12px;">
-                                        <span class="material-icons" style="font-size:32px; color:#0d9488;">security</span>
+                                        <img src="assets/images/icons/security.svg" alt="security" style="width:32px; height:32px; vertical-align:middle; color:#0d9488">
                                       </div>
                                       <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;" class="dm-text">SOC 2 Certified</h3>
                                       <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">Unwavering commitment to data security and compliance.</p>
@@ -1029,7 +984,7 @@
                                   <tr>
                                     <td style="padding:16px; vertical-align:middle; height:180px;">
                                       <div style="text-align:center; margin-bottom:12px;">
-                                        <span class="material-icons" style="font-size:32px; color:#0d9488;">speed</span>
+                                        <img src="assets/images/icons/speed.svg" alt="speed" style="width:32px; height:32px; vertical-align:middle; color:#0d9488">
                                       </div>
                                       <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;" class="dm-text">Faster Implementation</h3>
                                       <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">3–6 week launches help clients see ROI sooner.</p>
@@ -1043,7 +998,7 @@
                                   <tr>
                                     <td style="padding:16px; vertical-align:middle; height:180px;">
                                       <div style="text-align:center; margin-bottom:12px;">
-                                        <span class="material-icons" style="font-size:32px; color:#0d9488;">integration_instructions</span>
+                                        <img src="assets/images/icons/integration_instructions.svg" alt="integration_instructions" style="width:32px; height:32px; vertical-align:middle; color:#0d9488">
                                       </div>
                                       <h3 style="margin:0 0 8px; font-size:15px; font-weight:600; ; text-align:center;" class="dm-text">HRIS Integrations</h3>
                                       <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b; text-align:center;" class="dm-muted">Expanding integrations to decrease HR workload.</p>
@@ -1166,7 +1121,7 @@
                                   <tr>
                                     <td style="width:48px; vertical-align:top; padding-right:12px; text-align:center;">
                                       <div style="width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;">
-                                        <span class="material-icons" style="font-size:24px;">favorite</span>
+                                        <img src="assets/images/icons/favorite.svg" alt="favorite" style="width:24px; height:24px; vertical-align:middle; color:currentColor">
                                       </div>
                                     </td>
                                     <td style="vertical-align:top;">
@@ -1188,7 +1143,7 @@
                                   <tr>
                                     <td style="width:48px; vertical-align:top; padding-right:12px; text-align:center;">
                                       <div style="width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;">
-                                        <span class="material-icons" style="font-size:24px;">trending_up</span>
+                                        <img src="assets/images/icons/trending_up.svg" alt="trending_up" style="width:24px; height:24px; vertical-align:middle; color:currentColor">
                                       </div>
                                     </td>
                                     <td style="vertical-align:top;">
@@ -1210,7 +1165,7 @@
                                   <tr>
                                     <td style="width:48px; vertical-align:top; padding-right:12px; text-align:center;">
                                       <div style="width:48px; height:48px; background:#0d9488; border-radius:6px; display:flex; align-items:center; justify-content:center;">
-                                        <span class="material-icons" style="font-size:24px;">article</span>
+                                        <img src="assets/images/icons/article.svg" alt="article" style="width:24px; height:24px; vertical-align:middle; color:currentColor">
                                       </div>
                                     </td>
                                     <td style="vertical-align:top;">
@@ -1291,7 +1246,7 @@
                       Get the latest health news, product updates, and broker insights.
                     </p>
                     <a href="https://www.linkedin.com/company/zomo-health/" target="_blank" style="display:inline-block; padding:8px 16px; background:#0d9488; color:#FFFFFF; text-decoration:none; border-radius:6px; font-size:14px; font-weight:500;" class="dm-cta btn-primary btn-primary-dark">
-                      <span class="material-icons" style="font-size:16px; vertical-align:middle; margin-right:4px; color:#FFFFFF;">linkedin</span>Follow us on LinkedIn
+                      <img src="assets/images/icons/linkedin.svg" alt="linkedin" style="width:16px; height:16px; vertical-align:middle; color:#FFFFFF; margin-right:4px">Follow us on LinkedIn
                     </a>
                   </td>
                 </tr>
@@ -1431,7 +1386,7 @@
   <!-- Bottom Navigation -->
   <div class="bottom-nav">
     <button class="download-btn" onclick="downloadHTML()">
-      <span class="material-icons">download</span>
+      <img src="assets/images/icons/download.svg" alt="download" style="width:16px; height:16px; vertical-align:middle;">
       Download HTML
     </button>
   </div>  <script>
