@@ -464,11 +464,10 @@
     .force-light .view-btn:hover { background: #e2e8f0 !important; }
     .force-light .view-btn.active { background: #0d9488 !important; color: white !important; border-color: #0d9488 !important; }
     .force-light .dm-headline-accent { color: #0d9488 !important; }
-    .force-light .logo-filter { filter: none !important; }
-    .force-light .symbol-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
-    .force-light .footer-symbol img { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
-    .force-light .footer-symbol img svg { stroke-width: 2px !important; }
-    .force-light .footer-symbol img svg * { stroke-width: 2px !important; }
+    .force-light .logo-light,
+    .force-light .symbol-light { display: inline-block !important; }
+    .force-light .logo-dark,
+    .force-light .symbol-dark { display: none !important; }
     
     .force-dark .dm-bg { background: #0a1216 !important; }
     .force-dark .dm-text { color: #f8fafc !important; }
@@ -479,7 +478,10 @@
     .force-dark .dm-hero-text { color: #2dd4bf !important; }
     .force-dark .dm-placeholder { background: #1e293b !important; }
     .force-dark .dm-headline-accent { color: #2dd4bf !important; }
-    .force-dark .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
+    .force-dark .logo-light,
+    .force-dark .symbol-light { display: none !important; }
+    .force-dark .logo-dark,
+    .force-dark .symbol-dark { display: inline-block !important; }
     .force-dark .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
     .force-dark .dm-avatar { background: #0f1a21 !important; border-color: #2dd4bf !important; }
     .force-dark .mobile-preview { border-color: #1e293b !important; }
@@ -490,10 +492,6 @@
     .force-dark .view-btn:hover { background: #1e293b !important; }
     .force-dark .view-btn.active { background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important; }
     .force-dark .btn-link-dark { color: #2dd4bf !important; }
-    .force-dark .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
-    .force-dark .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
-    .force-dark .footer-symbol img svg { stroke-width: 2px !important; }
-    .force-dark .footer-symbol img svg * { stroke-width: 2px !important; }
     
     .mobile-preview {
       max-width: 375px;
@@ -595,8 +593,12 @@
     .desktop-preview {
       max-width: 100%;
     }
-    /* Logo color filters - Light mode: #05151d, Dark mode: #2dd4bf */
-    .logo-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%); }
+    /* Logo variants for light and dark mode */
+    .logo-light,
+    .symbol-light { display: inline-block; }
+
+    .logo-dark,
+    .symbol-dark { display: none !important; }
 
     /* Baseline primary button text/icon color (default light) */
     .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
@@ -616,12 +618,11 @@
       .dm-hero-text { color:#2dd4bf !important; }
       .dm-placeholder { background:#1e293b !important; }
       .dm-headline-accent { color:#2dd4bf !important; }
+      .logo-light,
+      .symbol-light { display:none !important; }
+      .logo-dark,
+      .symbol-dark { display:inline-block !important; }
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
-      .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
-      .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
-      .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
-      .footer-symbol img svg { stroke-width: 2px; }
-      .footer-symbol img svg * { stroke-width: 2px; }
       
       .view-switcher {
         background: #0a1216 !important;
@@ -701,10 +702,6 @@
     .btn-primary:hover { background:#0b7a6b !important; }
     .btn-primary-dark:hover { background:#26c4b1 !important; }
     
-    /* Symbol filter for light mode */
-    .symbol-filter { 
-      filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%);
-    }
     
     /* Mobile Responsive Styles */
     @media only screen and (max-width: 600px) {
@@ -1055,7 +1052,41 @@
   &lt;![endif]--&gt;
 &lt;/head&gt;
 &lt;body id=&quot;body&quot; style=&quot;margin:0; padding:0; background:#FFFFFF;&quot; class=&quot;dm-bg&quot;&gt;
-&lt;!-- Email Container --&gt;
+  &lt;!-- View Switcher Toolbar --&gt;
+  &lt;div class=&quot;view-switcher&quot;&gt;
+    &lt;h3&gt;
+      &lt;a href=&quot;../../index.html&quot; class=&quot;back-link&quot;&gt;
+        &lt;span class=&quot;material-icons back-arrow&quot;&gt;arrow_back&lt;/span&gt;
+        Email Preview
+      &lt;/a&gt;
+    &lt;/h3&gt;
+    &lt;div class=&quot;view-buttons&quot;&gt;
+      &lt;button class=&quot;view-btn active&quot; onclick=&quot;switchView(&#x27;desktop&#x27;)&quot;&gt;Desktop&lt;/button&gt;
+      &lt;button class=&quot;view-btn&quot; onclick=&quot;switchView(&#x27;mobile&#x27;)&quot;&gt;Mobile&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;theme-switcher&quot;&gt;
+      &lt;button class=&quot;theme-toggle-btn&quot; onclick=&quot;toggleThemeDropdown()&quot;&gt;
+        &lt;span class=&quot;material-icons&quot; id=&quot;theme-icon&quot;&gt;monitor&lt;/span&gt;
+        &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 12px;&quot;&gt;keyboard_arrow_down&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class=&quot;theme-dropdown&quot; id=&quot;theme-dropdown&quot;&gt;
+        &lt;div class=&quot;theme-option&quot; onclick=&quot;switchTheme(&#x27;light&#x27;)&quot;&gt;
+          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;light_mode&lt;/span&gt;
+          Light
+        &lt;/div&gt;
+        &lt;div class=&quot;theme-option&quot; onclick=&quot;switchTheme(&#x27;dark&#x27;)&quot;&gt;
+          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;dark_mode&lt;/span&gt;
+          Dark
+        &lt;/div&gt;
+        &lt;div class=&quot;theme-option active&quot; onclick=&quot;switchTheme(&#x27;system&#x27;)&quot;&gt;
+          &lt;span class=&quot;material-icons&quot; style=&quot;font-size: 16px;&quot;&gt;monitor&lt;/span&gt;
+          System
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Email Container --&gt;
   &lt;div id=&quot;email-container&quot; class=&quot;email-container desktop-preview&quot;&gt;
   &lt;!-- Hidden Preheader (edit per send) --&gt;
   &lt;div style=&quot;display:none; max-height:0; overflow:hidden; mso-hide:all; opacity:0; color:transparent; height:0;&quot;&gt;
@@ -1073,7 +1104,8 @@
               &lt;table role=&quot;presentation&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; width=&quot;100%&quot;&gt;
                 &lt;tr&gt;
                   &lt;td align=&quot;left&quot; style=&quot;vertical-align:middle;&quot;&gt;
-                    &lt;img src=&quot;https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg&quot; width=&quot;165&quot; alt=&quot;ZOMO Health&quot; style=&quot;display:block; border:0;&quot; class=&quot;logo-filter mobile-logo&quot;&gt;
+                    &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/ZomoLogo-Light.png&quot; width=&quot;165&quot; alt=&quot;ZOMO Health&quot; style=&quot;display:block; border:0;&quot; class=&quot;logo-light mobile-logo&quot;&gt;
+                    &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/ZomoLogo-Dark.png&quot; width=&quot;165&quot; alt=&quot;ZOMO Health&quot; style=&quot;display:none; border:0;&quot; class=&quot;logo-dark mobile-logo&quot;&gt;
                   &lt;/td&gt;
                   &lt;td align=&quot;right&quot; style=&quot;vertical-align:middle;&quot;&gt;
                     &lt;p style=&quot;margin:0; font-size:14px; font-weight:500; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;October, 2025&lt;/p&gt;
@@ -1527,7 +1559,8 @@
                   &lt;tr&gt;
                     &lt;td style=&quot;vertical-align:top; width:70%;&quot;&gt;
                       &lt;div style=&quot;margin:0 0 8px; text-align:left;&quot;&gt;
-                  &lt;img src=&quot;https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg&quot; width=&quot;112&quot; alt=&quot;Zomo Health&quot; style=&quot;display:block; border:0;&quot; class=&quot;logo-filter&quot;&gt;
+                  &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/ZomoLogo-Light.png&quot; width=&quot;112&quot; alt=&quot;Zomo Health&quot; style=&quot;display:block; border:0;&quot; class=&quot;logo-light&quot;&gt;
+                  &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/ZomoLogo-Dark.png&quot; width=&quot;112&quot; alt=&quot;Zomo Health&quot; style=&quot;display:none; border:0;&quot; class=&quot;logo-dark&quot;&gt;
                 &lt;/div&gt;
                 &lt;p style=&quot;margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;&quot; class=&quot;dm-muted&quot;&gt;
                   1980 Post Oak Blvd., Ste 100&lt;br&gt;
@@ -1537,7 +1570,8 @@
                 &lt;/p&gt;
                     &lt;/td&gt;
                     &lt;td style=&quot;vertical-align:middle; width:30%; text-align:right;&quot; class=&quot;footer-symbol&quot;&gt;
-                      &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/Symbol.svg&quot; width=&quot;80&quot; alt=&quot;Symbol&quot; style=&quot;display:block; border:0; margin-left:auto;&quot; class=&quot;symbol-filter&quot;&gt;
+                      &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/Symbol-Light.png&quot; width=&quot;80&quot; alt=&quot;Symbol&quot; style=&quot;display:block; border:0; margin-left:auto;&quot; class=&quot;symbol-light&quot;&gt;
+                      &lt;img src=&quot;https://zomo-emails.vercel.app/assets/images/Symbol-Dark.png&quot; width=&quot;80&quot; alt=&quot;Symbol&quot; style=&quot;display:none; border:0; margin-left:auto;&quot; class=&quot;symbol-dark&quot;&gt;
                     &lt;/td&gt;
                   &lt;/tr&gt;
                 &lt;/table&gt;
@@ -1562,9 +1596,105 @@
       &lt;/td&gt;
     &lt;/tr&gt;
   &lt;/table&gt;
-  &lt;/div&gt;
+  &lt;/div&gt; &lt;!-- End Email Container --&gt;
+
+  &lt;script&gt;
+    function switchView(view) {
+      const container = document.getElementById(&#x27;email-container&#x27;);
+      const buttons = document.querySelectorAll(&#x27;.view-btn&#x27;);
+      
+      // Remove active class from all buttons
+      buttons.forEach(btn =&gt; btn.classList.remove(&#x27;active&#x27;));
+      
+      // Add active class to clicked button
+      event.target.classList.add(&#x27;active&#x27;);
+      
+      // Switch container class
+      if (view === &#x27;mobile&#x27;) {
+        container.className = &#x27;email-container mobile-preview&#x27;;
+      } else {
+        container.className = &#x27;email-container desktop-preview&#x27;;
+      }
+    }
+    
+    function toggleThemeDropdown() {
+      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
+      dropdown.classList.toggle(&#x27;show&#x27;);
+    }
+    
+    function switchTheme(theme) {
+      const body = document.getElementById(&#x27;body&#x27;);
+      const options = document.querySelectorAll(&#x27;.theme-option&#x27;);
+      const themeIcon = document.getElementById(&#x27;theme-icon&#x27;);
+      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
+      
+      // Remove active class from all theme options
+      options.forEach(option =&gt; option.classList.remove(&#x27;active&#x27;));
+      
+      // Add active class to clicked option
+      event.target.classList.add(&#x27;active&#x27;);
+      
+      // Update theme icon
+      if (theme === &#x27;light&#x27;) {
+        themeIcon.textContent = &#x27;light_mode&#x27;;
+      } else if (theme === &#x27;dark&#x27;) {
+        themeIcon.textContent = &#x27;dark_mode&#x27;;
+      } else {
+        themeIcon.textContent = &#x27;monitor&#x27;;
+      }
+      
+      // Apply theme
+      if (theme === &#x27;light&#x27;) {
+        body.style.colorScheme = &#x27;light&#x27;;
+        body.style.setProperty(&#x27;--prefers-color-scheme&#x27;, &#x27;light&#x27;);
+        // Force light mode by overriding media query
+        body.classList.add(&#x27;force-light&#x27;);
+        body.classList.remove(&#x27;force-dark&#x27;);
+      } else if (theme === &#x27;dark&#x27;) {
+        body.style.colorScheme = &#x27;dark&#x27;;
+        body.style.setProperty(&#x27;--prefers-color-scheme&#x27;, &#x27;dark&#x27;);
+        // Force dark mode by overriding media query
+        body.classList.add(&#x27;force-dark&#x27;);
+        body.classList.remove(&#x27;force-light&#x27;);
+      } else {
+        // System theme - remove forced classes and let CSS media query handle it
+        body.classList.remove(&#x27;force-light&#x27;, &#x27;force-dark&#x27;);
+        body.style.colorScheme = &#x27;&#x27;;
+        body.style.removeProperty(&#x27;--prefers-color-scheme&#x27;);
+      }
+      
+      // Close dropdown
+      dropdown.classList.remove(&#x27;show&#x27;);
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener(&#x27;click&#x27;, function(event) {
+      const themeSwitcher = document.querySelector(&#x27;.theme-switcher&#x27;);
+      const dropdown = document.getElementById(&#x27;theme-dropdown&#x27;);
+      
+      if (!themeSwitcher.contains(event.target)) {
+        dropdown.classList.remove(&#x27;show&#x27;);
+      }
+    });
+  &lt;/script&gt;
+
+  &lt;!-- Bottom Navigation --&gt;
+  &lt;div class=&quot;bottom-nav&quot;&gt;
+    &lt;button class=&quot;download-btn&quot; onclick=&quot;downloadHTML()&quot;&gt;
+      &lt;span class=&quot;material-icons&quot;&gt;download&lt;/span&gt;
+      Download HTML
+    &lt;/button&gt;
+  &lt;/div&gt;  &lt;script&gt;
+    function downloadHTML() {
+      // Open the download page for this email template
+      window.open(&#x27;../../download-pages/zomo-health-marsh-template-download.html&#x27;, &#x27;_blank&#x27;);
+    }
+  &lt;/script&gt;
+      
+      
 &lt;/body&gt;
-&lt;/html&gt;</pre>
+&lt;/html&gt;
+</pre>
             </div>
         </div>
     </div>

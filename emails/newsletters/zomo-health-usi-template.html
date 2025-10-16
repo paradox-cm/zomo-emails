@@ -203,11 +203,10 @@
     .force-light .view-btn:hover { background: #e2e8f0 !important; }
     .force-light .view-btn.active { background: #0d9488 !important; color: white !important; border-color: #0d9488 !important; }
     .force-light .dm-headline-accent { color: #0d9488 !important; }
-    .force-light .logo-filter { filter: none !important; }
-    .force-light .symbol-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
-    .force-light .footer-symbol img { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%) !important; }
-    .force-light .footer-symbol img svg { stroke-width: 2px !important; }
-    .force-light .footer-symbol img svg * { stroke-width: 2px !important; }
+    .force-light .logo-light,
+    .force-light .symbol-light { display: inline-block !important; }
+    .force-light .logo-dark,
+    .force-light .symbol-dark { display: none !important; }
     
     .force-dark .dm-bg { background: #0a1216 !important; }
     .force-dark .dm-text { color: #f8fafc !important; }
@@ -218,7 +217,10 @@
     .force-dark .dm-hero-text { color: #2dd4bf !important; }
     .force-dark .dm-placeholder { background: #1e293b !important; }
     .force-dark .dm-headline-accent { color: #2dd4bf !important; }
-    .force-dark .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
+    .force-dark .logo-light,
+    .force-dark .symbol-light { display: none !important; }
+    .force-dark .logo-dark,
+    .force-dark .symbol-dark { display: inline-block !important; }
     .force-dark .dm-box { background: #0f1a21 !important; border-color: #1e293b !important; }
     .force-dark .dm-avatar { background: #0f1a21 !important; border-color: #2dd4bf !important; }
     .force-dark .mobile-preview { border-color: #1e293b !important; }
@@ -229,10 +231,6 @@
     .force-dark .view-btn:hover { background: #1e293b !important; }
     .force-dark .view-btn.active { background: #2dd4bf !important; color: #0a1216 !important; border-color: #2dd4bf !important; }
     .force-dark .btn-link-dark { color: #2dd4bf !important; }
-    .force-dark .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
-    .force-dark .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%) !important; }
-    .force-dark .footer-symbol img svg { stroke-width: 2px !important; }
-    .force-dark .footer-symbol img svg * { stroke-width: 2px !important; }
     
     .mobile-preview {
       max-width: 375px;
@@ -334,8 +332,12 @@
     .desktop-preview {
       max-width: 100%;
     }
-    /* Logo color filters - Light mode: #05151d, Dark mode: #2dd4bf */
-    .logo-filter { filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%); }
+    /* Logo variants for light and dark mode */
+    .logo-light,
+    .symbol-light { display: inline-block; }
+
+    .logo-dark,
+    .symbol-dark { display: none !important; }
 
     /* Baseline primary button text/icon color (default light) */
     .btn-primary, .btn-primary-dark { color: #FFFFFF !important; }
@@ -355,12 +357,11 @@
       .dm-hero-text { color:#2dd4bf !important; }
       .dm-placeholder { background:#1e293b !important; }
       .dm-headline-accent { color:#2dd4bf !important; }
+      .logo-light,
+      .symbol-light { display:none !important; }
+      .logo-dark,
+      .symbol-dark { display:inline-block !important; }
       .dm-box { background:#0f1a21 !important; border-color:#1e293b !important; }
-      .logo-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
-      .symbol-filter { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
-      .footer-symbol img { filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(200%) hue-rotate(120deg) brightness(120%) contrast(90%); }
-      .footer-symbol img svg { stroke-width: 2px; }
-      .footer-symbol img svg * { stroke-width: 2px; }
       
       .view-switcher {
         background: #0a1216 !important;
@@ -440,10 +441,6 @@
     .btn-primary:hover { background:#0b7a6b !important; }
     .btn-primary-dark:hover { background:#26c4b1 !important; }
     
-    /* Symbol filter for light mode */
-    .symbol-filter { 
-      filter: brightness(0) saturate(100%) invert(4%) sepia(8%) saturate(2000%) hue-rotate(200deg) brightness(95%) contrast(95%);
-    }
     
     /* Mobile Responsive Styles */
     @media only screen and (max-width: 600px) {
@@ -846,7 +843,8 @@
               <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                 <tr>
                   <td align="left" style="vertical-align:middle;">
-                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-filter mobile-logo">
+                    <img src="https://zomo-emails.vercel.app/assets/images/ZomoLogo-Light.png" width="165" alt="ZOMO Health" style="display:block; border:0;" class="logo-light mobile-logo">
+                    <img src="https://zomo-emails.vercel.app/assets/images/ZomoLogo-Dark.png" width="165" alt="ZOMO Health" style="display:none; border:0;" class="logo-dark mobile-logo">
                   </td>
                   <td align="right" style="vertical-align:middle;">
                     <p style="margin:0; font-size:14px; font-weight:500; color:#64748b;" class="dm-muted">October, 2025</p>
@@ -1304,7 +1302,8 @@
                   <tr>
                     <td style="vertical-align:top; width:70%;">
                       <div style="margin:0 0 8px; text-align:left;">
-                  <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ZomoLogo-D2YwOuk0UBrwHkYGyIKajn469RMSVn.svg" width="112" alt="Zomo Health" style="display:block; border:0;" class="logo-filter">
+                  <img src="https://zomo-emails.vercel.app/assets/images/ZomoLogo-Light.png" width="112" alt="Zomo Health" style="display:block; border:0;" class="logo-light">
+                  <img src="https://zomo-emails.vercel.app/assets/images/ZomoLogo-Dark.png" width="112" alt="Zomo Health" style="display:none; border:0;" class="logo-dark">
                 </div>
                 <p style="margin:0; font-size:13px; font-weight:400; line-height:1.5; color:#64748b;" class="dm-muted">
                   1980 Post Oak Blvd., Ste 100<br>
@@ -1314,7 +1313,8 @@
                 </p>
                     </td>
                     <td style="vertical-align:middle; width:30%; text-align:right;" class="footer-symbol">
-                      <img src="https://zomo-emails.vercel.app/assets/images/Symbol.svg" width="80" alt="Symbol" style="display:block; border:0; margin-left:auto;" class="symbol-filter">
+                      <img src="https://zomo-emails.vercel.app/assets/images/Symbol-Light.png" width="80" alt="Symbol" style="display:block; border:0; margin-left:auto;" class="symbol-light">
+                      <img src="https://zomo-emails.vercel.app/assets/images/Symbol-Dark.png" width="80" alt="Symbol" style="display:none; border:0; margin-left:auto;" class="symbol-dark">
                     </td>
                   </tr>
                 </table>
